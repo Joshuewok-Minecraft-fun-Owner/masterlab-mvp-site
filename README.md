@@ -45,4 +45,85 @@ All colors are defined in `global.css` as CSS variables.
 ---
 
 ## 📁 Project Structure
+masterlab-mvp-site
+│
+├── index.html
+├── login.html
+├── dashboard.html
+├── course-map.html
+├── lesson.html
+├── test.html
+├── relearn.html
+├── games.html
+├── staff.html
+├── developing.html
+├── experimental.html
+│
+├── css/
+│   ├── global.css
+│   ├── homepage.css
+│   ├── dashboard.css
+│   ├── course-map.css
+│   ├── lesson.css
+│   ├── test.css
+│   ├── relearn.css
+│   ├── games.css
+│   ├── staff.css
+│   ├── developing.css
+│   └── experimental.css
+│
+├── js/
+│   ├── global.js
+│   ├── dashboard.js
+│   ├── course-map.js
+│   ├── lesson.js
+│   ├── test.js
+│   ├── relearn.js
+│   ├── games.js
+│   ├── staff.js
+│   ├── developing.js
+│   └── experimental.js
+│
+├── assets/
+│   ├── images/
+│   └── icons/
+│
+├── README.md
+└── .gitignore
 
+---
+
+## 🧪 Experimental Page
+
+A private sandbox for testing new UI components, animations, layouts, and prototypes.  
+Accessible only via a subtle footer link labeled **Developer Mode**.
+
+---
+
+## 🛠️ Tech Stack
+
+- **HTML5**  
+- **CSS3** (custom brand system + responsive layout)  
+- **JavaScript** (modular page scripts)  
+
+No frameworks yet — pure, clean, lightweight front‑end.
+
+---
+
+## 📌 Future Plans
+
+- Teacher dashboard  
+- Parent portal  
+- User accounts + authentication  
+- Database integration  
+- Real‑time progress tracking  
+- More games  
+- Dark mode  
+- Mobile app version  
+
+---
+
+## © Copyright
+
+All rights reserved.  
+MasterLab™ is a developing educational platform and brand.
