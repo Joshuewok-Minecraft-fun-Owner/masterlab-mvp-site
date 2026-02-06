@@ -1,51 +1,24 @@
-# 🎓 MasterLab — MVP Site
-A multi‑page adaptive learning platform with gamified mastery progression, designed for students, teachers, parents, and future school integrations.
+# MasterLab MVP Site
 
-MasterLab blends **education**, **game design**, and **adaptive testing** into one cohesive experience — built to help learners *master* skills through repetition, feedback, and progression.
+MasterLab is a modern, gamified learning platform designed by Joshua to support
+Science Olympiad preparation, adaptive learning, and interactive study tools.
 
----
-
-## 🚀 Features
-
-### **Core Pages**
-- **Homepage** — Brand intro, navigation, and platform overview  
-- **Login** — Student/teacher authentication  
-- **Dashboard** — Student progress, coins, tokens, streaks  
-- **Course Map** — Visual mastery path with locked/unlocked lessons  
-- **Lesson Viewer** — Interactive learning modules  
-- **Test Engine** — Adaptive testing with instant feedback  
-- **ReLearn Loop** — Auto‑generated review based on mistakes  
-- **Games Menu** — Educational mini‑games for reinforcement  
-
-### **Additional Pages**
-- **Staff Page** — For future teacher/admin tools  
-- **Developing Page** — Shows features currently in progress  
-- **Experimental Page** — Private sandbox for prototyping new layouts  
+This repository contains the full MVP website structure, including:
+- Student dashboard
+- Course modules
+- Test engine
+- ReLearn loop
+- Games
+- Staff and parent pages
+- Experimental sandbox
+- Full SciOly courses (Engineering CAD C + Rocks & Minerals C)
 
 ---
 
-## 🎨 Brand System
+## 📁 Folder Structure
 
-MasterLab uses a custom color palette including:
 
-- Electric Blue — Primary  
-- Teal — Accent  
-- Deep Navy — Background  
-- Soft White — Text  
-- Slate Gray — Secondary text  
-- Emerald Green — Success  
-- Amber — Warning  
-- Rose Red — Error  
-- Gold — Coins  
-- Violet — Tokens  
-- **Neon Mint (#00FFA7)** — Special accent color  
-
-All colors are defined in `global.css` as CSS variables.
-
----
-
-## 📁 Project Structure
-masterlab-mvp-site
+masterlab-mvp-site/
 │
 ├── index.html
 ├── login.html
@@ -58,6 +31,10 @@ masterlab-mvp-site
 ├── staff.html
 ├── developing.html
 ├── experimental.html
+│
+├── courses/
+│   ├── cad.html
+│   └── rocks.html
 │
 ├── css/
 │   ├── global.css
@@ -86,44 +63,45 @@ masterlab-mvp-site
 │
 ├── assets/
 │   ├── images/
+│   │   └── masterlab-logo.png
 │   └── icons/
 │
-├── README.md
-└── .gitignore
+└── README.md
 
 ---
 
-## 🧪 Experimental Page
+## 🚀 Getting Started
 
-A private sandbox for testing new UI components, animations, layouts, and prototypes.  
-Accessible only via a subtle footer link labeled **Developer Mode**.
-
----
-
-## 🛠️ Tech Stack
-
-- **HTML5**  
-- **CSS3** (custom brand system + responsive layout)  
-- **JavaScript** (modular page scripts)  
-
-No frameworks yet — pure, clean, lightweight front‑end.
+1. Clone the repository  
+2. Open `index.html` in your browser  
+3. Explore the dashboard, courses, and modules  
+4. Add your own lessons, tests, and study tools  
 
 ---
 
-## 📌 Future Plans
+## 📚 Courses Included
 
-- Teacher dashboard  
-- Parent portal  
-- User accounts + authentication  
-- Database integration  
-- Real‑time progress tracking  
-- More games  
-- Dark mode  
-- Mobile app version  
+### Engineering CAD (Division C)
+- Constraints
+- Features
+- Drawings
+- Assemblies
+- Competition skills
+- State-level challenges
+
+### Rocks & Minerals (Division C)
+- Mineral properties
+- Rock identification
+- Igneous, sedimentary, metamorphic
+- Look-alike pairs
+- State-level challenges
 
 ---
 
-## © Copyright
+## 🧪 Experimental Mode
+Use `experimental.html` to test layouts, UI ideas, or new features.
 
-All rights reserved.  
-MasterLab™ is a developing educational platform and brand.
+---
+
+## 🧑‍💻 Created by Joshua
+MasterLab is a personal learning platform designed to support Science Olympiad preparation and future expansion into a full educational system.
