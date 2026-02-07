@@ -1,11 +1,230 @@
-<script src="../rm-lock.js"></script>
-<script>
-    RMLock.enforceLessonLock(4); // change number per lesson
-</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 4 — Igneous Rocks</title>
+
+    <link rel="stylesheet" href="/masterlab-mvp-site/css/global.css">
+    <link rel="stylesheet" href="/masterlab-mvp-site/css/lesson.css">
+    <link rel="stylesheet" href="../rm-style.css">
+
+    <script src="../rm-lock.js"></script>
+</head>
+
+<body>
 
 <script>
-    // Give XP when the lesson is viewed for the first time
+    // Enforce lock for Lesson 4
+    RMLock.enforceLessonLock(4);
+
+    // Award XP if first time viewing
     if (!localStorage.getItem("rm_lesson4_xp")) {
         RMRewards.rewardLessonXP(4);
     }
 </script>
+
+<div class="lesson-container">
+
+    <h1 class="lesson-title">Lesson 4 — Igneous Rocks</h1>
+    <p class="lesson-subtitle">MasterLab Rocks & Minerals (Division C)</p>
+
+    <hr>
+
+    <!-- SECTION 1: INTRO -->
+    <section>
+        <h2>1. Introduction</h2>
+        <p>
+            Igneous rocks form from the cooling and solidification of molten material—magma or lava. 
+            They are the starting point of the rock cycle and are heavily tested in Science Olympiad.
+            In this lesson, you’ll learn how igneous rocks are classified, how texture and composition
+            work together, and how to quickly identify common specimens in competition.
+        </p>
+    </section>
+
+    <hr>
+
+    <!-- SECTION 2: INTRUSIVE VS EXTRUSIVE -->
+    <section>
+        <h2>2. Intrusive vs Extrusive Igneous Rocks</h2>
+        <p>
+            Igneous rocks are first divided by where they solidify.
+        </p>
+
+        <h3>Intrusive (Plutonic)</h3>
+        <ul>
+            <li>Form below Earth’s surface from slowly cooled magma.</li>
+            <li>Crystals have time to grow → coarse‑grained texture.</li>
+            <li>Examples: granite, diorite, gabbro.</li>
+        </ul>
+
+        <h3>Extrusive (Volcanic)</h3>
+        <ul>
+            <li>Form at or near the surface from rapidly cooled lava.</li>
+            <li>Crystals are small or invisible → fine‑grained or glassy.</li>
+            <li>Examples: basalt, rhyolite, andesite, obsidian, pumice, scoria.</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <!-- SECTION 3: TEXTURE -->
+    <section>
+        <h2>3. Igneous Rock Textures</h2>
+        <p>
+            Texture describes the size and arrangement of crystals or fragments in the rock.
+            It is one of the fastest ways to classify igneous rocks.
+        </p>
+
+        <h3>Common Textures</h3>
+        <ul>
+            <li><strong>Phaneritic</strong> — coarse‑grained; crystals visible (intrusive).</li>
+            <li><strong>Aphanitic</strong> — fine‑grained; crystals too small to see (extrusive).</li>
+            <li><strong>Porphyritic</strong> — large crystals in a finer matrix (two‑stage cooling).</li>
+            <li><strong>Glassy</strong> — no crystals; rapid cooling (obsidian).</li>
+            <li><strong>Vesicular</strong> — full of gas bubbles (pumice, scoria).</li>
+            <li><strong>Pyroclastic</strong> — made of volcanic fragments and ash (tuff, volcanic breccia).</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <!-- SECTION 4: COMPOSITION -->
+    <section>
+        <h2>4. Igneous Rock Composition</h2>
+        <p>
+            Composition describes what minerals (and therefore what elements) dominate the rock.
+            It is usually grouped into four main categories.
+        </p>
+
+        <h3>Felsic</h3>
+        <ul>
+            <li>High in silica (SiO₂), rich in feldspar and quartz.</li>
+            <li>Light‑colored: pink, white, light gray.</li>
+            <li>Examples: granite (intrusive), rhyolite (extrusive).</li>
+        </ul>
+
+        <h3>Intermediate</h3>
+        <ul>
+            <li>Between felsic and mafic in composition and color.</li>
+            <li>Medium gray, salt‑and‑pepper appearance.</li>
+            <li>Examples: diorite (intrusive), andesite (extrusive).</li>
+        </ul>
+
+        <h3>Mafic</h3>
+        <ul>
+            <li>Rich in magnesium and iron (Mg + Fe).</li>
+            <li>Dark‑colored: dark gray, black, greenish.</li>
+            <li>Examples: gabbro (intrusive), basalt (extrusive).</li>
+        </ul>
+
+        <h3>Ultramafic</h3>
+        <ul>
+            <li>Very high in Mg and Fe, very low in silica.</li>
+            <li>Usually dark green to black.</li>
+            <li>Example: peridotite (often mantle rock).</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <!-- SECTION 5: TEXTURE + COMPOSITION CHART -->
+    <section>
+        <h2>5. Texture + Composition Classification</h2>
+        <p>
+            In competition, you often classify igneous rocks by combining texture and composition.
+        </p>
+
+        <h3>Key Pairs to Know</h3>
+        <ul>
+            <li><strong>Granite</strong> — coarse‑grained, felsic, intrusive.</li>
+            <li><strong>Rhyolite</strong> — fine‑grained, felsic, extrusive.</li>
+            <li><strong>Diorite</strong> — coarse‑grained, intermediate, intrusive.</li>
+            <li><strong>Andesite</strong> — fine‑grained, intermediate, extrusive.</li>
+            <li><strong>Gabbro</strong> — coarse‑grained, mafic, intrusive.</li>
+            <li><strong>Basalt</strong> — fine‑grained, mafic, extrusive.</li>
+        </ul>
+
+        <p>
+            Memorizing these pairs makes igneous ID much faster during timed events.
+        </p>
+    </section>
+
+    <hr>
+
+    <!-- SECTION 6: SPECIAL IGNEOUS ROCKS -->
+    <section>
+        <h2>6. Special Igneous Rocks</h2>
+        <p>
+            Some igneous rocks are especially distinctive and show up frequently in Science Olympiad.
+        </p>
+
+        <ul>
+            <li><strong>Obsidian</strong> — glassy, usually black, conchoidal fracture.</li>
+            <li><strong>Pumice</strong> — light‑colored, vesicular, often floats in water.</li>
+            <li><strong>Scoria</strong> — dark, vesicular, heavier than pumice.</li>
+            <li><strong>Tuff</strong> — pyroclastic, made of ash and small fragments.</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <!-- SECTION 7: IGNEOUS ROCKS IN THE ROCK CYCLE -->
+    <section>
+        <h2>7. Igneous Rocks in the Rock Cycle</h2>
+        <p>
+            Igneous rocks form from melted material, but they don’t stay that way forever.
+        </p>
+        <ul>
+            <li>Weathering and erosion can break them down into sediment.</li>
+            <li>Heat and pressure can transform them into metamorphic rocks.</li>
+            <li>They can be remelted to form new igneous rocks.</li>
+        </ul>
+        <p>
+            Understanding where igneous rocks fit in the rock cycle helps you answer process‑based questions.
+        </p>
+    </section>
+
+    <hr>
+
+    <!-- SECTION 8: VOCABULARY -->
+    <section>
+        <h2>8. Key Vocabulary</h2>
+        <ul>
+            <li><strong>Igneous</strong> — rock formed from cooled magma or lava.</li>
+            <li><strong>Intrusive</strong> — formed below the surface; coarse‑grained.</li>
+            <li><strong>Extrusive</strong> — formed at the surface; fine‑grained or glassy.</li>
+            <li><strong>Phaneritic</strong> — coarse‑grained texture.</li>
+            <li><strong>Aphanitic</strong> — fine‑grained texture.</li>
+            <li><strong>Porphyritic</strong> — mixed crystal sizes.</li>
+            <li><strong>Vesicular</strong> — full of gas bubbles.</li>
+            <li><strong>Felsic</strong> — silica‑rich, light‑colored composition.</li>
+            <li><strong>Mafic</strong> — Mg + Fe‑rich, dark‑colored composition.</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <!-- SECTION 9: SUMMARY -->
+    <section>
+        <h2>9. Summary</h2>
+        <p>
+            Igneous rocks are classified by both texture and composition. 
+            Knowing whether a rock is intrusive or extrusive, coarse‑ or fine‑grained, 
+            and felsic, intermediate, mafic, or ultramafic allows you to quickly identify 
+            most igneous specimens on the Rocks & Minerals list. 
+            With practice, these patterns become automatic during competition.
+        </p>
+    </section>
+
+    <hr>
+
+    <!-- BEGIN TEST BUTTON -->
+    <div class="test-button-container">
+        <a class="test-button" href="../Tests/rm-test4.html">Begin Test 4</a>
+    </div>
+
+</div>
+
+</body>
+</html>

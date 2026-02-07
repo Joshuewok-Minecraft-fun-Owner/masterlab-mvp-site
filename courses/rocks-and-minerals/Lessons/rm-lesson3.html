@@ -1,11 +1,242 @@
-<script src="../rm-lock.js"></script>
-<script>
-    RMLock.enforceLessonLock(3); // change number per lesson
-</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 3 — Mineral Chemical Properties & Composition</title>
+
+    <link rel="stylesheet" href="/masterlab-mvp-site/css/global.css">
+    <link rel="stylesheet" href="/masterlab-mvp-site/css/lesson.css">
+    <link rel="stylesheet" href="../rm-style.css">
+
+    <script src="../rm-lock.js"></script>
+</head>
+
+<body>
 
 <script>
-    // Give XP when the lesson is viewed for the first time
+    // Enforce lock for Lesson 3
+    RMLock.enforceLessonLock(3);
+
+    // Award XP if first time viewing
     if (!localStorage.getItem("rm_lesson3_xp")) {
         RMRewards.rewardLessonXP(3);
     }
 </script>
+
+<div class="lesson-container">
+
+    <h1 class="lesson-title">Lesson 3 — Mineral Chemical Properties & Composition</h1>
+    <p class="lesson-subtitle">MasterLab Rocks & Minerals (Division C)</p>
+
+    <hr>
+
+    <!-- SECTION 1: INTRO -->
+    <section>
+        <h2>1. Introduction</h2>
+        <p>
+            You’ve learned what a mineral is and how to use physical properties to identify it. 
+            Now it’s time to go deeper — into the **chemical side** of minerals. Chemical composition 
+            explains why minerals have certain colors, densities, hardness values, and even how they form.
+        </p>
+        <p>
+            In this lesson, you’ll learn how to read mineral formulas, understand major mineral groups, 
+            and connect chemistry to the properties you see in competition.
+        </p>
+    </section>
+
+    <hr>
+
+    <!-- SECTION 2: CHEMICAL FORMULAS -->
+    <section>
+        <h2>2. Chemical Formulas of Minerals</h2>
+        <p>
+            Every true mineral has a **definite chemical composition**, which can be written as a formula.
+            These formulas show which elements are present and in what ratios.
+        </p>
+
+        <h3>Examples</h3>
+        <ul>
+            <li><strong>Quartz</strong> — SiO₂</li>
+            <li><strong>Halite</strong> — NaCl</li>
+            <li><strong>Calcite</strong> — CaCO₃</li>
+            <li><strong>Hematite</strong> — Fe₂O₃</li>
+            <li><strong>Galena</strong> — PbS</li>
+        </ul>
+
+        <p>
+            Some minerals allow limited substitution of elements (solid solution), but the overall 
+            composition stays within a narrow range.
+        </p>
+    </section>
+
+    <hr>
+
+    <!-- SECTION 3: SILICATE VS NON-SILICATE -->
+    <section>
+        <h2>3. Silicate vs Non‑Silicate Minerals</h2>
+        <p>
+            Most of Earth’s crust is made of **silicate minerals**, which are built around the 
+            silicon‑oxygen tetrahedron (SiO₄)⁴⁻. Non‑silicates include all other mineral groups.
+        </p>
+
+        <h3>Silicates</h3>
+        <p>
+            Silicates are classified by how their tetrahedra are arranged:
+        </p>
+        <ul>
+            <li><strong>Isolated tetrahedra</strong> (olivine)</li>
+            <li><strong>Single chains</strong> (pyroxenes)</li>
+            <li><strong>Double chains</strong> (amphiboles)</li>
+            <li><strong>Sheets</strong> (micas, clays)</li>
+            <li><strong>Frameworks</strong> (quartz, feldspars)</li>
+        </ul>
+
+        <h3>Non‑Silicates</h3>
+        <p>
+            Non‑silicate groups include:
+        </p>
+        <ul>
+            <li><strong>Carbonates</strong> — CO₃²⁻ (e.g., calcite, dolomite)</li>
+            <li><strong>Sulfates</strong> — SO₄²⁻ (e.g., gypsum)</li>
+            <li><strong>Sulfides</strong> — S²⁻ with metals (e.g., pyrite, galena)</li>
+            <li><strong>Oxides</strong> — O²⁻ with metals (e.g., hematite, magnetite)</li>
+            <li><strong>Halides</strong> — Cl⁻, F⁻, etc. (e.g., halite, fluorite)</li>
+            <li><strong>Native elements</strong> — single elements (e.g., gold, copper, sulfur)</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <!-- SECTION 4: IONIC VS COVALENT BONDING -->
+    <section>
+        <h2>4. Ionic vs Covalent Bonding in Minerals</h2>
+        <p>
+            The type of chemical bonding inside a mineral strongly affects its properties.
+        </p>
+
+        <h3>Ionic Bonds</h3>
+        <p>
+            Ionic bonds form between positively and negatively charged ions. Many minerals, 
+            especially halides and some oxides, are primarily ionically bonded.
+        </p>
+        <ul>
+            <li>Often result in moderate hardness</li>
+            <li>Can be easily dissolved or altered</li>
+            <li>Examples: halite (NaCl), fluorite (CaF₂)</li>
+        </ul>
+
+        <h3>Covalent Bonds</h3>
+        <p>
+            Covalent bonds involve shared electrons. They are usually very strong.
+        </p>
+        <ul>
+            <li>Often result in very hard minerals</li>
+            <li>High melting points</li>
+            <li>Examples: diamond (pure C), quartz (SiO₂)</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <!-- SECTION 5: SOLID SOLUTION & SUBSTITUTION -->
+    <section>
+        <h2>5. Solid Solution & Element Substitution</h2>
+        <p>
+            In some minerals, ions of similar size and charge can substitute for each other 
+            without changing the overall structure. This is called a **solid solution**.
+        </p>
+
+        <h3>Example: Olivine Series</h3>
+        <p>
+            Olivine ranges between:
+        </p>
+        <ul>
+            <li><strong>Forsterite</strong> — Mg₂SiO₄</li>
+            <li><strong>Fayalite</strong> — Fe₂SiO₄</li>
+        </ul>
+        <p>
+            Magnesium and iron can substitute for each other, creating a continuous range of compositions.
+        </p>
+    </section>
+
+    <hr>
+
+    <!-- SECTION 6: CHEMISTRY AND COLOR -->
+    <section>
+        <h2>6. How Chemistry Affects Color</h2>
+        <p>
+            Color in minerals is often controlled by trace elements or defects in the crystal structure.
+        </p>
+
+        <h3>Examples</h3>
+        <ul>
+            <li><strong>Amethyst</strong> — purple quartz colored by iron and radiation.</li>
+            <li><strong>Malachite</strong> — green due to copper.</li>
+            <li><strong>Azurite</strong> — blue due to copper.</li>
+        </ul>
+
+        <p>
+            Because color can vary, it is usually less reliable than other properties, 
+            but knowing the chemistry behind it can still help in competition.
+        </p>
+    </section>
+
+    <hr>
+
+    <!-- SECTION 7: CHEMICAL REACTIONS -->
+    <section>
+        <h2>7. Chemical Reactions of Minerals</h2>
+        <p>
+            Some minerals react chemically in ways that are useful for identification.
+        </p>
+
+        <h3>Classic Example: Carbonates and Acid</h3>
+        <p>
+            Carbonate minerals (like calcite) react with dilute hydrochloric acid (HCl) to produce bubbles of CO₂ gas.
+        </p>
+        <ul>
+            <li><strong>Calcite</strong> — strong fizz in cold, dilute HCl.</li>
+            <li><strong>Dolomite</strong> — weak fizz, stronger when powdered or warmed.</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <!-- SECTION 8: VOCABULARY -->
+    <section>
+        <h2>8. Key Vocabulary</h2>
+        <ul>
+            <li><strong>Chemical Formula</strong> — symbolic representation of a mineral’s composition.</li>
+            <li><strong>Silicate</strong> — mineral containing silicon and oxygen tetrahedra.</li>
+            <li><strong>Non‑Silicate</strong> — mineral group without the silicate tetrahedron.</li>
+            <li><strong>Solid Solution</strong> — continuous range of compositions due to ion substitution.</li>
+            <li><strong>Ionic Bond</strong> — bond between charged ions.</li>
+            <li><strong>Covalent Bond</strong> — bond formed by shared electrons.</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <!-- SECTION 9: SUMMARY -->
+    <section>
+        <h2>9. Summary</h2>
+        <p>
+            Mineral chemistry explains why minerals look and behave the way they do. 
+            Chemical formulas, bonding types, and mineral groups (silicates vs non‑silicates) 
+            are all testable in Science Olympiad. Understanding these concepts will help you 
+            connect physical properties to deeper atomic‑level structure.
+        </p>
+    </section>
+
+    <hr>
+
+    <!-- BEGIN TEST BUTTON -->
+    <div class="test-button-container">
+        <a class="test-button" href="../Tests/rm-test3.html">Begin Test 3</a>
+    </div>
+
+</div>
+
+</body>
+</html>

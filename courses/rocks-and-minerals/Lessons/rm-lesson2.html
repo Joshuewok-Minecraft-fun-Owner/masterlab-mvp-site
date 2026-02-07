@@ -1,11 +1,212 @@
-<script src="../rm-lock.js"></script>
-<script>
-    RMLock.enforceLessonLock(2); // change number per lesson
-</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 2 — Mineral Identification: Physical Properties</title>
+
+    <link rel="stylesheet" href="/masterlab-mvp-site/css/global.css">
+    <link rel="stylesheet" href="/masterlab-mvp-site/css/lesson.css">
+    <link rel="stylesheet" href="../rm-style.css">
+
+    <script src="../rm-lock.js"></script>
+</head>
+
+<body>
 
 <script>
-    // Give XP when the lesson is viewed for the first time
+    // Enforce lock for Lesson 2
+    RMLock.enforceLessonLock(2);
+
+    // Award XP if first time viewing
     if (!localStorage.getItem("rm_lesson2_xp")) {
         RMRewards.rewardLessonXP(2);
     }
 </script>
+
+<div class="lesson-container">
+
+    <h1 class="lesson-title">Lesson 2 — Mineral Identification: Physical Properties</h1>
+    <p class="lesson-subtitle">MasterLab Rocks & Minerals (Division C)</p>
+
+    <hr>
+
+    <!-- SECTION 1: INTRO -->
+    <section>
+        <h2>1. Introduction</h2>
+        <p>
+            Now that you know what a mineral is, the next step is learning how to identify them. 
+            Science Olympiad relies heavily on physical properties — measurable, observable traits 
+            that help distinguish one mineral from another. These properties are consistent, testable, 
+            and form the backbone of mineral identification.
+        </p>
+        <p>
+            In this lesson, you’ll learn the most important physical properties used in competitions, 
+            how to interpret them, and how they connect to a mineral’s internal structure.
+        </p>
+    </section>
+
+    <hr>
+
+    <!-- SECTION 2: HARDNESS -->
+    <section>
+        <h2>2. Hardness</h2>
+        <p>
+            Hardness measures a mineral’s resistance to scratching. The Mohs Hardness Scale ranks 
+            minerals from 1 (softest) to 10 (hardest).
+        </p>
+
+        <h3>Mohs Scale (Key Examples)</h3>
+        <ul>
+            <li><strong>1 — Talc</strong></li>
+            <li><strong>2 — Gypsum</strong></li>
+            <li><strong>3 — Calcite</strong></li>
+            <li><strong>5 — Apatite</strong></li>
+            <li><strong>7 — Quartz</strong></li>
+            <li><strong>10 — Diamond</strong></li>
+        </ul>
+
+        <p>
+            Hardness is directly related to atomic bonding strength. Stronger bonds = harder mineral.
+        </p>
+    </section>
+
+    <hr>
+
+    <!-- SECTION 3: LUSTER -->
+    <section>
+        <h2>3. Luster</h2>
+        <p>
+            Luster describes how light reflects off a mineral’s surface. It is one of the fastest 
+            ways to narrow down possibilities.
+        </p>
+
+        <h3>Main Categories</h3>
+        <ul>
+            <li><strong>Metallic</strong> — shiny like metal (e.g., pyrite, galena)</li>
+            <li><strong>Nonmetallic</strong> — includes:
+                <ul>
+                    <li><strong>Vitreous</strong> (glassy)</li>
+                    <li><strong>Pearly</strong></li>
+                    <li><strong>Silky</strong></li>
+                    <li><strong>Earthy</strong></li>
+                    <li><strong>Resinous</strong></li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <!-- SECTION 4: STREAK -->
+    <section>
+        <h2>4. Streak</h2>
+        <p>
+            Streak is the color of a mineral’s powder when rubbed on a porcelain streak plate. 
+            It is often more reliable than surface color.
+        </p>
+
+        <h3>Important Notes</h3>
+        <ul>
+            <li>Metallic minerals usually have a dark streak.</li>
+            <li>Nonmetallic minerals often have a white or colorless streak.</li>
+            <li>Hematite’s streak is always red-brown — a classic ID clue.</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <!-- SECTION 5: CLEAVAGE & FRACTURE -->
+    <section>
+        <h2>5. Cleavage & Fracture</h2>
+        <p>
+            These describe how a mineral breaks.
+        </p>
+
+        <h3>Cleavage</h3>
+        <p>
+            Cleavage is the tendency to break along flat, parallel planes. It occurs when atomic 
+            bonds are weaker in certain directions.
+        </p>
+
+        <h3>Fracture</h3>
+        <p>
+            Fracture is irregular breakage. Types include:
+        </p>
+        <ul>
+            <li><strong>Conchoidal</strong> — smooth, curved (e.g., quartz)</li>
+            <li><strong>Uneven</strong></li>
+            <li><strong>Fibrous</strong></li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <!-- SECTION 6: SPECIFIC GRAVITY -->
+    <section>
+        <h2>6. Specific Gravity</h2>
+        <p>
+            Specific gravity measures density relative to water. It helps identify minerals with 
+            unusually high or low density.
+        </p>
+
+        <h3>Examples</h3>
+        <ul>
+            <li><strong>Galena</strong> — very high SG (feels heavy)</li>
+            <li><strong>Graphite</strong> — very low SG (feels light)</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <!-- SECTION 7: OTHER PROPERTIES -->
+    <section>
+        <h2>7. Other Useful Properties</h2>
+        <ul>
+            <li><strong>Magnetism</strong> — magnetite</li>
+            <li><strong>Reaction to acid</strong> — calcite fizzes with HCl</li>
+            <li><strong>Fluorescence</strong> — some minerals glow under UV</li>
+            <li><strong>Taste</strong> — halite tastes salty (only in controlled settings)</li>
+            <li><strong>Smell</strong> — sulfur smells like rotten eggs</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <!-- SECTION 8: VOCABULARY -->
+    <section>
+        <h2>8. Key Vocabulary</h2>
+        <ul>
+            <li><strong>Hardness</strong> — resistance to scratching</li>
+            <li><strong>Luster</strong> — how a mineral reflects light</li>
+            <li><strong>Streak</strong> — powdered color</li>
+            <li><strong>Cleavage</strong> — flat breakage planes</li>
+            <li><strong>Fracture</strong> — irregular breakage</li>
+            <li><strong>Specific Gravity</strong> — density relative to water</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <!-- SECTION 9: SUMMARY -->
+    <section>
+        <h2>9. Summary</h2>
+        <p>
+            Mineral identification relies on consistent, observable physical properties. 
+            Hardness, luster, streak, cleavage, fracture, and specific gravity form the core 
+            of competition-level mineral ID. Mastering these properties will make the rest of 
+            the Rocks & Minerals event significantly easier.
+        </p>
+    </section>
+
+    <hr>
+
+    <!-- BEGIN TEST BUTTON -->
+    <div class="test-button-container">
+        <a class="test-button" href="../Tests/rm-test2.html">Begin Test 2</a>
+    </div>
+
+</div>
+
+</body>
+</html>

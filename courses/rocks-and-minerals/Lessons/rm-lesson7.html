@@ -1,11 +1,219 @@
-<script src="../rm-lock.js"></script>
-<script>
-    RMLock.enforceLessonLock(7); // change number per lesson
-</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 7 — The Rock Cycle & Geological Processes</title>
+
+    <link rel="stylesheet" href="/masterlab-mvp-site/css/global.css">
+    <link rel="stylesheet" href="/masterlab-mvp-site/css/lesson.css">
+    <link rel="stylesheet" href="../rm-style.css">
+
+    <script src="../rm-lock.js"></script>
+</head>
+
+<body>
 
 <script>
-    // Give XP when the lesson is viewed for the first time
+    // Enforce lock for Lesson 7
+    RMLock.enforceLessonLock(7);
+
+    // Award XP if first time viewing
     if (!localStorage.getItem("rm_lesson7_xp")) {
         RMRewards.rewardLessonXP(7);
     }
 </script>
+
+<div class="lesson-container">
+
+    <h1 class="lesson-title">Lesson 7 — The Rock Cycle & Geological Processes</h1>
+    <p class="lesson-subtitle">MasterLab Rocks & Minerals (Division C)</p>
+
+    <hr>
+
+    <!-- SECTION 1: INTRO -->
+    <section>
+        <h2>1. Introduction</h2>
+        <p>
+            The rock cycle describes how rocks change from one type to another through natural 
+            geological processes. Igneous, sedimentary, and metamorphic rocks are all connected 
+            through heat, pressure, melting, weathering, erosion, and deposition. Understanding 
+            these processes is essential for interpreting Earth’s history and answering 
+            process‑based questions in Science Olympiad.
+        </p>
+    </section>
+
+    <hr>
+
+    <!-- SECTION 2: THE THREE ROCK TYPES -->
+    <section>
+        <h2>2. The Three Rock Types</h2>
+        <p>
+            All rocks fall into one of three categories:
+        </p>
+        <ul>
+            <li><strong>Igneous</strong> — formed from cooled magma or lava.</li>
+            <li><strong>Sedimentary</strong> — formed from sediments or chemical/biological processes.</li>
+            <li><strong>Metamorphic</strong> — formed from heat, pressure, or chemically active fluids.</li>
+        </ul>
+        <p>
+            The rock cycle explains how each type can transform into another.
+        </p>
+    </section>
+
+    <hr>
+
+    <!-- SECTION 3: WEATHERING & EROSION -->
+    <section>
+        <h2>3. Weathering & Erosion</h2>
+        <p>
+            Weathering breaks down rocks at Earth’s surface, while erosion transports the resulting 
+            sediments to new locations.
+        </p>
+
+        <h3>Types of Weathering</h3>
+        <ul>
+            <li><strong>Mechanical</strong> — physical breakdown (ice wedging, abrasion).</li>
+            <li><strong>Chemical</strong> — chemical alteration (dissolution, oxidation).</li>
+            <li><strong>Biological</strong> — caused by organisms (roots, acids from plants).</li>
+        </ul>
+
+        <p>
+            Weathering and erosion are the first steps in forming sedimentary rocks.
+        </p>
+    </section>
+
+    <hr>
+
+    <!-- SECTION 4: DEPOSITION, COMPACTION & CEMENTATION -->
+    <section>
+        <h2>4. Deposition, Compaction & Cementation</h2>
+        <p>
+            After sediments are transported, they settle (deposition), are buried (compaction), 
+            and become glued together by minerals (cementation). Together, these processes form 
+            sedimentary rocks.
+        </p>
+
+        <h3>Common Cements</h3>
+        <ul>
+            <li><strong>Calcite</strong></li>
+            <li><strong>Quartz</strong></li>
+            <li><strong>Iron oxides</strong></li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <!-- SECTION 5: HEAT & PRESSURE -->
+    <section>
+        <h2>5. Heat & Pressure</h2>
+        <p>
+            When rocks are buried deep within Earth or subjected to tectonic forces, they experience 
+            increased heat and pressure. These conditions cause minerals to recrystallize and align, 
+            forming metamorphic rocks.
+        </p>
+
+        <h3>Key Concepts</h3>
+        <ul>
+            <li><strong>Low‑grade metamorphism</strong> — slight changes (slate, phyllite).</li>
+            <li><strong>High‑grade metamorphism</strong> — major changes (schist, gneiss).</li>
+            <li><strong>Contact metamorphism</strong> — heat from magma.</li>
+            <li><strong>Regional metamorphism</strong> — pressure from mountain building.</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <!-- SECTION 6: MELTING & COOLING -->
+    <section>
+        <h2>6. Melting & Cooling</h2>
+        <p>
+            If rocks are heated enough to melt, they form magma. When magma cools, it becomes 
+            igneous rock again, completing the cycle.
+        </p>
+
+        <h3>Cooling Types</h3>
+        <ul>
+            <li><strong>Slow cooling</strong> → intrusive rocks (granite, gabbro).</li>
+            <li><strong>Fast cooling</strong> → extrusive rocks (basalt, rhyolite).</li>
+            <li><strong>Very rapid cooling</strong> → glassy rocks (obsidian).</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <!-- SECTION 7: THE FULL ROCK CYCLE -->
+    <section>
+        <h2>7. The Full Rock Cycle</h2>
+        <p>
+            The rock cycle is not a simple loop — any rock type can transform into any other 
+            rock type depending on the processes involved.
+        </p>
+
+        <h3>Examples</h3>
+        <ul>
+            <li>Granite → weathering → sand → sandstone → quartzite.</li>
+            <li>Basalt → heat/pressure → amphibolite.</li>
+            <li>Limestone → metamorphism → marble.</li>
+            <li>Shale → burial → slate → schist → gneiss.</li>
+        </ul>
+
+        <p>
+            These transformations are frequently tested in Science Olympiad.
+        </p>
+    </section>
+
+    <hr>
+
+    <!-- SECTION 8: GEOLOGICAL PROCESSES -->
+    <section>
+        <h2>8. Geological Processes</h2>
+        <p>
+            Several large‑scale processes drive the rock cycle:
+        </p>
+        <ul>
+            <li><strong>Plate tectonics</strong> — creates mountains, volcanoes, and metamorphic zones.</li>
+            <li><strong>Volcanism</strong> — produces igneous rocks.</li>
+            <li><strong>Uplift</strong> — exposes rocks to weathering.</li>
+            <li><strong>Subduction</strong> — recycles rocks into the mantle.</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <!-- SECTION 9: VOCABULARY -->
+    <section>
+        <h2>9. Key Vocabulary</h2>
+        <ul>
+            <li><strong>Weathering</strong> — breaking down rocks at Earth’s surface.</li>
+            <li><strong>Erosion</strong> — movement of sediment.</li>
+            <li><strong>Deposition</strong> — settling of sediment.</li>
+            <li><strong>Metamorphism</strong> — alteration by heat and pressure.</li>
+            <li><strong>Intrusive</strong> — igneous rock formed underground.</li>
+            <li><strong>Extrusive</strong> — igneous rock formed at the surface.</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <!-- SECTION 10: SUMMARY -->
+    <section>
+        <h2>10. Summary</h2>
+        <p>
+            The rock cycle explains how igneous, sedimentary, and metamorphic rocks form and 
+            transform through geological processes. Understanding these pathways helps you 
+            interpret Earth’s history and answer process‑based questions in competition.
+        </p>
+    </section>
+
+    <hr>
+
+    <!-- BEGIN TEST BUTTON -->
+    <div class="test-button-container">
+        <a class="test-button" href="../Tests/rm-test7.html">Begin Test 7</a>
+    </div>
+
+</div>
+
+</body>
+</html>

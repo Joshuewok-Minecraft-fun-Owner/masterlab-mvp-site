@@ -1,11 +1,226 @@
-<script src="../rm-lock.js"></script>
-<script>
-    RMLock.enforceLessonLock(9); // change number per lesson
-</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 9 — Fossils, Geologic Time & Earth History</title>
+
+    <link rel="stylesheet" href="/masterlab-mvp-site/css/global.css">
+    <link rel="stylesheet" href="/masterlab-mvp-site/css/lesson.css">
+    <link rel="stylesheet" href="../rm-style.css">
+
+    <script src="../rm-lock.js"></script>
+</head>
+
+<body>
 
 <script>
-    // Give XP when the lesson is viewed for the first time
+    // Enforce lock for Lesson 9
+    RMLock.enforceLessonLock(9);
+
+    // Award XP if first time viewing
     if (!localStorage.getItem("rm_lesson9_xp")) {
         RMRewards.rewardLessonXP(9);
     }
 </script>
+
+<div class="lesson-container">
+
+    <h1 class="lesson-title">Lesson 9 — Fossils, Geologic Time & Earth History</h1>
+    <p class="lesson-subtitle">MasterLab Rocks & Minerals (Division C)</p>
+
+    <hr>
+
+    <!-- SECTION 1: INTRO -->
+    <section>
+        <h2>1. Introduction</h2>
+        <p>
+            Fossils and geologic time help scientists interpret Earth’s past. Although Rocks & Minerals 
+            focuses on identification, many tests include questions about fossils, dating methods, 
+            and major events in Earth history. This lesson gives you the essential background needed 
+            to understand how rocks record time.
+        </p>
+    </section>
+
+    <hr>
+
+    <!-- SECTION 2: WHAT ARE FOSSILS? -->
+    <section>
+        <h2>2. What Are Fossils?</h2>
+        <p>
+            Fossils are preserved remains, impressions, or traces of ancient organisms. They form 
+            under specific conditions, usually involving rapid burial and low oxygen.
+        </p>
+
+        <h3>Types of Fossils</h3>
+        <ul>
+            <li><strong>Body fossils</strong> — bones, shells, teeth, leaves.</li>
+            <li><strong>Trace fossils</strong> — footprints, burrows, coprolites.</li>
+            <li><strong>Permineralization</strong> — minerals fill pore spaces (common in bone and wood).</li>
+            <li><strong>Casts & molds</strong> — impressions left in sediment.</li>
+            <li><strong>Amber fossils</strong> — organisms trapped in tree resin.</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <!-- SECTION 3: HOW FOSSILS FORM -->
+    <section>
+        <h2>3. How Fossils Form</h2>
+        <p>
+            Fossilization requires special conditions:
+        </p>
+        <ul>
+            <li>Rapid burial.</li>
+            <li>Low oxygen (reduces decay).</li>
+            <li>Hard parts (shells, bones) fossilize more easily.</li>
+            <li>Mineral-rich water promotes preservation.</li>
+        </ul>
+        <p>
+            Most fossils are found in <strong>sedimentary rocks</strong>.
+        </p>
+    </section>
+
+    <hr>
+
+    <!-- SECTION 4: GEOLOGIC TIME SCALE -->
+    <section>
+        <h2>4. The Geologic Time Scale</h2>
+        <p>
+            The geologic time scale divides Earth’s 4.6‑billion‑year history into eons, eras, periods, 
+            and epochs. It is based on major biological and geological events.
+        </p>
+
+        <h3>Major Divisions</h3>
+        <ul>
+            <li><strong>Precambrian</strong> — earliest life, simple organisms.</li>
+            <li><strong>Paleozoic</strong> — explosion of life, fish, amphibians.</li>
+            <li><strong>Mesozoic</strong> — age of reptiles; dinosaurs dominate.</li>
+            <li><strong>Cenozoic</strong> — age of mammals; humans appear.</li>
+        </ul>
+
+        <p>
+            Many Science Olympiad questions reference these eras.
+        </p>
+    </section>
+
+    <hr>
+
+    <!-- SECTION 5: RELATIVE DATING -->
+    <section>
+        <h2>5. Relative Dating</h2>
+        <p>
+            Relative dating determines the order of events without assigning exact ages.
+        </p>
+
+        <h3>Key Principles</h3>
+        <ul>
+            <li><strong>Superposition</strong> — oldest layers at the bottom.</li>
+            <li><strong>Original horizontality</strong> — sediments are deposited flat.</li>
+            <li><strong>Cross‑cutting relationships</strong> — intrusions/faults are younger.</li>
+            <li><strong>Inclusions</strong> — fragments inside a rock are older than the rock itself.</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <!-- SECTION 6: ABSOLUTE DATING -->
+    <section>
+        <h2>6. Absolute Dating</h2>
+        <p>
+            Absolute dating assigns numerical ages using radioactive decay.
+        </p>
+
+        <h3>Common Methods</h3>
+        <ul>
+            <li><strong>Uranium‑Lead</strong> — used for very old rocks.</li>
+            <li><strong>Potassium‑Argon</strong> — volcanic rocks.</li>
+            <li><strong>Carbon‑14</strong> — recent organic remains (up to ~50,000 years).</li>
+        </ul>
+
+        <p>
+            Absolute dating is often used alongside relative dating.
+        </p>
+    </section>
+
+    <hr>
+
+    <!-- SECTION 7: INDEX FOSSILS -->
+    <section>
+        <h2>7. Index Fossils</h2>
+        <p>
+            Index fossils help correlate rock layers across large distances.
+        </p>
+
+        <h3>Characteristics of Good Index Fossils</h3>
+        <ul>
+            <li>Widespread geographically.</li>
+            <li>Short time range.</li>
+            <li>Easy to recognize.</li>
+        </ul>
+
+        <h3>Examples</h3>
+        <ul>
+            <li><strong>Trilobites</strong> — Paleozoic.</li>
+            <li><strong>Ammonites</strong> — Mesozoic.</li>
+            <li><strong>Foraminifera</strong> — various ages.</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <!-- SECTION 8: EARTH HISTORY EVENTS -->
+    <section>
+        <h2>8. Major Earth History Events</h2>
+        <p>
+            Several major events appear frequently in Science Olympiad tests.
+        </p>
+
+        <h3>Important Events</h3>
+        <ul>
+            <li><strong>Cambrian Explosion</strong> — rapid diversification of life.</li>
+            <li><strong>Permian Extinction</strong> — largest mass extinction.</li>
+            <li><strong>K‑Pg Extinction</strong> — dinosaurs go extinct.</li>
+            <li><strong>Formation of Pangaea</strong> — supercontinent assembly.</li>
+            <li><strong>Rise of mammals</strong> — Cenozoic dominance.</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <!-- SECTION 9: VOCABULARY -->
+    <section>
+        <h2>9. Key Vocabulary</h2>
+        <ul>
+            <li><strong>Fossil</strong> — preserved remains or traces of life.</li>
+            <li><strong>Relative dating</strong> — ordering events without exact ages.</li>
+            <li><strong>Absolute dating</strong> — numerical ages using radioactive decay.</li>
+            <li><strong>Index fossil</strong> — fossil used to correlate rock layers.</li>
+            <li><strong>Geologic time scale</strong> — timeline of Earth’s history.</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <!-- SECTION 10: SUMMARY -->
+    <section>
+        <h2>10. Summary</h2>
+        <p>
+            Fossils and geologic time provide a framework for understanding Earth’s history. 
+            Relative and absolute dating methods help determine the age of rocks, while index fossils 
+            allow correlation across regions. These concepts often appear in Science Olympiad tests 
+            and help connect rock identification to larger geological processes.
+        </p>
+    </section>
+
+    <hr>
+
+    <!-- BEGIN TEST BUTTON -->
+    <div class="test-button-container">
+        <a class="test-button" href="../Tests/rm-test9.html">Begin Test 9</a>
+    </div>
+
+</div>
+
+</body>
+</html>

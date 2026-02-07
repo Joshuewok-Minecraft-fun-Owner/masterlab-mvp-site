@@ -1,11 +1,210 @@
-<script src="../rm-lock.js"></script>
-<script>
-    RMLock.enforceLessonLock(6); // change number per lesson
-</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 6 — Metamorphic Rocks</title>
+
+    <link rel="stylesheet" href="/masterlab-mvp-site/css/global.css">
+    <link rel="stylesheet" href="/masterlab-mvp-site/css/lesson.css">
+    <link rel="stylesheet" href="../rm-style.css">
+
+    <script src="../rm-lock.js"></script>
+</head>
+
+<body>
 
 <script>
-    // Give XP when the lesson is viewed for the first time
+    // Enforce lock for Lesson 6
+    RMLock.enforceLessonLock(6);
+
+    // Award XP if first time viewing
     if (!localStorage.getItem("rm_lesson6_xp")) {
         RMRewards.rewardLessonXP(6);
     }
 </script>
+
+<div class="lesson-container">
+
+    <h1 class="lesson-title">Lesson 6 — Metamorphic Rocks</h1>
+    <p class="lesson-subtitle">MasterLab Rocks & Minerals (Division C)</p>
+
+    <hr>
+
+    <!-- SECTION 1: INTRO -->
+    <section>
+        <h2>1. Introduction</h2>
+        <p>
+            Metamorphic rocks form when existing rocks (igneous, sedimentary, or older metamorphic rocks)
+            are changed by heat, pressure, and chemically active fluids. These changes occur without melting,
+            producing new textures and minerals. In Science Olympiad, metamorphic rocks are heavily tested
+            because their textures and mineral assemblages reveal the conditions under which they formed.
+        </p>
+    </section>
+
+    <hr>
+
+    <!-- SECTION 2: WHAT CAUSES METAMORPHISM -->
+    <section>
+        <h2>2. What Causes Metamorphism?</h2>
+        <p>
+            Three main factors drive metamorphism:
+        </p>
+        <ul>
+            <li><strong>Heat</strong> — increases mineral mobility and recrystallization.</li>
+            <li><strong>Pressure</strong> — compacts minerals and aligns them into layers.</li>
+            <li><strong>Chemically active fluids</strong> — transport ions and promote new mineral growth.</li>
+        </ul>
+        <p>
+            These factors work together to transform the parent rock (protolith) into a new metamorphic rock.
+        </p>
+    </section>
+
+    <hr>
+
+    <!-- SECTION 3: FOLIATED METAMORPHIC ROCKS -->
+    <section>
+        <h2>3. Foliated Metamorphic Rocks</h2>
+        <p>
+            Foliation is the alignment of minerals into layers or bands due to directed pressure.
+            Foliated rocks are extremely common in competition and follow a predictable progression.
+        </p>
+
+        <h3>Foliation Progression (Low → High Grade)</h3>
+        <ul>
+            <li><strong>Slate</strong> — very fine‑grained; splits into flat sheets; dull surface.</li>
+            <li><strong>Phyllite</strong> — silky sheen; wavy layers; slightly larger grains.</li>
+            <li><strong>Schist</strong> — visible mica flakes; sparkly; strongly foliated.</li>
+            <li><strong>Gneiss</strong> — banded appearance; alternating light and dark minerals.</li>
+        </ul>
+
+        <p>
+            This sequence is one of the most important metamorphic concepts in Science Olympiad.
+        </p>
+    </section>
+
+    <hr>
+
+    <!-- SECTION 4: NONFOLIATED METAMORPHIC ROCKS -->
+    <section>
+        <h2>4. Non‑Foliated Metamorphic Rocks</h2>
+        <p>
+            Non‑foliated rocks form when pressure is equal in all directions or when the rock is made
+            of minerals that do not align easily.
+        </p>
+
+        <h3>Common Types</h3>
+        <ul>
+            <li><strong>Marble</strong> — metamorphosed limestone; reacts with acid; softer than quartzite.</li>
+            <li><strong>Quartzite</strong> — metamorphosed sandstone; very hard; scratches glass.</li>
+            <li><strong>Anthracite Coal</strong> — shiny, hard coal; highest grade of coal metamorphism.</li>
+            <li><strong>Hornfels</strong> — fine‑grained; forms in contact metamorphism zones.</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <!-- SECTION 5: TYPES OF METAMORPHISM -->
+    <section>
+        <h2>5. Types of Metamorphism</h2>
+        <p>
+            Different geological settings produce different metamorphic textures and minerals.
+        </p>
+
+        <h3>Regional Metamorphism</h3>
+        <ul>
+            <li>Occurs over large areas during mountain building.</li>
+            <li>Produces foliated rocks like schist and gneiss.</li>
+        </ul>
+
+        <h3>Contact Metamorphism</h3>
+        <ul>
+            <li>Occurs when rocks are heated by nearby magma.</li>
+            <li>Produces non‑foliated rocks like hornfels and marble.</li>
+        </ul>
+
+        <h3>Hydrothermal Metamorphism</h3>
+        <ul>
+            <li>Hot, mineral‑rich fluids alter rock chemistry.</li>
+            <li>Common near mid‑ocean ridges and volcanic systems.</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <!-- SECTION 6: INDEX MINERALS -->
+    <section>
+        <h2>6. Index Minerals</h2>
+        <p>
+            Index minerals form only under specific temperature and pressure conditions.
+            They help geologists determine metamorphic grade.
+        </p>
+
+        <h3>Important Index Minerals</h3>
+        <ul>
+            <li><strong>Chlorite</strong> — low grade.</li>
+            <li><strong>Biotite</strong> — low to medium grade.</li>
+            <li><strong>Garnet</strong> — medium grade.</li>
+            <li><strong>Staurolite</strong> — medium to high grade.</li>
+            <li><strong>Kyanite</strong> — high pressure.</li>
+            <li><strong>Sillimanite</strong> — high temperature.</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <!-- SECTION 7: METAMORPHIC PROTOLITHS -->
+    <section>
+        <h2>7. Metamorphic Protoliths</h2>
+        <p>
+            Many metamorphic rocks can be identified by knowing their parent rock.
+        </p>
+
+        <h3>Common Protolith Pairs</h3>
+        <ul>
+            <li><strong>Limestone → Marble</strong></li>
+            <li><strong>Sandstone → Quartzite</strong></li>
+            <li><strong>Shale → Slate → Phyllite → Schist → Gneiss</strong></li>
+            <li><strong>Bituminous Coal → Anthracite Coal</strong></li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <!-- SECTION 8: VOCABULARY -->
+    <section>
+        <h2>8. Key Vocabulary</h2>
+        <ul>
+            <li><strong>Metamorphism</strong> — alteration of rock by heat, pressure, or fluids.</li>
+            <li><strong>Foliation</strong> — alignment of minerals into layers.</li>
+            <li><strong>Protolith</strong> — original rock before metamorphism.</li>
+            <li><strong>Index Mineral</strong> — mineral indicating metamorphic grade.</li>
+            <li><strong>Regional Metamorphism</strong> — large‑scale metamorphism during mountain building.</li>
+            <li><strong>Contact Metamorphism</strong> — metamorphism caused by heat from magma.</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <!-- SECTION 9: SUMMARY -->
+    <section>
+        <h2>9. Summary</h2>
+        <p>
+            Metamorphic rocks reveal the conditions under which they formed. Foliated rocks show
+            directed pressure, while non‑foliated rocks form under uniform pressure or from minerals
+            that do not align. Understanding metamorphic textures, index minerals, and protoliths
+            allows you to quickly identify metamorphic rocks in competition.
+        </p>
+    </section>
+
+    <hr>
+
+    <!-- BEGIN TEST BUTTON -->
+    <div class="test-button-container">
+        <a class="test-button" href="../Tests/rm-test6.html">Begin Test 6</a>
+    </div>
+
+</div>
+
+</body>
+</html>
