@@ -346,7 +346,8 @@ button:hover,
 }
 
 .ml-logo {
-    width: 160px;
+    width: 110px;
     height: auto;
     filter: drop-shadow(0 0 6px var(--neon-mint));
 }
+
