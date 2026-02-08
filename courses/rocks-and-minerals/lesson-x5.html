@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson X.5 – ReLearn Mini‑Lesson</title>
+    <link rel="stylesheet" href="/masterlab-mvp-site/css/global.css">
+</head>
+<body>
+
+<h1>Lesson <span id="lesson-num"></span>.5 – ReLearn Mini‑Lesson</h1>
+<p>This adaptive mini‑lesson appears because you had 5 or more weak‑spot topics.</p>
+
+<div id="content"></div>
+
+<button id="continue-btn">Continue to ReLearn Test</button>
+
+<script>
+/* ============================================================
+   LESSON X.5 DYNAMIC GENERATOR
+   Generates a mini‑lesson based on weak‑spots.
+   ============================================================ */
+
+function getLessonNumber() {
+    const params = new URLSearchParams(window.location.search);
+    return parseInt(params.get("lesson"));
+}
+
+function loadWeakspots(lesson) {
+    const key = `ml_lesson_${lesson - 1}_weakspots`;
+    return JSON.parse(localStorage.getItem(key) || "[]");
+}
+
+function generateExplanation(topic) {
+    return `
+        <h3>${topic}</h3>
+        <p>This topic was identified as a weak‑spot in your previous test. Review the explanation below.</p>
+    `;
+}
+
+function generateDiagram(topic) {
+    return `
+        <pre class="diagram">
+[ ${topic.toUpperCase()} ]
+   └── simplified concept diagram
+        </pre>
+    `;
+}
+
+function generateExample(topic) {
+    return `
+        <p><strong>Example:</strong> Here is a simple example related to <em>${topic}</em> to reinforce understanding.</p>
+    `;
+}
+
+function generateMicroQuiz(topic, index) {
+    return `
+        <p><strong>Quick Check ${index + 1}:</strong> What is the key idea behind "${topic}"?</p>
+        <label><input type="radio" name="q${index}" value="correct"> Correct idea</label><br>
+        <label><input type="radio" name="q${index}" value="wrong"> Wrong idea</label><br>
+    `;
+}
+
+function renderX5Page() {
+    const lesson = getLessonNumber();
+    document.getElementById("lesson-num").textContent = lesson;
+
+    const weakspots = loadWeakspots(lesson);
+
+    const container = document.getElementById("content");
+
+    // If fewer than 5 weak‑spots, skip X.5 entirely
+    if (weakspots.length < 5) {
+        container.innerHTML = `
+            <p>You do not have enough weak‑spots for a mini‑lesson.</p>
+            <p>Redirecting you to the ReLearn Test...</p>
+        `;
+        setTimeout(() => {
+            window.location.href = `relearn-test${lesson}.html`;
+        }, 2000);
+        return;
+    }
+
+    let html = "";
+
+    weakspots.forEach((topic, i) => {
+        html += `
+            <div class="x5-block">
+                ${generateExplanation(topic)}
+                ${generateDiagram(topic)}
+                ${generateExample(topic)}
+                ${generateMicroQuiz(topic, i)}
+            </div>
+            <hr>
+        `;
+    });
+
+    container.innerHTML = html;
+
+    document.getElementById("continue-btn").onclick = () => {
+        window.location.href = `relearn-test${lesson}.html`;
+    };
+}
+
+renderX5Page();
+</script>
+
+<style>
+.x5-block {
+    background: #f7f7f7;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.diagram {
+    background: #eaeaea;
+    padding: 0.5rem;
+    border-radius: 6px;
+}
+</style>
+
+</body>
+</html>

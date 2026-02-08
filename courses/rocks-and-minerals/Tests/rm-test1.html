@@ -11,6 +11,7 @@
 
     <script src="/masterlab-mvp-site/js/rm-lock.js"></script>
     <script src="/masterlab-mvp-site/js/ml-test-engine.js"></script>
+    <script src="/masterlab-mvp-site/js/ml-relearn-test-engine.js"></script>
     <script src="/masterlab-mvp-site/js/test.js"></script>
 </head>
 
@@ -26,12 +27,28 @@
     <p class="lesson-subtitle">MasterLab Rocks & Minerals (Division C)</p>
     <hr>
 
-    <form id="test-form">
-        <div id="test-container"></div>
+    <div id="test-container"></div>
 
-        <button type="button" id="submit-btn">Submit Test</button>
-        <button type="button" id="retry-btn" style="display:none;">Retry Test</button>
-    </form>
+    <script src="/masterlab-mvp-site/js/ml-test-engine.js"></script>
+    <script src="/masterlab-mvp-site/js/ml-relearn-test-engine.js"></script>
+    <script>
+        MLTestEngine.startTest({
+            lesson: 1,
+            course: "rocks-and-minerals",
+            questions: [
+                { q: "Which property describes resistance to scratching?", a: ["Hardness","Luster","Streak","Cleavage"], c: 0 },
+                { q: "What is luster?", a: ["How a mineral reflects light","Color of powdered mineral","Resistance to fracture","Crystal habit"], c: 0 },
+                { q: "What does cleavage describe?", a: ["Tendency to break along flat planes","Powdered color","Hardness","Density"], c: 0 },
+                { q: "What is streak?", a: ["Color of the mineral's powder","Surface shine","Crystal shape","Specific gravity"], c: 0 },
+                { q: "Which term means atoms arranged in a repeating pattern?", a: ["Crystalline","Amorphous","Mineraloid","Organic"], c: 0 },
+                { q: "Which is NOT a criterion for a mineral?", a: ["Organic origin","Solid","Definite chemical composition","Ordered internal structure"], c: 0 },
+                { q: "What is a mineraloid?", a: ["Mineral-like substance missing one criterion","A perfect crystal","A type of rock","A fossil"], c: 0 },
+                { q: "Which mineral has chemical formula SiO2?", a: ["Quartz","Halite","Calcite","Mica"], c: 0 },
+                { q: "Why does crystalline structure matter?", a: ["It influences cleavage and physical properties","It defines color only","It makes minerals organic","It determines magnetic properties only"], c: 0 },
+                { q: "Which property is measured relative to water?", a: ["Specific Gravity","Streak","Luster","Hardness"], c: 0 }
+            ]
+        });
+    </script>
 
     <div id="score-container"></div>
 

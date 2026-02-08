@@ -1,1 +1,135 @@
+/* ============================================
+   MASTERLAB GLOBAL.CSS
+   Clean, modular, reusable styling for all courses
+   ============================================ */
 
+/* ---------- Root Colors ---------- */
+:root {
+    --mint-glaze: #c8fff0;
+    --neon-mint: #4effc3;
+    --dark-bg: #0f0f0f;
+    --light-bg: #1a1a1a;
+    --text-light: #f5f5f5;
+    --text-muted: #b5b5b5;
+    --accent: #4effc3;
+    --danger: #ff6b6b;
+    --card-bg: #141414;
+    --border: #2a2a2a;
+}
+
+/* ---------- Global Reset ---------- */
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--dark-bg);
+    color: var(--text-light);
+    font-family: Inter, Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* ---------- Headings ---------- */
+h1, h2, h3 {
+    color: var(--mint-glaze);
+    margin-bottom: 10px;
+}
+
+/* ---------- Lesson Sections ---------- */
+.lesson-section {
+    background: var(--card-bg);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+}
+
+/* ---------- Vocabulary List ---------- */
+#vocab-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+#vocab-list li {
+    background: var(--light-bg);
+    padding: 10px 14px;
+    margin: 6px 0;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+}
+
+/* ---------- Diagram Box ---------- */
+.diagram-box {
+    background: var(--light-bg);
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    margin: 20px 0;
+    text-align: center;
+    color: var(--text-muted);
+}
+
+/* ---------- Example Box ---------- */
+.example-box {
+    background: #101010;
+    padding: 15px;
+    border-left: 4px solid var(--neon-mint);
+    margin: 20px 0;
+}
+
+/* ---------- Quiz Box ---------- */
+.quiz-box {
+    background: var(--light-bg);
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    margin: 20px 0;
+}
+
+/* ---------- Buttons ---------- */
+.ml-button, button, .continue-button {
+    display: inline-block;
+    background: var(--neon-mint);
+    color: #000;
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.2s;
+    text-decoration: none;
+}
+
+.ml-button:hover,
+button:hover,
+.continue-button:hover {
+    background: var(--mint-glaze);
+}
+
+/* ---------- ReLearn Block ---------- */
+.relearn-block {
+    margin-top: 30px;
+    padding: 20px;
+    background: var(--card-bg);
+    border-radius: 10px;
+    border: 1px solid var(--border);
+}
+
+/* ---------- Lesson Grid (Landing Page) ---------- */
+.lesson-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.lesson-card {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    text-align: center;
+}
+
+.lesson-card h3 {
+    margin-top: 0;
+    color: var(--neon-mint);
+}

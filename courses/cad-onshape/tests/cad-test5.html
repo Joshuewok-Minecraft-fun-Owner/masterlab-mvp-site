@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CAD Test 5</title>
+    <link rel="stylesheet" href="/masterlab-mvp-site/css/global.css">
+</head>
+<body>
+
+<h1>CAD Test 5</h1>
+
+<div id="test-container"></div>
+
+<script src="/masterlab-mvp-site/js/ml-test-engine.js"></script>
+<script src="/masterlab-mvp-site/js/ml-relearn-test-engine.js"></script>
+<script src="/masterlab-mvp-site/js/ml-relearn-test-engine.js"></script>
+<script>
+    MLTestEngine.startTest({
+        lesson: 5,
+        course: "cad-onshape",
+        questions: [
+            { q: "What does a Fillet do?", a: ["Bevels an edge", "Rounds edges or corners", "Hollows out a part", "Creates a pattern"], c: 1 },
+            { q: "What does a Chamfer do?", a: ["Rounds an edge", "Creates a beveled edge", "Removes material", "Creates a hollow space"], c: 1 },
+            { q: "When would you use a Chamfer instead of a Fillet?", a: ["Chamfers are always better", "For edges that need clearance or on machined parts", "Chamfers are smaller", "There is no difference"], c: 1 },
+            { q: "What does the Shell feature do?", a: ["Adds material to edges", "Hollows out a solid to a specified wall thickness", "Removes internal features", "Creates a protective layer"], c: 1 },
+            { q: "The Shell feature is useful for creating:", a: ["Solid blocks", "Enclosures, cases, and hollow parts", "Assembly mates", "Drawing dimensions"], c: 1 },
+            { q: "What is a Linear Pattern?", a: ["A circular repetition", "A pattern that repeats features in a straight line", "A single feature copy", "A geometric shape"], c: 1 },
+            { q: "What is a Circular Pattern?", a: ["A straight line repetition", "A pattern that repeats features around an axis", "A fillet pattern", "Not available in Onshape"], c: 1 },
+            { q: "When should you use a Pattern feature instead of creating features manually?", a: ["Patterns are slower", "Always—patterns ensure consistency and save time", "Only for one or two repetitions", "Patterns cannot be edited"], c: 1 },
+            { q: "Can patterns be edited after creation?", a: ["No, they are frozen", "Yes, you can change the number of instances or spacing", "Only if you recreate them", "Patterns are for sketches only"], c: 1 },
+            { q: "What is the typical order for adding detail features?", a: ["Details first, then main form", "Main form first, then details like fillets", "Patterns before extrudes", "Order doesn't matter"], c: 1 }
+        ]
+    });
+</script>
+
+</body>
+</html>

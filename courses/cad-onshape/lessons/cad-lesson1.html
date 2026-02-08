@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CAD Lesson 1 – Onshape Basics</title>
+    <link rel="stylesheet" href="/masterlab-mvp-site/css/global.css">
+</head>
+<body>
+
+<h1>CAD Lesson 1 – Onshape & Sketching Fundamentals</h1>
+
+<p>
+    In this lesson, you’ll learn the core ideas behind CAD in Onshape:
+    what sketches are, how constraints work, and how to fully define geometry.
+</p>
+
+<h2>What is CAD?</h2>
+<p>
+    CAD (Computer‑Aided Design) is used to create precise 2D sketches and 3D models.
+    In Onshape, everything starts with a sketch, which you then turn into 3D features
+    like extrudes, revolves, and cuts.
+</p>
+
+<h2>Onshape Environment</h2>
+<ul>
+    <li><strong>Documents:</strong> Cloud‑based containers for your work.</li>
+    <li><strong>Part Studios:</strong> Where you create parts and sketches.</li>
+    <li><strong>Assemblies:</strong> Where you mate parts together.</li>
+    <li><strong>Features:</strong> Extrude, Revolve, Fillet, Chamfer, Shell, Pattern, etc.</li>
+</ul>
+
+<h2>Sketch Constraints</h2>
+<p>Constraints control how geometry behaves. Common ones in Onshape:</p>
+<ul>
+    <li><strong>Horizontal / Vertical:</strong> Force lines to be horizontal or vertical.</li>
+    <li><strong>Coincident:</strong> A point lies on another point or edge.</li>
+    <li><strong>Concentric:</strong> Circles share the same center.</li>
+    <li><strong>Parallel / Perpendicular:</strong> Lines never intersect or meet at 90°.</li>
+    <li><strong>Tangent:</strong> A curve touches a line or circle at exactly one point.</li>
+    <li><strong>Equal:</strong> Makes lengths or radii identical.</li>
+    <li><strong>Symmetric:</strong> Geometry mirrors across a line.</li>
+    <li><strong>Fix:</strong> Locks geometry in place.</li>
+</ul>
+
+<h2>Fully Defined Sketches</h2>
+<p>
+    In Onshape, a sketch is:
+</p>
+<ul>
+    <li><strong>Black:</strong> Fully defined (good).</li>
+    <li><strong>Blue:</strong> Underdefined (missing constraints or dimensions).</li>
+    <li><strong>Red:</strong> Overdefined (conflicting constraints or dimensions).</li>
+</ul>
+<p>
+    Your goal is to make important sketches fully defined using a mix of constraints and dimensions.
+</p>
+
+<h2>Dimensions</h2>
+<p>
+    Use the <strong>Dimension (D)</strong> tool to set:
+</p>
+<ul>
+    <li>Line lengths</li>
+    <li>Circle diameters</li>
+    <li>Distances between points</li>
+    <li>Angles between lines</li>
+</ul>
+
+<h2>Quick Check</h2>
+<ol>
+    <li>What color is a fully defined sketch in Onshape?</li>
+    <li>What does the Equal constraint do?</li>
+    <li>What is the purpose of dimensions in a sketch?</li>
+    <li>What is the difference between a Part Studio and an Assembly?</li>
+</ol>
+
+<!-- ReLearn Block hook -->
+<h2>Vocabulary</h2>
+<ul id="vocab-list"></ul>
+
+<script>
+const vocab_1 = [
+    { term: "CAD", def: "Computer-Aided Design; software used to create 2D sketches and 3D models." },
+    { term: "Sketch", def: "A 2D drawing used as the foundation for 3D features." },
+    { term: "Constraint", def: "A rule that controls geometry relationships and behavior." },
+    { term: "Dimension", def: "A numerical value that specifies size or distance in a sketch or model." },
+    { term: "Fully Defined", def: "A sketch shown in black with all necessary constraints and dimensions." },
+    { term: "Part Studio", def: "A workspace in Onshape where individual parts are created." },
+    { term: "Feature", def: "A 3D operation like Extrude, Revolve, Fillet, or Shell." },
+    { term: "Coincident", def: "A constraint that places a point on another point or edge." }
+];
+</script>
+
+<div id="relearn-block"></div>
+
+<script src="/masterlab-mvp-site/js/ml-relearn-engine.js"></script>
+<script>
+    // Set the lesson number for this CAD course.
+    // Adjust this number if you change the lesson index.
+    const lesson = 1;
+    MLRelearnEngine.renderRelearnBlock(lesson);
+</script>
+
+</body>
+</html>

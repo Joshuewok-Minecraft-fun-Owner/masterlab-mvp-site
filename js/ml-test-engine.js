@@ -208,5 +208,171 @@ const MLTestEngine = {
             vocabQuestions,
             answerKey
         };
+    },
+    
+    /* ============================================================
+       startTest METHOD - Main entry point for test pages
+       ============================================================ */
+    startTest(config) {
+        const { lesson, course, questions } = config;
+        
+        // Load vocab for this lesson
+        const vocabList = window[`vocab_${lesson}`] || [];
+        
+        // Save vocab to localStorage for test results tracking
+        const vocabKey = `ml_vocab_lesson_${lesson}`;
+        localStorage.setItem(vocabKey, JSON.stringify(vocabList));
+        
+        // Build question pool: content questions + vocab questions
+        let allQuestions = [...questions];
+        
+        // Add vocab questions to the pool
+        vocabList.forEach((vocabItem, index) => {
+            // Create a multiple choice vocab question
+            const correctAnswer = vocabItem.def;
+            const choices = [
+                correctAnswer,
+                "Incorrect definition " + (index + 1),
+                "Incorrect definition " + (index + 2),
+                "Incorrect definition " + (index + 3)
+            ];
+            
+            // Shuffle choices
+            const shuffled = MLTestEngine.shuffleArray(choices);
+            const correctIndex = shuffled.indexOf(correctAnswer);
+            
+            allQuestions.push({
+                q: `What is the definition of "${vocabItem.term}"?`,
+                a: shuffled,
+                c: correctIndex,
+                isVocab: true,
+                term: vocabItem.term
+            });
+        });
+        
+        // Shuffle all questions
+        const shuffledQuestions = MLTestEngine.shuffleArray(allQuestions);
+        
+        // Render test to container
+        MLTestEngine.renderTest(shuffledQuestions, lesson, course);
+    },
+    
+    // Helper: shuffle array
+    shuffleArray(arr) {
+        const newArr = [...arr];
+        for (let i = newArr.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [newArr[i], newArr[j]] = [newArr[j], newArr[i]];
+        }
+        return newArr;
+    },
+    
+    // Helper: render test questions to DOM
+    renderTest(questions, lesson, course) {
+        const container = document.getElementById("test-container");
+        if (!container) {
+            console.warn("No #test-container found. Ensure test HTML has this element.");
+            return;
+        }
+        
+        let html = '<form id="answer-form">';
+        
+        questions.forEach((q, idx) => {
+            const qNum = idx + 1;
+            html += `<div class="question" data-q="${qNum}" data-vocab="${q.isVocab ? 'true' : 'false'}" data-term="${q.term || ''}">`;
+            html += `<h3>Question ${qNum}</h3>`;
+            html += `<p><strong>${q.q}</strong></p>`;
+            html += '<div class="choices">';
+            
+            q.a.forEach((choice, cIdx) => {
+                const inputId = `q${qNum}_c${cIdx}`;
+                html += `<label><input type="radio" name="q${qNum}" value="${cIdx}" id="${inputId}"> ${choice}</label><br>`;
+            });
+            
+            html += '</div></div>';
+        });
+        
+        html += '<button type="submit" class="submit-btn">Submit Test</button>';
+        html += '</form>';
+        
+        container.innerHTML = html;
+        
+        // Attach submit handler
+        document.getElementById("answer-form").addEventListener("submit", (e) => {
+            e.preventDefault();
+            MLTestEngine.submitTest(questions, lesson, course);
+        });
+    },
+    
+    // Helper: submit and grade test
+    submitTest(questions, lesson, course) {
+        const form = document.getElementById("answer-form");
+        const answers = {};
+        let score = 0;
+        const weakspots = [];
+        
+        questions.forEach((q, idx) => {
+            const qNum = idx + 1;
+            const selected = form.querySelector(`input[name="q${qNum}"]:checked`);
+            const userAnswer = selected ? parseInt(selected.value) : null;
+            answers[`q${qNum}`] = userAnswer;
+            
+            if (userAnswer === q.c) {
+                score++;
+            } else {
+                // Track weakspot
+                if (q.isVocab) {
+                    weakspots.push({
+                        term: q.term,
+                        def: q.a[q.c]
+                    });
+                }
+            }
+        });
+        
+        // Calculate percentage
+        const percentage = Math.round((score / questions.length) * 100);
+        
+        // Store results
+        const key = `ml_test_${lesson}_results_${new Date().getTime()}`;
+        localStorage.setItem(key, JSON.stringify({
+            lesson,
+            course,
+            score,
+            total: questions.length,
+            percentage,
+            answers,
+            timestamp: new Date().toISOString()
+        }));
+        
+        // Store vocab weakspots for relearn
+        if (weakspots.length > 0) {
+            const weakKey = `ml_vocab_lesson_${lesson}_weakspots`;
+            localStorage.setItem(weakKey, JSON.stringify(weakspots));
+        }
+        
+        // Show results
+        MLTestEngine.showResults(score, questions.length, percentage, lesson, course);
+    },
+    
+    // Helper: show test results
+    showResults(score, total, percentage, lesson, course) {
+        const container = document.getElementById("test-container");
+        let resultHtml = `
+        <div class="test-results">
+            <h2>Test Complete!</h2>
+            <p>You scored <strong>${score} out of ${total}</strong> (${percentage}%)</p>
+        `;
+        
+        if (percentage >= 80) {
+            resultHtml += '<p class="success">Great work! You passed this lesson.</p>';
+        } else {
+            resultHtml += '<p class="warning">You need to review this lesson before moving on.</p>';
+        }
+        
+        resultHtml += `<a href="/" class="btn">Return to Dashboard</a>`;
+        resultHtml += '</div>';
+        
+        container.innerHTML = resultHtml;
     }
 };

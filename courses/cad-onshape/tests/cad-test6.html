@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CAD Test 6</title>
+    <link rel="stylesheet" href="/masterlab-mvp-site/css/global.css">
+</head>
+<body>
+
+<h1>CAD Test 6</h1>
+
+<div id="test-container"></div>
+
+<script src="/masterlab-mvp-site/js/ml-test-engine.js"></script>
+<script src="/masterlab-mvp-site/js/ml-relearn-test-engine.js"></script>
+<script src="/masterlab-mvp-site/js/ml-relearn-test-engine.js"></script>
+<script>
+    MLTestEngine.startTest({
+        lesson: 6,
+        course: "cad-onshape",
+        questions: [
+            { q: "What is a Part Studio?", a: ["Where you assemble parts", "Where you create and edit individual parts", "A database of parts", "A drawing workspace"], c: 1 },
+            { q: "What is an Assembly?", a: ["A single part", "Where you bring parts together and define motion", "A sketch file", "Only for 2D designs"], c: 1 },
+            { q: "What is a Mate?", a: ["A partnership in CAD", "A relationship between parts that controls movement", "The final assembly", "A feature inside a part"], c: 1 },
+            { q: "What does a Fastened mate do?", a: ["Allows rotation", "Allows sliding", "Prevents all movement between parts", "Allows free motion"], c: 2 },
+            { q: "What is a Revolute mate used for?", a: ["Sliding motion", "Rotational motion around one axis", "No movement", "Planar sliding"], c: 1 },
+            { q: "What does a Slider mate allow?", a: ["Rotation only", "Linear motion along one axis", "No movement", "Combined rotation and sliding"], c: 1 },
+            { q: "A Cylindrical mate allows:", a: ["Rotation only", "Sliding only", "Rotation and sliding along an axis", "No motion"], c: 2 },
+            { q: "Which mate would you use for a door hinge?", a: ["Fastened", "Revolute", "Slider", "Cylindrical"], c: 1 },
+            { q: "What are mate connectors?", a: ["Tools for assembling", "Reference points for mates that control part positioning", "Temporary guides", "Part documentation"], c: 1 },
+            { q: "Why is choosing good mate connector locations important?", a: ["It has no effect", "It makes assemblies easier to control and visualize", "It only matters for aesthetics", "Mate connectors are not used in Onshape"], c: 1 }
+        ]
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CAD Lesson 2 – Design Intent</title>
+    <link rel="stylesheet" href="/masterlab-mvp-site/css/global.css">
+</head>
+<body>
+
+<h1>CAD Lesson 2 – Design Intent & Parametric Modeling</h1>
+
+<p>
+    Design intent is about building models that update correctly when dimensions change.
+    In Onshape, this means using constraints and dimensions that reflect how the part
+    should behave, not just how it looks once.
+</p>
+
+<h2>What is Design Intent?</h2>
+<ul>
+    <li>Thinking about how a part might change in the future.</li>
+    <li>Using symmetry, equal constraints, and patterns instead of manual duplication.</li>
+    <li>Placing dimensions on critical features, not random edges.</li>
+</ul>
+
+<h2>Parametric Modeling</h2>
+<p>
+    Parametric models are driven by parameters (dimensions, relations, variables).
+    Changing a dimension should update the model predictably.
+</p>
+<ul>
+    <li>Use <strong>Equal</strong> to keep repeated features the same size.</li>
+    <li>Use <strong>Symmetric</strong> to keep geometry centered.</li>
+    <li>Use <strong>Patterns</strong> instead of copying features manually.</li>
+</ul>
+
+<h2>Best Practices</h2>
+<ul>
+    <li>Dimension to centerlines and reference geometry when possible.</li>
+    <li>Avoid over‑defining sketches with redundant dimensions.</li>
+    <li>Think: “If this dimension changes, does the model still make sense?”</li>
+</ul>
+
+<h2>Quick Check</h2>
+<ol>
+    <li>What is design intent?</li>
+    <li>Why is parametric modeling powerful?</li>
+    <li>When should you use patterns instead of copying features?</li>
+</ol>
+
+<h2>Vocabulary</h2>
+<ul id="vocab-list"></ul>
+
+<script>
+const vocab_2 = [
+    { term: "Design Intent", def: "The reasoning behind design choices; how a model should behave when dimensions change." },
+    { term: "Parametric Modeling", def: "Designing models where geometry is driven by dimensions and constraints." },
+    { term: "Equal Constraint", def: "A constraint that makes multiple entities (lines, circles) the same size." },
+    { term: "Symmetric Constraint", def: "A constraint that mirrors geometry across a centerline or axis." },
+    { term: "Pattern", def: "A feature that automatically repeats other features in a line or circle." },
+    { term: "Reference Geometry", def: "Construction elements (planes, axes, points) that help build robust models." },
+    { term: "Centerline", def: "A construction line used for symmetry, axes, and dimension references." }
+];
+</script>
+
+<div id="relearn-block"></div>
+
+<script src="/masterlab-mvp-site/js/ml-relearn-engine.js"></script>
+<script>
+    const lesson = 2;
+    MLRelearnEngine.renderRelearnBlock(lesson);
+</script>
+
+</body>
+</html>

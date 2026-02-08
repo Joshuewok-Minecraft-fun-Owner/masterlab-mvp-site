@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CAD Test 7</title>
+    <link rel="stylesheet" href="/masterlab-mvp-site/css/global.css">
+</head>
+<body>
+
+<h1>CAD Test 7</h1>
+
+<div id="test-container"></div>
+
+<script src="/masterlab-mvp-site/js/ml-test-engine.js"></script>
+<script src="/masterlab-mvp-site/js/ml-relearn-test-engine.js"></script>
+<script src="/masterlab-mvp-site/js/ml-relearn-test-engine.js"></script>
+<script>
+    MLTestEngine.startTest({
+        lesson: 7,
+        course: "cad-onshape",
+        questions: [
+            { q: "What is reference geometry?", a: ["The final part shape", "Planes, axes, and points that help build complex models", "Only decorative elements", "Part of the 3D model"], c: 1 },
+            { q: "When would you create a new plane?", a: ["Never", "Only for assemblies", "When you need a sketch plane offset from default planes", "Only for cutting"], c: 2 },
+            { q: "What is a mid-plane?", a: ["A plane in the middle of a part", "A plane between two faces for symmetric features", "A plane for drawings", "Not available in Onshape"], c: 1 },
+            { q: "What are axes primarily used for?", a: ["Assembly only", "As reference lines for revolves, patterns, and mates", "Strengthening the model", "Creating cuts"], c: 1 },
+            { q: "How can reference geometry make models more robust?", a: ["It doesn't—it complicates things", "It prevents dependence on edges and makes models easier to edit", "It slows down editing", "Reference geometry is only visual"], c: 1 },
+            { q: "An angled plane is useful for:", a: ["Standard orthogonal features only", "Features at non-orthogonal angles", "Decorative purposes", "Only in drawings"], c: 1 },
+            { q: "What is a reference point?", a: ["A visible dot on the screen", "A reference used to position other geometry", "Only for assemblies", "Not used in sketches"], c: 1 },
+            { q: "Why might you create a reference axis?", a: ["No practical reason", "For revolve features, circular patterns, and mates", "Only for visualization", "Reference axes are automatic"], c: 1 },
+            { q: "What is the advantage of using reference geometry over part edges?", a: ["No advantage", "Reference geometry is more stable if the part changes", "Part edges are always better", "Reference geometry is only for documentation"], c: 1 },
+            { q: "Can reference planes be used as sketch planes?", a: ["No", "Yes—they provide surfaces to sketch on", "Only for some plane types", "Drawing only"], c: 1 }
+        ]
+    });
+</script>
+
+</body>
+</html>

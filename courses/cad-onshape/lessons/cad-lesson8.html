@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CAD Lesson 8 – Configurations & Variables</title>
+    <link rel="stylesheet" href="/masterlab-mvp-site/css/global.css">
+</head>
+<body>
+
+<h1>CAD Lesson 8 – Configurations & Variables</h1>
+
+<p>
+    Configurations and variables let you create families of parts and control
+    dimensions from a single place.
+</p>
+
+<h2>Variables</h2>
+<ul>
+    <li>Define named values (e.g., width, height, thickness).</li>
+    <li>Use them in dimensions so one change updates the whole model.</li>
+</ul>
+
+<h2>Configurations</h2>
+<ul>
+    <li>Create multiple versions of a part in one Part Studio.</li>
+    <li>Change dimensions, features, or options per configuration.</li>
+</ul>
+
+<h2>Why This Matters</h2>
+<ul>
+    <li>Great for brackets with different sizes.</li>
+    <li>Useful for competition parts that need quick iteration.</li>
+</ul>
+
+<h2>Quick Check</h2>
+<ol>
+    <li>What is a variable in Onshape?</li>
+    <li>What is a configuration used for?</li>
+    <li>How do variables help with design intent?</li>
+</ol>
+
+<h2>Vocabulary</h2>
+<ul id="vocab-list"></ul>
+
+<script>
+const vocab_8 = [
+    { term: "Variable", def: "A named value in Onshape that can be referenced in dimensions to control the model parametrically." },
+    { term: "Configuration", def: "A variant of a part with different dimensions, features, or settings, all within one Part Studio." },
+    { term: "Parametric Control", def: "Designing a model so that changing one dimension automatically updates all dependent geometry." },
+    { term: "Design Family", def: "Multiple versions of a part created using configurations with shared design logic." },
+    { term: "Driving Dimension", def: "A dimension that controls the size or position of geometry." },
+    { term: "Reference Dimension", def: "A dimension that shows the result of geometry but does not control it." },
+    { term: "Design Table", def: "A spreadsheet that defines multiple configurations by varying parameters." }
+];
+</script>
+
+<div id="relearn-block"></div>
+
+<script src="/masterlab-mvp-site/js/ml-relearn-engine.js"></script>
+<script>
+    const lesson = 8;
+    MLRelearnEngine.renderRelearnBlock(lesson);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CAD Lesson 6 – Assemblies & Mates</title>
+    <link rel="stylesheet" href="/masterlab-mvp-site/css/global.css">
+</head>
+<body>
+
+<h1>CAD Lesson 6 – Assemblies & Mates in Onshape</h1>
+
+<p>
+    Assemblies show how parts fit and move together. In Onshape, you use mates
+    to define relationships between parts.
+</p>
+
+<h2>Part Studios vs Assemblies</h2>
+<ul>
+    <li><strong>Part Studio:</strong> Where you create parts.</li>
+    <li><strong>Assembly:</strong> Where you bring parts together and define motion.</li>
+</ul>
+
+<h2>Common Mates</h2>
+<ul>
+    <li><strong>Fastened:</strong> No movement between parts.</li>
+    <li><strong>Revolute:</strong> Rotational motion around one axis.</li>
+    <li><strong>Slider:</strong> Linear motion along one axis.</li>
+    <li><strong>Cylindrical:</strong> Rotation + sliding along an axis.</li>
+    <li><strong>Planar:</strong> Sliding in a plane.</li>
+</ul>
+
+<h2>Mate Connectors</h2>
+<p>
+    Onshape uses mate connectors as reference points for mates.
+    Choosing good mate connector locations makes assemblies easier to control.
+</p>
+
+<h2>Quick Check</h2>
+<ol>
+    <li>What is the difference between a Part Studio and an Assembly?</li>
+    <li>Which mate would you use for a door hinge?</li>
+    <li>What does a Fastened mate allow?</li>
+</ol>
+
+<h2>Vocabulary</h2>
+<ul id="vocab-list"></ul>
+
+<script>
+const vocab_6 = [
+    { term: "Part Studio", def: "A workspace in Onshape where individual parts are created and modified." },
+    { term: "Assembly", def: "A workspace in Onshape where multiple parts are brought together and positioned relative to each other." },
+    { term: "Mate", def: "A constraint that defines the spatial relationship and permitted motion between parts in an assembly." },
+    { term: "Fastened Mate", def: "A fixed constraint that prevents all relative motion between two parts." },
+    { term: "Revolute Mate", def: "A mate that allows rotation around a single axis, like a hinge or pin joint." },
+    { term: "Slider Mate", def: "A mate that permits linear sliding motion along one direction." },
+    { term: "Mate Connector", def: "A reference point on a part used to define mate relationships and positioning." },
+    { term: "Degrees of Freedom", def: "The number of independent ways a part can move relative to another." }
+];
+</script>
+
+<div id="relearn-block"></div>
+
+<script src="/masterlab-mvp-site/js/ml-relearn-engine.js"></script>
+<script>
+    const lesson = 6;
+    MLRelearnEngine.renderRelearnBlock(lesson);
+</script>
+
+</body>
+</html>

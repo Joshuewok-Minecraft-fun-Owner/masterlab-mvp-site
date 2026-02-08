@@ -78,12 +78,24 @@ const MLRelearnEngine = {
         });
 
         html += `
-            <button onclick="window.location.href='relearn-test-${lesson}.html'">
-                Take ReLearn Test
-            </button>
+            <button onclick="handleRelearnRedirect()">Continue</button>
             </div>
         `;
 
         container.innerHTML = html;
+
+        // Attach the redirect logic to the button
+        const btn = container.querySelector("button");
+        if (btn) {
+            btn.onclick = () => {
+                const weak = JSON.parse(localStorage.getItem(`ml_lesson_${lesson - 1}_weakspots`) || "[]");
+
+                if (weak.length >= 5) {
+                    window.location.href = `lesson-x5.html?lesson=${lesson}`;
+                } else {
+                    window.location.href = `relearn-test${lesson}.html`;
+                }
+            };
+        }
     }
 };

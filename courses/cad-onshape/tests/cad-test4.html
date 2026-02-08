@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CAD Test 4</title>
+    <link rel="stylesheet" href="/masterlab-mvp-site/css/global.css">
+</head>
+<body>
+
+<h1>CAD Test 4</h1>
+
+<div id="test-container"></div>
+
+<script src="/masterlab-mvp-site/js/ml-test-engine.js"></script>
+<script src="/masterlab-mvp-site/js/ml-relearn-test-engine.js"></script>
+<script src="/masterlab-mvp-site/js/ml-relearn-test-engine.js"></script>
+<script>
+    MLTestEngine.startTest({
+        lesson: 4,
+        course: "cad-onshape",
+        questions: [
+            { q: "What does the Extrude feature do?", a: ["Rotates a sketch profile", "Turns a 2D sketch into 3D geometry", "Removes material", "Creates a pattern"], c: 1 },
+            { q: "What is the Blind extrude option?", a: ["A fixed depth extrusion", "An extrusion through all material", "An automatic extrusion", "A symmetric extrusion"], c: 0 },
+            { q: "When would you use the Revolve feature?", a: ["For rectangular boxes", "For round parts like shafts and wheels", "For 2D shapes", "Only in assemblies"], c: 1 },
+            { q: "What is required to create a Revolve feature?", a: ["A 3D body", "An axis of revolution", "Multiple sketches", "A drawing view"], c: 1 },
+            { q: "What does Through All do in an extrude cut?", a: ["Cuts a specific depth", "Ensures the cut passes completely through the part", "Creates multiple cuts", "Reverses the cut direction"], c: 1 },
+            { q: "What is the difference between Extrude Add and Extrude Remove?", a: ["Add creates material; Remove cuts material", "Remove is faster", "They are the same", "Add is only for sketches"], c: 0 },
+            { q: "The Symmetric extrude option:", a: ["Extrudes in one direction", "Extrudes equally in both directions from the sketch plane", "Creates a mirror of the extrusion", "Removes material symmetrically"], c: 1 },
+            { q: "When would you use Up to Next?", a: ["Always", "When you want to extrude until the next feature or face", "Only for patterns", "Never in practice"], c: 1 },
+            { q: "Can you use Revolve to create complex round features?", a: ["No, only basic cylinders", "Yes, with complex profile sketches and axes", "Only with Extrude", "Revolve is only for 2D"], c: 1 },
+            { q: "What is the primary difference between Extrude and Revolve?", a: ["Extrude adds material; Revolve removes it", "Extrude moves linearly; Revolve rotates around an axis", "They serve the same purpose", "Revolve is only for cuts"], c: 1 }
+        ]
+    });
+</script>
+
+</body>
+</html>
