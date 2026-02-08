@@ -12,38 +12,15 @@
     <!-- R&M Styles -->
     <link rel="stylesheet" href="rm-style.css">
 
-    <!-- Scripts for R&M Course -->
-    <script src="/masterlab-mvp-site/js/ml-xp.js"></script>
     <script src="lesson-data.js"></script>
-    <script src="rm-render-lessons.js"></script>
-    <script src="rm-lock.js"></script> <!-- Hybrid Lock System -->
-
-    <style>
-        /* Lock indicator styling */
-        .lock-status {
-            font-size: 0.9rem;
-            font-weight: bold;
-        }
-        .unlocked {
-            color: #00FFA7; /* Joshua Glow */
-        }
-        .locked {
-            color: #ff4d4d;
-        }
-        .lesson-card.disabled {
-            pointer-events: none;
-            opacity: 0.5;
-        }
-
-        .lesson-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-    </style>
 </head>
 
 <body>
+
+<div class="ml-header">
+    <img src="/masterlab-mvp-site/assets/images/Copilot_20260205_213356.png" 
+         alt="MasterLab Logo" class="ml-logo">
+</div>
 
     <div class="course-container">
         <h1 class="course-title">Rocks & Minerals (Division C)</h1>
@@ -201,6 +178,13 @@
         document.getElementById("xp-display").textContent = `XP: ${xp}`;
     });
     </script>
+
+    <!-- Core Scripts -->
+    <script src="/masterlab-mvp-site/js/ml-xp.js"></script>
+    <script src="/masterlab-mvp-site/js/ml-relearn-engine.js"></script>
+    <script src="/masterlab-mvp-site/js/ml-test-engine.js"></script>
+    <script src="/masterlab-mvp-site/js/rm-lock.js"></script>
+    <script src="/masterlab-mvp-site/courses/rocks-and-minerals/rm-render-lessons.js"></script>
 
 </body>
 </html>

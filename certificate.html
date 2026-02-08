@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="/masterlab-mvp-site/css/global.css">
 </head>
 <body>
+        <div class="ml-header">
+            <img src="/masterlab-mvp-site/assets/images/Copilot_20260205_213356.png" 
+                 alt="MasterLab Logo" class="ml-logo">
+        </div>
+
     <div class="certificate">
         <h1>Certificate of Completion</h1>
         <h2 id="course-name"></h2>
@@ -18,5 +23,8 @@
     document.getElementById("course-name").textContent =
         params.get("course") || "MasterLab Course";
     </script>
+    <script src="/masterlab-mvp-site/js/ml-xp.js"></script>
+    <script src="/masterlab-mvp-site/js/ml-relearn-engine.js"></script>
+    <script src="/masterlab-mvp-site/js/ml-test-engine.js"></script>
 </body>
 </html>

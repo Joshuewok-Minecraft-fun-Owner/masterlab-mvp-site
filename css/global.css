@@ -324,4 +324,29 @@ button:hover,
 
 .clear-button:active {
     transform: scale(0.98);
+
+/* MasterLab Logo Header */
+.ml-header {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.ml-logo {
+    width: 160px;
+    height: auto;
+    filter: drop-shadow(0 0 6px var(--neon-mint));
+}
+}
+/* MasterLab Logo Header */
+.ml-header {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.ml-logo {
+    width: 160px;
+    height: auto;
+    filter: drop-shadow(0 0 6px var(--neon-mint));
 }

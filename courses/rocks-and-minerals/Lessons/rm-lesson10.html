@@ -15,12 +15,17 @@
 
 <body>
 
+<div class="ml-header">
+    <img src="/masterlab-mvp-site/assets/images/Copilot_20260205_213356.png" alt="MasterLab Logo" class="ml-logo">
+</div>
+
 <script>
     // Enforce lock for Lesson 10
     RMLock.enforceLessonLock(10);
 
     // Award XP if first time viewing
     if (!localStorage.getItem("rm_lesson10_xp")) {
+        addXP(50);
         RMRewards.rewardLessonXP(10);
     }
 </script>
