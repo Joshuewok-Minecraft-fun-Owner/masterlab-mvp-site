@@ -22,6 +22,7 @@ function getCurrentDayNumber() {
 }
 
 function isLessonUnlocked(lessonNumber) {
+    if (lessonNumber === 1) return true;
     const day = getCurrentDayNumber();
 
     // Check if the lesson is in any unlock list up to today
