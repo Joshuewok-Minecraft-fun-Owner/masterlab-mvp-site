@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="/masterlab-mvp-site/css/global.css">
 </head>
 <body>
+  <script src="/js/global-header.js"></script>
+  <!--#include virtual="/components/global-header.html" -->
 
 <h1>CAD Lesson 2 – Design Intent & Parametric Modeling</h1>
 
@@ -46,21 +48,6 @@
     <li>Why is parametric modeling powerful?</li>
     <li>When should you use patterns instead of copying features?</li>
 </ol>
-
-<h2>Vocabulary</h2>
-<ul id="vocab-list"></ul>
-
-<script>
-const vocab_2 = [
-    { term: "Design Intent", def: "The reasoning behind design choices; how a model should behave when dimensions change." },
-    { term: "Parametric Modeling", def: "Designing models where geometry is driven by dimensions and constraints." },
-    { term: "Equal Constraint", def: "A constraint that makes multiple entities (lines, circles) the same size." },
-    { term: "Symmetric Constraint", def: "A constraint that mirrors geometry across a centerline or axis." },
-    { term: "Pattern", def: "A feature that automatically repeats other features in a line or circle." },
-    { term: "Reference Geometry", def: "Construction elements (planes, axes, points) that help build robust models." },
-    { term: "Centerline", def: "A construction line used for symmetry, axes, and dimension references." }
-];
-</script>
 
 <div id="relearn-block"></div>
 

@@ -1,5 +1,14 @@
 <script src="../rm-lock.js"></script>
 <script>
+(async () => {
+    await MLTestEngine.startTest({
+        lesson: 5,
+        course: "rocks-and-minerals"
+    });
+})();
+</script>
+
+<script>
 </script>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,11 +23,12 @@
 
     <script src="/masterlab-mvp-site/js/rm-lock.js"></script>
     <script src="/masterlab-mvp-site/js/ml-test-engine.js"></script>
-    <script src="/masterlab-mvp-site/js/ml-relearn-test-engine.js"></script>
     <script src="/masterlab-mvp-site/js/test.js"></script>
 </head>
 
 <body>
+  <script src="/js/global-header.js"></script>
+  <!--#include virtual="/components/global-header.html" -->
 
 <script>
     const lesson = 5;  

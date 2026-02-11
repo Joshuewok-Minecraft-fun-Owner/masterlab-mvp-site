@@ -133,3 +133,53 @@ button:hover,
     margin-top: 0;
     color: var(--neon-mint);
 }
+
+/* === GLOBAL MASTERLAB HEADER === */
+#ml-global-header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 64px;
+  background: #0d0d0d;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  z-index: 9998;
+  border-bottom: 1px solid #222;
+}
+
+#ml-header-left {
+  display: flex;
+  align-items: center;
+}
+
+#ml-header-logo {
+  height: 48px;
+  filter: drop-shadow(0 0 4px rgba(255,255,255,0.4));
+  pointer-events: none;
+}
+
+#ml-header-center {
+  flex: 1;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #e6e6e6;
+  text-shadow: 0 0 4px rgba(0,0,0,0.6);
+}
+
+#ml-header-right button {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+body {
+  padding-top: 64px;
+}

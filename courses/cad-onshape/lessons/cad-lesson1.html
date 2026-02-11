@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="/masterlab-mvp-site/css/global.css">
 </head>
 <body>
+  <script src="/js/global-header.js"></script>
+  <!--#include virtual="/components/global-header.html" -->
 
 <h1>CAD Lesson 1 – Onshape & Sketching Fundamentals</h1>
 
@@ -75,22 +77,6 @@
 </ol>
 
 <!-- ReLearn Block hook -->
-<h2>Vocabulary</h2>
-<ul id="vocab-list"></ul>
-
-<script>
-const vocab_1 = [
-    { term: "CAD", def: "Computer-Aided Design; software used to create 2D sketches and 3D models." },
-    { term: "Sketch", def: "A 2D drawing used as the foundation for 3D features." },
-    { term: "Constraint", def: "A rule that controls geometry relationships and behavior." },
-    { term: "Dimension", def: "A numerical value that specifies size or distance in a sketch or model." },
-    { term: "Fully Defined", def: "A sketch shown in black with all necessary constraints and dimensions." },
-    { term: "Part Studio", def: "A workspace in Onshape where individual parts are created." },
-    { term: "Feature", def: "A 3D operation like Extrude, Revolve, Fillet, or Shell." },
-    { term: "Coincident", def: "A constraint that places a point on another point or edge." }
-];
-</script>
-
 <div id="relearn-block"></div>
 
 <script src="/masterlab-mvp-site/js/ml-relearn-engine.js"></script>

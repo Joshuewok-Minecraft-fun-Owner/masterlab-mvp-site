@@ -13,6 +13,8 @@
 </head>
 
 <body>
+  <script src="/js/global-header.js"></script>
+  <!--#include virtual="/components/global-header.html" -->
 
 <script>
     // Enforce lock for Lesson 2
@@ -175,22 +177,9 @@
 
     <!-- SECTION 8: VOCABULARY -->
     <section>
-        <h2>Vocabulary</h2>
-        <ul id="vocab-list"></ul>
+       <h2>Vocabulary</h2>
+<div id="lesson-vocab"></div>
 
-        <script>
-        const vocab_2 = [
-            { term: "Hardness", def: "A mineral's resistance to being scratched; commonly measured with the Mohs scale." },
-            { term: "Luster", def: "The way a mineral reflects light (e.g., metallic, vitreous, pearly)." },
-            { term: "Streak", def: "The color of a mineral's powder when rubbed on a porcelain streak plate." },
-            { term: "Cleavage", def: "The tendency of a mineral to break along flat, planar surfaces related to its crystal structure." },
-            { term: "Fracture", def: "The pattern in which a mineral breaks when not along cleavage planes (e.g., conchoidal)." },
-            { term: "Specific Gravity", def: "The density of a mineral relative to water; useful for identifying dense minerals." },
-            { term: "Mohs Scale", def: "A relative scale (1–10) ranking mineral hardness, from talc (1) to diamond (10)." },
-            { term: "Magnetism", def: "Magnetic response of a mineral (e.g., magnetite), useful for quick identification." },
-            { term: "Reaction to Acid", def: "Effervescence when a mineral reacts with dilute HCl, characteristic of carbonates like calcite." }
-        ];
-        </script>
     </section>
 
     <hr>
@@ -221,6 +210,13 @@
     </script>
 
 </div>
+<script src="/js/ml-browser-ai.js"></script>
+<script src="/js/ml-vocab-engine.js"></script>
+
+<script>
+    // Load vocab for this lesson
+    MLVocabEngine.loadVocab(2);  // change 1 → lesson number
+</script>
 
 </body>
 </html>
