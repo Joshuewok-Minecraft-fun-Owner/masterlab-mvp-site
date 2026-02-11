@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MasterLab – Sign Up</title>
+  <link rel="stylesheet" href="css/global.css">
+</head>
+<body>
+  <div class="ml-auth-page">
+    <div class="ml-auth-card">
+      <h1>Create MasterLab Account</h1>
+
+      <div id="signup-error" class="ml-auth-error"></div>
+
+      <label>Email</label>
+      <input type="email" id="signup-email" autocomplete="email">
+
+      <label>Password</label>
+      <input type="password" id="signup-password" autocomplete="new-password">
+
+      <label>Confirm Password</label>
+      <input type="password" id="signup-password-confirm" autocomplete="new-password">
+
+      <button id="signup-btn" class="ml-button-primary">Create Account</button>
+
+      <p class="ml-auth-switch">
+        Already have an account?
+        <a href="login.html">Log in</a>
+      </p>
+    </div>
+  </div>
+
+  <script src="js/firebase-config.js"></script>
+  <script src="js/auth.js"></script>
+  <script>
+    document.getElementById('signup-btn').addEventListener('click', () => {
+      const email = document.getElementById('signup-email').value.trim();
+      const password = document.getElementById('signup-password').value;
+      const confirm = document.getElementById('signup-password-confirm').value;
+
+      const errorBox = document.getElementById('signup-error');
+      errorBox.textContent = '';
+
+      if (!email || !password) {
+        errorBox.textContent = 'Email and password are required.';
+        return;
+      }
+      if (password !== confirm) {
+        errorBox.textContent = 'Passwords do not match.';
+        return;
+      }
+
+      signupUser(email, password)
+        .catch(err => {
+          errorBox.textContent = err.message;
+        });
+    });
+  </script>
+</body>
+</html>

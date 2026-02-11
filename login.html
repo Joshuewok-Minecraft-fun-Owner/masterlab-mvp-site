@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MasterLab – Login</title>
+  <link rel="stylesheet" href="css/global.css">
+</head>
+<body>
+  <div class="ml-auth-page">
+    <div class="ml-auth-card">
+      <h1>MasterLab Login</h1>
+
+      <div id="login-error" class="ml-auth-error"></div>
+
+      <label>Email</label>
+      <input type="email" id="login-email" autocomplete="email">
+
+      <label>Password</label>
+      <input type="password" id="login-password" autocomplete="current-password">
+
+      <button id="login-btn" class="ml-button-primary">Log In</button>
+
+      <p class="ml-auth-switch">
+        Don’t have an account?
+        <a href="signup.html">Create one</a>
+      </p>
+    </div>
+  </div>
+
+  <script src="js/firebase-config.js"></script>
+  <script src="js/auth.js"></script>
+  <script>
+    document.getElementById('login-btn').addEventListener('click', () => {
+      const email = document.getElementById('login-email').value.trim();
+      const password = document.getElementById('login-password').value;
+      loginUser(email, password)
+        .catch(err => {
+          document.getElementById('login-error').textContent = err.message;
+        });
+    });
+  </script>
+</body>
+</html>
