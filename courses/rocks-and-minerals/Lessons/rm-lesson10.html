@@ -10,14 +10,11 @@
     <link rel="stylesheet" href="../rm-style.css">
 
     <script src="../rm-lock.js"></script>
-    <script src="/masterlab-mvp-site/js/ml-xp.js"></script>
 </head>
 
 <body>
-
-<div class="ml-header">
-    <img src="/masterlab-mvp-site/assets/images/Copilot_20260205_213356.png" alt="MasterLab Logo" class="ml-logo">
-</div>
+  <script src="/js/global-header.js"></script>
+  <!--#include virtual="/components/global-header.html" -->
 
 <script>
     // Enforce lock for Lesson 10
@@ -25,12 +22,11 @@
 
     // Award XP if first time viewing
     if (!localStorage.getItem("rm_lesson10_xp")) {
-        addXP(50);
         RMRewards.rewardLessonXP(10);
     }
 </script>
 
-<div class="lesson-blocks" data-course="rocks-and-minerals" data-lesson="10">  <div class="lesson-block-header">    <h2 class="lesson-block-title">Part 1</h2>    <p class="lesson-block-progress">Block 1 of 1</p>    <audio controls class="lesson-audio"></audio>  </div>  <div class="lesson-block" data-block="1" data-title="Part 1">    <div class="lesson-container">
+<div class="lesson-container">
 
     <h1 class="lesson-title">Lesson 10 — Plate Tectonics, Earth Structure & Mineral Formation Environments</h1>
     <p class="lesson-subtitle">MasterLab Rocks & Minerals (Division C)</p>
@@ -46,7 +42,7 @@
             environments helps explain why certain minerals and rocks appear together and how major 
             geological features develop.
         </p>
-    </div>
+    </section>
 
     <hr>
 
@@ -72,7 +68,7 @@
             <li><strong>Outer core</strong> — liquid metal.</li>
             <li><strong>Inner core</strong> — solid metal.</li>
         </ul>
-    </div>
+    </section>
 
     <hr>
 
@@ -102,7 +98,7 @@
             <li>Plates slide past each other.</li>
             <li>Cause earthquakes (e.g., San Andreas Fault).</li>
         </ul>
-    </div>
+    </section>
 
     <hr>
 
@@ -121,7 +117,7 @@
         <p>
             These processes determine the composition of igneous rocks.
         </p>
-    </div>
+    </section>
 
     <hr>
 
@@ -155,7 +151,7 @@
             <li>High pressure/temperature environments.</li>
             <li>Garnet, staurolite, kyanite, sillimanite.</li>
         </ul>
-    </div>
+    </section>
 
     <hr>
 
@@ -173,7 +169,7 @@
             <li><strong>Placer deposits</strong> — rivers concentrate heavy minerals (gold, magnetite).</li>
             <li><strong>Banded iron formations</strong> — ancient oceans with rising oxygen.</li>
         </ul>
-    </div>
+    </section>
 
     <hr>
 
@@ -197,7 +193,7 @@
             <li>Hotspots create intraplate volcanoes (Hawaii).</li>
             <li>Magma composition controls eruption style.</li>
         </ul>
-    </div>
+    </section>
 
     <hr>
 
@@ -215,28 +211,22 @@
             <li>Interpreting cross‑sections.</li>
             <li>Understanding depositional environments.</li>
         </ul>
-    </div>
+    </section>
 
     <hr>
 
     <!-- SECTION 9: VOCABULARY -->
     <section>
-        <h2>Vocabulary</h2>
-        <ul id="vocab-list"></ul>
-
-        <script>
-        const vocab_10 = [
-            { term: "Competition Review", def: "A focused study of key identification features, classification rules, and common trick specimens used in events like Science Olympiad." },
-            { term: "Identification Strategies", def: "Systematic approaches (e.g., observe luster → streak → hardness → cleavage) to efficiently identify minerals and rocks under time pressure." },
-            { term: "Classification", def: "Organizing rocks and minerals into groups based on composition, texture, and formation processes for accurate ID." },
-            { term: "Testing Procedures", def: "Standard, safe tests used in competition (streak, hardness, acid test, magnetism, specific gravity) with proper controls." },
-            { term: "Diagnostic Property", def: "A feature that reliably distinguishes a mineral or rock from others (e.g., calcite fizzes with HCl)." },
-            { term: "Observation Protocol", def: "A repeatable sequence of observations and tests to reduce errors during timed identification tasks." },
-            { term: "Elimination", def: "Using negative test results to rule out possibilities and narrow the identification list." },
-            { term: "Field Notes", def: "Clear, concise records of tests and observations used to justify identifications during review or grading." }
-        ];
-        </script>
-    </div>
+        <h2>9. Key Vocabulary</h2>
+        <ul>
+            <li><strong>Plate tectonics</strong> — movement of Earth’s lithospheric plates.</li>
+            <li><strong>Subduction</strong> — one plate sinks beneath another.</li>
+            <li><strong>Asthenosphere</strong> — partially molten mantle layer.</li>
+            <li><strong>Hydrothermal</strong> — involving hot, mineral‑rich fluids.</li>
+            <li><strong>Pegmatite</strong> — extremely coarse‑grained igneous rock.</li>
+            <li><strong>Ore deposit</strong> — concentration of valuable minerals.</li>
+        </ul>
+    </section>
 
     <hr>
 
@@ -249,7 +239,7 @@
             geological processes ties together everything you’ve learned in this course and prepares 
             you for advanced interpretation questions in Science Olympiad.
         </p>
-    </div>
+    </section>
 
     <hr>
 
@@ -267,7 +257,5 @@
 
 </div>
 
-  <div class="vocab-section" data-lesson="10"></div>
-</div></div>
 </body>
 </html>

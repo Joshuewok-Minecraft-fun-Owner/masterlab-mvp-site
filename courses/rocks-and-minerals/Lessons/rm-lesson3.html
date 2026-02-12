@@ -10,14 +10,11 @@
     <link rel="stylesheet" href="../rm-style.css">
 
     <script src="../rm-lock.js"></script>
-    <script src="/masterlab-mvp-site/js/ml-xp.js"></script>
 </head>
 
 <body>
-
-<div class="ml-header">
-    <img src="/masterlab-mvp-site/assets/images/Copilot_20260205_213356.png" alt="MasterLab Logo" class="ml-logo">
-</div>
+  <script src="/js/global-header.js"></script>
+  <!--#include virtual="/components/global-header.html" -->
 
 <script>
     // Enforce lock for Lesson 3
@@ -25,12 +22,11 @@
 
     // Award XP if first time viewing
     if (!localStorage.getItem("rm_lesson3_xp")) {
-        addXP(50);
         RMRewards.rewardLessonXP(3);
     }
 </script>
 
-<div class="lesson-blocks" data-course="rocks-and-minerals" data-lesson="3">  <div class="lesson-block-header">    <h2 class="lesson-block-title">Part 1</h2>    <p class="lesson-block-progress">Block 1 of 1</p>    <audio controls class="lesson-audio"></audio>  </div>  <div class="lesson-block" data-block="1" data-title="Part 1">    <div class="lesson-container">
+<div class="lesson-container">
 
     <h1 class="lesson-title">Lesson 3 — Mineral Chemical Properties & Composition</h1>
     <p class="lesson-subtitle">MasterLab Rocks & Minerals (Division C)</p>
@@ -49,7 +45,7 @@
             In this lesson, you’ll learn how to read mineral formulas, understand major mineral groups, 
             and connect chemistry to the properties you see in competition.
         </p>
-    </div>
+    </section>
 
     <hr>
 
@@ -74,7 +70,7 @@
             Some minerals allow limited substitution of elements (solid solution), but the overall 
             composition stays within a narrow range.
         </p>
-    </div>
+    </section>
 
     <hr>
 
@@ -110,7 +106,7 @@
             <li><strong>Halides</strong> — Cl⁻, F⁻, etc. (e.g., halite, fluorite)</li>
             <li><strong>Native elements</strong> — single elements (e.g., gold, copper, sulfur)</li>
         </ul>
-    </div>
+    </section>
 
     <hr>
 
@@ -141,7 +137,7 @@
             <li>High melting points</li>
             <li>Examples: diamond (pure C), quartz (SiO₂)</li>
         </ul>
-    </div>
+    </section>
 
     <hr>
 
@@ -164,7 +160,7 @@
         <p>
             Magnesium and iron can substitute for each other, creating a continuous range of compositions.
         </p>
-    </div>
+    </section>
 
     <hr>
 
@@ -186,7 +182,7 @@
             Because color can vary, it is usually less reliable than other properties, 
             but knowing the chemistry behind it can still help in competition.
         </p>
-    </div>
+    </section>
 
     <hr>
 
@@ -205,28 +201,22 @@
             <li><strong>Calcite</strong> — strong fizz in cold, dilute HCl.</li>
             <li><strong>Dolomite</strong> — weak fizz, stronger when powdered or warmed.</li>
         </ul>
-    </div>
+    </section>
 
     <hr>
 
     <!-- SECTION 8: VOCABULARY -->
     <section>
-        <h2>Vocabulary</h2>
-        <ul id="vocab-list"></ul>
-
-        <script>
-        const vocab_3 = [
-            { term: "Rock Formation", def: "Processes by which rocks form: solidification of magma, lithification of sediments, or metamorphism of existing rocks." },
-            { term: "Igneous", def: "Rocks formed by cooling and solidification of magma or lava; textures reflect cooling history." },
-            { term: "Sedimentary", def: "Rocks formed from accumulation, compaction, and cementation of sediments or by chemical/biochemical precipitation." },
-            { term: "Metamorphic", def: "Rocks altered in the solid state by heat, pressure, and chemically active fluids without melting." },
-            { term: "Texture", def: "The size, shape, and arrangement of grains or crystals in a rock (e.g., phaneritic, aphanitic, foliated)." },
-            { term: "Grain Size", def: "Measurement of individual particle size in clastic rocks (e.g., clay, silt, sand, gravel) or crystal size in igneous rocks." },
-            { term: "Phaneritic", def: "Coarse‑grained igneous texture with crystals large enough to see with the naked eye." },
-            { term: "Aphanitic", def: "Fine‑grained igneous texture with crystals too small to see unaided." }
-        ];
-        </script>
-    </div>
+        <h2>8. Key Vocabulary</h2>
+        <ul>
+            <li><strong>Chemical Formula</strong> — symbolic representation of a mineral’s composition.</li>
+            <li><strong>Silicate</strong> — mineral containing silicon and oxygen tetrahedra.</li>
+            <li><strong>Non‑Silicate</strong> — mineral group without the silicate tetrahedron.</li>
+            <li><strong>Solid Solution</strong> — continuous range of compositions due to ion substitution.</li>
+            <li><strong>Ionic Bond</strong> — bond between charged ions.</li>
+            <li><strong>Covalent Bond</strong> — bond formed by shared electrons.</li>
+        </ul>
+    </section>
 
     <hr>
 
@@ -239,7 +229,7 @@
             are all testable in Science Olympiad. Understanding these concepts will help you 
             connect physical properties to deeper atomic‑level structure.
         </p>
-    </div>
+    </section>
 
     <hr>
 
@@ -257,7 +247,5 @@
 
 </div>
 
-  <div class="vocab-section" data-lesson="3"></div>
-</div></div>
 </body>
 </html>

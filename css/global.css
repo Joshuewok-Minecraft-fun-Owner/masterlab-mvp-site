@@ -133,309 +133,53 @@ button:hover,
     margin-top: 0;
     color: var(--neon-mint);
 }
-/* Progress + Continue */
-.progress-container {
-    background: var(--card-bg);
-    padding: 20px;
-    border-radius: 12px;
-    border: 1px solid var(--border);
-    margin-bottom: 25px;
-}
 
-.progress-bar {
-    width: 100%;
-    height: 14px;
-    background: #222;
-    border-radius: 8px;
-    overflow: hidden;
-    margin-top: 10px;
-}
-
-.progress-fill {
-    height: 100%;
-    background: var(--neon-mint);
-    width: 0%;
-    transition: width 0.4s ease;
-}
-
-.continue-button {
-    margin-top: 15px;
-    display: inline-block;
-    background: var(--neon-mint);
-    color: #000;
-    padding: 12px 20px;
-    border-radius: 8px;
-    font-weight: 600;
-    text-decoration: none;
-    transition: 0.2s;
-}
-
-.continue-button:hover {
-    background: var(--mint-glaze);
-}
-
-.continue-button.locked {
-    opacity: 0.4;
-    pointer-events: none;
-}
-
-/* Lesson Completed Animation */
-.lesson-card.completed {
-    border-color: var(--neon-mint);
-    box-shadow: 0 0 12px var(--neon-mint);
-    position: relative;
-}
-
-.lesson-card.completed::after {
-    content: "✓";
-    position: absolute;
-    top: 10px;
-    right: 12px;
-    font-size: 22px;
-    color: var(--neon-mint);
-}
-
-/* Dashboard Widget */
-.dashboard-widget {
-    background: var(--card-bg);
-    padding: 20px;
-    border-radius: 12px;
-    border: 1px solid var(--border);
-    margin-bottom: 25px;
-}
-
-.dashboard-widget h3 {
-    margin-top: 0;
-    color: var(--mint-glaze);
-}
-
-.dashboard-stat {
-    font-size: 20px;
-    margin: 8px 0;
-}
-
-/* Streak Display */
-.streak {
-    font-size: 18px;
-    color: var(--neon-mint);
-    font-weight: 600;
-}
-
-/* Course Completion Animation */
-@keyframes courseCompletePulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-    100% { transform: scale(1); }
-}
-
-.course-complete {
-    animation: courseCompletePulse 1.2s infinite;
-    border-color: var(--neon-mint);
-}
-
-/* Smooth hover transitions for all cards */
-.lesson-card {
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.lesson-card:hover:not(.locked) {
-    transform: translateY(-4px);
-    box-shadow: 0 6px 14px rgba(0,0,0,0.35);
-}
-
-/* XP Coin Spin Animation */
-@keyframes coinSpin {
-    0% { transform: rotateY(0deg); }
-    100% { transform: rotateY(360deg); }
-}
-
-.xp-coin {
-    display: inline-block;
-    animation: coinSpin 1s linear;
-}
-
-/* Level-Up Burst */
-@keyframes levelBurst {
-    0% { transform: scale(1); opacity: 1; }
-    100% { transform: scale(2); opacity: 0; }
-}
-
-.level-up-burst {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    font-size: 40px;
-    color: var(--neon-mint);
-    transform: translate(-50%, -50%);
-    animation: levelBurst 0.8s ease-out;
-    pointer-events: none;
-}
-
-/* Streak Reward Glow */
-.streak-reward {
-    animation: pulseGlow 1.2s infinite;
-}
-
-@keyframes pulseGlow {
-    0% { text-shadow: 0 0 4px var(--neon-mint); }
-    50% { text-shadow: 0 0 12px var(--neon-mint); }
-    100% { text-shadow: 0 0 4px var(--neon-mint); }
-}
-
-/* Certificate Page Styling */
-.certificate {
-    background: white;
-    padding: 40px;
-    border-radius: 12px;
-    text-align: center;
-    border: 4px solid var(--neon-mint);
-    width: 80%;
-    margin: 40px auto;
-    font-family: 'Inter', sans-serif;
-}
-
-.certificate h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
-}
-
-.certificate h2 {
-    font-size: 28px;
-    margin-bottom: 10px;
-}
-/* Clear Button (Danger Style) */
-.clear-button {
-    display: inline-block;
-    background: var(--danger);
-    color: white;
-    padding: 12px 20px;
-    border-radius: 8px;
-    border: none;
-    cursor: pointer;
-    font-weight: 600;
-    transition: 0.2s;
-    text-decoration: none;
-}
-
-.clear-button:hover {
-    background: #ff5555;
-    box-shadow: 0 4px 8px rgba(255, 107, 107, 0.3);
-}
-
-.clear-button:active {
-    transform: scale(0.98);
-}
-
-/* MasterLab Logo Header */
-.ml-header {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-.ml-logo {
-    width: 110px;
-    height: auto;
-    filter: drop-shadow(0 0 6px var(--neon-mint));
-}
-
-
-/* ============================================================
-   MASTERLAB BLOCK + AUDIO LAYOUT
-   ============================================================ */
-
-.lesson-blocks {
-  margin-top: 1.5rem;
-}
-
-.lesson-block {
-  display: none;
-}
-
-.lesson-block-header {
-  margin-bottom: 1rem;
-}
-
-.lesson-audio {
-  width: 100%;
-  margin-top: 0.5rem;
-}
-
-.lesson-block-nav {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 1.5rem;
-}
-
-.lesson-block-nav button {
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-}
-
-/* === MasterLab Audio Panel === */
-#ml-audio-panel {
+/* === GLOBAL MASTERLAB HEADER === */
+#ml-global-header {
   position: sticky;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #111;
+  top: 0;
+  width: 100%;
+  height: 64px;
+  background: #0d0d0d;
   color: #fff;
-  padding: 8px 12px;
   display: flex;
-  flex-direction: column;
-  gap: 4px;
-  z-index: 1000;
-}
-#ml-audio-header {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
-  font-size: 0.9rem;
+  justify-content: space-between;
+  padding: 0 16px;
+  z-index: 9998;
+  border-bottom: 1px solid #222;
 }
-#ml-audio-toggle {
+
+#ml-header-left {
+  display: flex;
+  align-items: center;
+}
+
+#ml-header-logo {
+  height: 48px;
+  filter: drop-shadow(0 0 4px rgba(255,255,255,0.4));
+  pointer-events: none;
+}
+
+#ml-header-center {
+  flex: 1;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #e6e6e6;
+  text-shadow: 0 0 4px rgba(0,0,0,0.6);
+}
+
+#ml-header-right button {
   background: transparent;
   border: 1px solid #fff;
   color: #fff;
-  padding: 2px 8px;
+  padding: 4px 10px;
+  border-radius: 6px;
   cursor: pointer;
-  font-size: 0.8rem;
-}
-#ml-audio-player {
-  width: 100%;
-}
-
-/* === MasterLab Audio Panel (Everfi Style) === */
-#ml-audio-panel {
-  position: fixed;
-  top: 12px;
-  right: 12px;
-  background: #111;
-  color: #fff;
-  padding: 8px 12px;
-  border-radius: 8px;
-  z-index: 9999;
-  width: 260px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.35);
-}
-
-#ml-audio-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   font-size: 0.85rem;
-  margin-bottom: 4px;
 }
 
-#ml-audio-toggle {
-  background: transparent;
-  border: 1px solid #fff;
-  color: #fff;
-  padding: 2px 8px;
-  cursor: pointer;
-  font-size: 0.75rem;
-  border-radius: 4px;
-}
-
-#ml-audio-player {
-  width: 100%;
+body {
+  padding-top: 64px;
 }

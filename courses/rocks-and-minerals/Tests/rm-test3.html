@@ -1,5 +1,14 @@
 <script src="../rm-lock.js"></script>
 <script>
+(async () => {
+    await MLTestEngine.startTest({
+        lesson: 3,
+        course: "rocks-and-minerals"
+    });
+})();
+</script>
+
+<script>
 </script>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,22 +22,13 @@
     <link rel="stylesheet" href="../rm-style.css">
 
     <script src="/masterlab-mvp-site/js/rm-lock.js"></script>
-    <script src="/masterlab-mvp-site/js/ml-xp.js"></script>
     <script src="/masterlab-mvp-site/js/ml-test-engine.js"></script>
-    <script src="/masterlab-mvp-site/js/ml-relearn-test-engine.js"></script>
     <script src="/masterlab-mvp-site/js/test.js"></script>
-    <script>
-(async () => {
-    await MLTestEngine.startTest({
-        lesson: LESSON_NUMBER,
-        course: COURSE_NAME
-    });
-})();
-</script>
-
 </head>
 
 <body>
+  <script src="/js/global-header.js"></script>
+  <!--#include virtual="/components/global-header.html" -->
 
 <script>
     const lesson = 3;  
@@ -41,28 +41,12 @@
     <p class="lesson-subtitle">MasterLab Rocks & Minerals (Division C)</p>
     <hr>
 
-    <div id="test-container"></div>
+    <form id="test-form">
+        <div id="test-container"></div>
 
-    <script src="/masterlab-mvp-site/js/ml-test-engine.js"></script>
-    <script src="/masterlab-mvp-site/js/ml-relearn-test-engine.js"></script>
-    <script>
-        MLTestEngine.startTest({
-            lesson: 3,
-            course: "rocks-and-minerals",
-            questions: [
-                { q: "What process forms igneous rocks?", a: ["Cooling and solidification of magma/lava","Compression of sediments","Heat and pressure","Metamorphism"], c: 0 },
-                { q: "What is grain size?", a: ["Size of particles in a rock","Color variation","Mineral composition","Luster"], c: 0 },
-                { q: "Which rock is formed by heat and pressure?", a: ["Metamorphic","Igneous","Sedimentary","Clastic"], c: 0 },
-                { q: "What does 'extrusive' mean?", a: ["Lava solidifies at the surface","Cools underground","Formed by compaction","Metamorphosed"], c: 0 },
-                { q: "What is porphyritic texture?", a: ["Large crystals in a fine matrix","Uniform crystals","Glassy texture","Layered bedding"], c: 0 },
-                { q: "Which environment makes chemical sedimentary rocks?", a: ["Evaporation and precipitation","High-grade metamorphism","Volcanic eruption","Glacial deposition"], c: 0 },
-                { q: "What controls crystal size in igneous rocks?", a: ["Cooling rate","Pressure only","Color only","Composition only"], c: 0 },
-                { q: "Which rock commonly has vesicles (holes)?", a: ["Volcanic igneous rock","Marble","Shale","Limestone"], c: 0 },
-                { q: "What indicates rapid cooling of magma?", a: ["Fine-grained texture","Coarse crystals","Banded foliation","Large crystals"], c: 0 },
-                { q: "Which term refers to sediment settling out of water?", a: ["Deposition","Erosion","Weathering","Transport"], c: 0 }
-            ]
-        });
-    </script>
+        <button type="button" id="submit-btn">Submit Test</button>
+        <button type="button" id="retry-btn" style="display:none;">Retry Test</button>
+    </form>
 
     <div id="score-container"></div>
 
@@ -147,9 +131,3 @@
 </script>
 
 
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    MLTestEngine.loadTest("rocks-and-minerals", 3);
-  });
-</script>

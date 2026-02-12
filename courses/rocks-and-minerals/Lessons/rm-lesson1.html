@@ -10,15 +10,15 @@
     <link rel="stylesheet" href="../rm-style.css">
 
     <script src="../rm-lock.js"></script>
-    <script src="/masterlab-mvp-site/js/ml-xp.js"></script>
-
+    <script src="../rm-lock.js"></script>
+<script>
+    RMLock.enforceLessonLock(1); // change number per lesson
+</script>
 </head>
 
 <body>
-
-<div class="ml-header">
-    <img src="/masterlab-mvp-site/assets/images/Copilot_20260205_213356.png" alt="MasterLab Logo" class="ml-logo">
-</div>
+  <script src="/js/global-header.js"></script>
+  <!--#include virtual="/components/global-header.html" -->
 
 <script>
     // Enforce lock for Lesson 1
@@ -26,19 +26,11 @@
 
     // Award XP if first time viewing
     if (!localStorage.getItem("rm_lesson1_xp")) {
-        addXP(50);
         RMRewards.rewardLessonXP(1);
     }
 </script>
 
-<div class="lesson-blocks" data-course="rocks-and-minerals" data-lesson="1">
-  <div class="lesson-block-header">
-    <h2 class="lesson-block-title">Part 1</h2>
-    <p class="lesson-block-progress">Block 1 of 1</p>
-    <audio controls class="lesson-audio"></audio>
-  </div>
-  <div class="lesson-block" data-block="1" data-title="Part 1">
-    <div class="lesson-container">
+<div class="lesson-container">
 
     <h1 class="lesson-title">Lesson 1 — What Is a Mineral?</h1>
     <p class="lesson-subtitle">MasterLab Rocks & Minerals (Division C)</p>
@@ -58,7 +50,7 @@
             In this lesson, you’ll learn the **five criteria** that define a mineral, explore common 
             misconceptions, and build the foundation for all future lessons.
         </p>
-    </div>
+    </section>
 
     <hr>
 
@@ -93,7 +85,7 @@
 
         <p><strong>5. Ordered Internal Structure</strong><br>
         This is what gives minerals their crystal shapes, cleavage, and many physical properties.</p>
-    </div>
+    </section>
 
     <hr>
 
@@ -116,28 +108,13 @@
         <p>
             These appear constantly in competitions — knowing why they are not minerals gives you a huge advantage.
         </p>
-    </div>
+    </section>
 
     <hr>
 
-    <!-- SECTION 4: VOCABULARY -->
-    <section>
-        <h2>Vocabulary</h2>
-        <ul id="vocab-list"></ul>
+    <h2>Vocabulary</h2>
+<div id="lesson-vocab"></div>
 
-        <script>
-        const vocab_1 = [
-            { term: "Mineral", def: "A naturally occurring, inorganic solid with a definite chemical composition and ordered internal structure." },
-            { term: "Crystalline", def: "Having atoms arranged in a regular, repeating pattern that produces crystals." },
-            { term: "Amorphous", def: "Lacking an ordered internal crystal structure (e.g., glassy materials like obsidian or some mineraloids)." },
-            { term: "Inorganic", def: "Not produced by living organisms; excludes biologically derived substances like pearls or coal." },
-            { term: "Chemical Composition", def: "The specific elements and their proportions that make up a mineral, often written as a chemical formula." },
-            { term: "Mineraloid", def: "A mineral-like substance that lacks one or more criteria of a true mineral (e.g., opal lacks true crystallinity)." },
-            { term: "Naturally Occurring", def: "Formed by natural geologic processes rather than manufactured by humans." },
-            { term: "Solid", def: "A state of matter required for a true mineral at standard temperature and pressure." }
-        ];
-        </script>
-    </div>
 
     <hr>
 
@@ -145,8 +122,14 @@
     <section>
         <h2>5. Summary</h2>
         <p>
-            A strong grasp of the five criteria for minerals, and how minerals differ from mineraloids and other non‑minerals, will make identification and classification straightforward in competition.
+            A mineral is a naturally occurring, inorganic solid with a definite chemical composition and an 
+            ordered internal structure. If a substance fails even one of these criteria, it is not a mineral.
         </p>
+        <p>
+            This definition is the foundation for everything else in Rocks & Minerals — identification, 
+            classification, and competition strategy.
+        </p>
+    </section>
 
     <hr>
 
@@ -164,9 +147,14 @@
 
 </div>
 
-  <div class="vocab-section" data-lesson="1"></div>
-</div></div>
-  <div class="vocab-section" data-lesson="1"></div>
-</div></div>
+<script src="/js/ml-browser-ai.js"></script>
+<script src="/js/ml-vocab-engine.js"></script>
+
+<script>
+    // Load vocab for this lesson
+    MLVocabEngine.loadVocab(1);  // change 1 → lesson number
+</script>
+
+
 </body>
 </html>

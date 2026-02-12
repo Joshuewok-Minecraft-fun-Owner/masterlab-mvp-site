@@ -10,14 +10,11 @@
     <link rel="stylesheet" href="../rm-style.css">
 
     <script src="../rm-lock.js"></script>
-    <script src="/masterlab-mvp-site/js/ml-xp.js"></script>
 </head>
 
 <body>
-
-<div class="ml-header">
-    <img src="/masterlab-mvp-site/assets/images/Copilot_20260205_213356.png" alt="MasterLab Logo" class="ml-logo">
-</div>
+  <script src="/js/global-header.js"></script>
+  <!--#include virtual="/components/global-header.html" -->
 
 <script>
     // Enforce lock for Lesson 8
@@ -25,12 +22,11 @@
 
     // Award XP if first time viewing
     if (!localStorage.getItem("rm_lesson8_xp")) {
-        addXP(50);
         RMRewards.rewardLessonXP(8);
     }
 </script>
 
-<div class="lesson-blocks" data-course="rocks-and-minerals" data-lesson="8">  <div class="lesson-block-header">    <h2 class="lesson-block-title">Part 1</h2>    <p class="lesson-block-progress">Block 1 of 1</p>    <audio controls class="lesson-audio"></audio>  </div>  <div class="lesson-block" data-block="1" data-title="Part 1">    <div class="lesson-container">
+<div class="lesson-container">
 
     <h1 class="lesson-title">Lesson 8 — Earth Materials: Minerals, Rocks & Resources</h1>
     <p class="lesson-subtitle">MasterLab Rocks & Minerals (Division C)</p>
@@ -46,7 +42,7 @@
             is essential for both geology and Science Olympiad. This lesson explores Earth materials 
             from a practical perspective: what they are, how they form, and how humans use them.
         </p>
-    </div>
+    </section>
 
     <hr>
 
@@ -73,7 +69,7 @@
             Many minerals are considered <strong>critical resources</strong> due to their importance 
             in technology and limited supply.
         </p>
-    </div>
+    </section>
 
     <hr>
 
@@ -92,7 +88,7 @@
             <li><strong>Coal</strong> — energy resource (sedimentary organic rock).</li>
             <li><strong>Shale</strong> — source rock for oil and natural gas.</li>
         </ul>
-    </div>
+    </section>
 
     <hr>
 
@@ -115,7 +111,7 @@
         <p>
             Ore minerals are often identified by streak, density, and luster.
         </p>
-    </div>
+    </section>
 
     <hr>
 
@@ -137,7 +133,7 @@
             These resources form under specific geological conditions, often involving heat, pressure, 
             and long periods of burial.
         </p>
-    </div>
+    </section>
 
     <hr>
 
@@ -153,7 +149,7 @@
             <li><strong>Metamorphic recrystallization</strong> — garnet, kyanite.</li>
             <li><strong>Biological processes</strong> — calcite in shells, apatite in bones.</li>
         </ul>
-    </div>
+    </section>
 
     <hr>
 
@@ -172,28 +168,21 @@
         <p>
             These topics sometimes appear in Science Olympiad interpretation questions.
         </p>
-    </div>
+    </section>
 
     <hr>
 
     <!-- SECTION 8: VOCABULARY -->
     <section>
-        <h2>Vocabulary</h2>
-        <ul id="vocab-list"></ul>
-
-        <script>
-        const vocab_8 = [
-            { term: "Mineral Deposit", def: "A natural concentration of one or more minerals that is potentially extractable for economic use." },
-            { term: "Ore", def: "A rock containing valuable minerals in concentrations high enough to be mined profitably." },
-            { term: "Mineral Resource", def: "A concentration of material of economic interest, whether currently exploitable or not." },
-            { term: "Hydrothermal", def: "Related to hot, mineral‑rich fluids that can transport and deposit ore minerals in veins and deposits." },
-            { term: "Exploitation", def: "The process of extracting and processing mineral resources for human use." },
-            { term: "Placer Deposit", def: "Concentration of heavy minerals like gold in stream sediments formed by gravity sorting." },
-            { term: "Porphyry Deposit", def: "A large, low‑grade hydrothermal ore deposit commonly containing copper and associated metals." },
-            { term: "Reserve", def: "That portion of a resource that is economically mineable under current conditions." }
-        ];
-        </script>
-    </div>
+        <h2>8. Key Vocabulary</h2>
+        <ul>
+            <li><strong>Ore</strong> — rock containing valuable minerals.</li>
+            <li><strong>Resource</strong> — material used by humans.</li>
+            <li><strong>Critical mineral</strong> — essential and limited mineral resource.</li>
+            <li><strong>Renewable resource</strong> — replenishes naturally.</li>
+            <li><strong>Nonrenewable resource</strong> — limited supply.</li>
+        </ul>
+    </section>
 
     <hr>
 
@@ -205,7 +194,7 @@
             Understanding how they form, how they are used, and how they fit into the rock cycle 
             helps you answer both identification and interpretation questions in Science Olympiad.
         </p>
-    </div>
+    </section>
 
     <hr>
 
@@ -223,7 +212,5 @@
 
 </div>
 
-  <div class="vocab-section" data-lesson="8"></div>
-</div></div>
 </body>
 </html>

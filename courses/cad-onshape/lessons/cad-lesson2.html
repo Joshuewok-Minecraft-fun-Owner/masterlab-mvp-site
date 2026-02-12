@@ -6,29 +6,25 @@
     <link rel="stylesheet" href="/masterlab-mvp-site/css/global.css">
 </head>
 <body>
-
-<div class="ml-header">
-    <img src="/masterlab-mvp-site/assets/images/Copilot_20260205_213356.png" alt="MasterLab Logo" class="ml-logo">
-</div>
+  <script src="/js/global-header.js"></script>
+  <!--#include virtual="/components/global-header.html" -->
 
 <h1>CAD Lesson 2 – Design Intent & Parametric Modeling</h1>
-<div class="lesson-block" data-block="1" data-title="CAD Lesson 2 – Design Intent & Parametric Modeling">
-CAD Lesson 2 – Design Intent & Parametric Modeling
 
 <p>
     Design intent is about building models that update correctly when dimensions change.
     In Onshape, this means using constraints and dimensions that reflect how the part
     should behave, not just how it looks once.
 </p>
-</div>
-<div class="lesson-block" data-block="2" data-title="What is Design Intent?">
+
+<h2>What is Design Intent?</h2>
 <ul>
     <li>Thinking about how a part might change in the future.</li>
     <li>Using symmetry, equal constraints, and patterns instead of manual duplication.</li>
     <li>Placing dimensions on critical features, not random edges.</li>
 </ul>
-</div>
-<div class="lesson-block" data-block="3" data-title="Parametric Modeling">
+
+<h2>Parametric Modeling</h2>
 <p>
     Parametric models are driven by parameters (dimensions, relations, variables).
     Changing a dimension should update the model predictably.
@@ -38,24 +34,21 @@ CAD Lesson 2 – Design Intent & Parametric Modeling
     <li>Use <strong>Symmetric</strong> to keep geometry centered.</li>
     <li>Use <strong>Patterns</strong> instead of copying features manually.</li>
 </ul>
-</div>
-<div class="lesson-block" data-block="4" data-title="Best Practices">
+
+<h2>Best Practices</h2>
 <ul>
     <li>Dimension to centerlines and reference geometry when possible.</li>
     <li>Avoid over‑defining sketches with redundant dimensions.</li>
     <li>Think: “If this dimension changes, does the model still make sense?”</li>
 </ul>
-</div>
-<div class="lesson-block" data-block="5" data-title="Quick Check">
+
+<h2>Quick Check</h2>
 <ol>
     <li>What is design intent?</li>
     <li>Why is parametric modeling powerful?</li>
     <li>When should you use patterns instead of copying features?</li>
 </ol>
-</div>
-<div class="lesson-block" data-block="6" data-title="Vocabulary">
-  <div class="vocab-section" data-lesson="2"></div>
-</div>
+
 <div id="relearn-block"></div>
 
 <script src="/masterlab-mvp-site/js/ml-relearn-engine.js"></script>
@@ -64,24 +57,5 @@ CAD Lesson 2 – Design Intent & Parametric Modeling
     MLRelearnEngine.renderRelearnBlock(lesson);
 </script>
 
-<script src="/masterlab-mvp-site/js/ml-browser-ai.js"></script>
-<script src="/masterlab-mvp-site/js/ml-lesson-blocks.js"></script>
-<script src="/masterlab-mvp-site/js/ml-vocab-engine.js"></script>
-  <div class="vocab-section" data-lesson="2"></div>
-
-<div id="ml-audio-panel">
-  <div id="ml-audio-header">
-    <span id="ml-audio-section-label"></span>
-    <button id="ml-audio-toggle" type="button">[Audio is ON]</button>
-  </div>
-</div>
-<script src="/masterlab-mvp-site/js/ml-audio-engine.js"></script>
-<script>document.addEventListener("DOMContentLoaded",()=>MLAudioEngine.init({courseId:"cad-onshape"}));</script>
 </body>
 </html>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    MLVocabEngine.loadVocab("cad-onshape", 2);
-  });
-</script>

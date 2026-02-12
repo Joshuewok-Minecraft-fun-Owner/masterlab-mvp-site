@@ -10,14 +10,11 @@
     <link rel="stylesheet" href="../rm-style.css">
 
     <script src="../rm-lock.js"></script>
-    <script src="/masterlab-mvp-site/js/ml-xp.js"></script>
 </head>
 
 <body>
-
-<div class="ml-header">
-    <img src="/masterlab-mvp-site/assets/images/Copilot_20260205_213356.png" alt="MasterLab Logo" class="ml-logo">
-</div>
+  <script src="/js/global-header.js"></script>
+  <!--#include virtual="/components/global-header.html" -->
 
 <script>
     // Enforce lock for Lesson 6
@@ -25,12 +22,11 @@
 
     // Award XP if first time viewing
     if (!localStorage.getItem("rm_lesson6_xp")) {
-        addXP(50);
         RMRewards.rewardLessonXP(6);
     }
 </script>
 
-<div class="lesson-blocks" data-course="rocks-and-minerals" data-lesson="6">  <div class="lesson-block-header">    <h2 class="lesson-block-title">Part 1</h2>    <p class="lesson-block-progress">Block 1 of 1</p>    <audio controls class="lesson-audio"></audio>  </div>  <div class="lesson-block" data-block="1" data-title="Part 1">    <div class="lesson-container">
+<div class="lesson-container">
 
     <h1 class="lesson-title">Lesson 6 — Metamorphic Rocks</h1>
     <p class="lesson-subtitle">MasterLab Rocks & Minerals (Division C)</p>
@@ -46,7 +42,7 @@
             producing new textures and minerals. In Science Olympiad, metamorphic rocks are heavily tested
             because their textures and mineral assemblages reveal the conditions under which they formed.
         </p>
-    </div>
+    </section>
 
     <hr>
 
@@ -64,7 +60,7 @@
         <p>
             These factors work together to transform the parent rock (protolith) into a new metamorphic rock.
         </p>
-    </div>
+    </section>
 
     <hr>
 
@@ -87,7 +83,7 @@
         <p>
             This sequence is one of the most important metamorphic concepts in Science Olympiad.
         </p>
-    </div>
+    </section>
 
     <hr>
 
@@ -106,7 +102,7 @@
             <li><strong>Anthracite Coal</strong> — shiny, hard coal; highest grade of coal metamorphism.</li>
             <li><strong>Hornfels</strong> — fine‑grained; forms in contact metamorphism zones.</li>
         </ul>
-    </div>
+    </section>
 
     <hr>
 
@@ -134,7 +130,7 @@
             <li>Hot, mineral‑rich fluids alter rock chemistry.</li>
             <li>Common near mid‑ocean ridges and volcanic systems.</li>
         </ul>
-    </div>
+    </section>
 
     <hr>
 
@@ -155,7 +151,7 @@
             <li><strong>Kyanite</strong> — high pressure.</li>
             <li><strong>Sillimanite</strong> — high temperature.</li>
         </ul>
-    </div>
+    </section>
 
     <hr>
 
@@ -173,28 +169,22 @@
             <li><strong>Shale → Slate → Phyllite → Schist → Gneiss</strong></li>
             <li><strong>Bituminous Coal → Anthracite Coal</strong></li>
         </ul>
-    </div>
+    </section>
 
     <hr>
 
     <!-- SECTION 8: VOCABULARY -->
     <section>
-        <h2>Vocabulary</h2>
-        <ul id="vocab-list"></ul>
-
-        <script>
-        const vocab_6 = [
-            { term: "Geological Processes", def: "Natural Earth processes such as weathering, erosion, deposition, metamorphism, and plate tectonics that shape the crust." },
-            { term: "Weathering", def: "The breakdown of rocks at Earth's surface by physical, chemical, or biological means." },
-            { term: "Erosion", def: "The movement of weathered material by agents like water, wind, ice, or gravity." },
-            { term: "Deposition", def: "The settling and accumulation of transported sediments in a new location." },
-            { term: "Compaction", def: "The process by which overlying pressure reduces pore space and squeezes sediments together." },
-            { term: "Cementation", def: "Mineral precipitation that binds sediment grains together to form rock (part of lithification)." },
-            { term: "Lithification", def: "The combined processes of compaction and cementation that turn sediment into sedimentary rock." },
-            { term: "Transport", def: "The movement of sediment from its source to the site of deposition by water, wind, or ice." }
-        ];
-        </script>
-    </div>
+        <h2>8. Key Vocabulary</h2>
+        <ul>
+            <li><strong>Metamorphism</strong> — alteration of rock by heat, pressure, or fluids.</li>
+            <li><strong>Foliation</strong> — alignment of minerals into layers.</li>
+            <li><strong>Protolith</strong> — original rock before metamorphism.</li>
+            <li><strong>Index Mineral</strong> — mineral indicating metamorphic grade.</li>
+            <li><strong>Regional Metamorphism</strong> — large‑scale metamorphism during mountain building.</li>
+            <li><strong>Contact Metamorphism</strong> — metamorphism caused by heat from magma.</li>
+        </ul>
+    </section>
 
     <hr>
 
@@ -207,7 +197,7 @@
             that do not align. Understanding metamorphic textures, index minerals, and protoliths
             allows you to quickly identify metamorphic rocks in competition.
         </p>
-    </div>
+    </section>
 
     <hr>
 
@@ -225,7 +215,5 @@
 
 </div>
 
-  <div class="vocab-section" data-lesson="6"></div>
-</div></div>
 </body>
 </html>

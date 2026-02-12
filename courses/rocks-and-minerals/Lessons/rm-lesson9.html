@@ -10,14 +10,11 @@
     <link rel="stylesheet" href="../rm-style.css">
 
     <script src="../rm-lock.js"></script>
-    <script src="/masterlab-mvp-site/js/ml-xp.js"></script>
 </head>
 
 <body>
-
-<div class="ml-header">
-    <img src="/masterlab-mvp-site/assets/images/Copilot_20260205_213356.png" alt="MasterLab Logo" class="ml-logo">
-</div>
+  <script src="/js/global-header.js"></script>
+  <!--#include virtual="/components/global-header.html" -->
 
 <script>
     // Enforce lock for Lesson 9
@@ -25,12 +22,11 @@
 
     // Award XP if first time viewing
     if (!localStorage.getItem("rm_lesson9_xp")) {
-        addXP(50);
         RMRewards.rewardLessonXP(9);
     }
 </script>
 
-<div class="lesson-blocks" data-course="rocks-and-minerals" data-lesson="9">  <div class="lesson-block-header">    <h2 class="lesson-block-title">Part 1</h2>    <p class="lesson-block-progress">Block 1 of 1</p>    <audio controls class="lesson-audio"></audio>  </div>  <div class="lesson-block" data-block="1" data-title="Part 1">    <div class="lesson-container">
+<div class="lesson-container">
 
     <h1 class="lesson-title">Lesson 9 — Fossils, Geologic Time & Earth History</h1>
     <p class="lesson-subtitle">MasterLab Rocks & Minerals (Division C)</p>
@@ -46,7 +42,7 @@
             and major events in Earth history. This lesson gives you the essential background needed 
             to understand how rocks record time.
         </p>
-    </div>
+    </section>
 
     <hr>
 
@@ -66,7 +62,7 @@
             <li><strong>Casts & molds</strong> — impressions left in sediment.</li>
             <li><strong>Amber fossils</strong> — organisms trapped in tree resin.</li>
         </ul>
-    </div>
+    </section>
 
     <hr>
 
@@ -85,7 +81,7 @@
         <p>
             Most fossils are found in <strong>sedimentary rocks</strong>.
         </p>
-    </div>
+    </section>
 
     <hr>
 
@@ -108,7 +104,7 @@
         <p>
             Many Science Olympiad questions reference these eras.
         </p>
-    </div>
+    </section>
 
     <hr>
 
@@ -126,7 +122,7 @@
             <li><strong>Cross‑cutting relationships</strong> — intrusions/faults are younger.</li>
             <li><strong>Inclusions</strong> — fragments inside a rock are older than the rock itself.</li>
         </ul>
-    </div>
+    </section>
 
     <hr>
 
@@ -147,7 +143,7 @@
         <p>
             Absolute dating is often used alongside relative dating.
         </p>
-    </div>
+    </section>
 
     <hr>
 
@@ -171,7 +167,7 @@
             <li><strong>Ammonites</strong> — Mesozoic.</li>
             <li><strong>Foraminifera</strong> — various ages.</li>
         </ul>
-    </div>
+    </section>
 
     <hr>
 
@@ -190,28 +186,21 @@
             <li><strong>Formation of Pangaea</strong> — supercontinent assembly.</li>
             <li><strong>Rise of mammals</strong> — Cenozoic dominance.</li>
         </ul>
-    </div>
+    </section>
 
     <hr>
 
     <!-- SECTION 9: VOCABULARY -->
     <section>
-        <h2>Vocabulary</h2>
-        <ul id="vocab-list"></ul>
-
-        <script>
-        const vocab_9 = [
-            { term: "Economic Geology", def: "The study of materials of geological origin that can be used for economic and/or industrial purposes." },
-            { term: "Gemstone", def: "A mineral or rock valued for its beauty and rarity, often cut and polished for jewelry (e.g., diamond, ruby)." },
-            { term: "Industrial Mineral", def: "A non‑metallic mineral used in industry for its physical or chemical properties (e.g., gypsum, talc)." },
-            { term: "Recycling", def: "The recovery and reuse of materials to reduce demand for newly mined resources and environmental impact." },
-            { term: "Sustainability", def: "Managing resources to meet present needs without compromising future generations' ability to meet theirs." },
-            { term: "Conflict Mineral", def: "A mineral whose extraction and trade contribute to armed conflict and human rights abuses in producing regions." },
-            { term: "Byproduct", def: "A secondary mineral or material produced during the processing of a primary ore." },
-            { term: "Value Chain", def: "The full lifecycle of a mineral product from extraction through processing, manufacturing, and end use." }
-        ];
-        </script>
-    </div>
+        <h2>9. Key Vocabulary</h2>
+        <ul>
+            <li><strong>Fossil</strong> — preserved remains or traces of life.</li>
+            <li><strong>Relative dating</strong> — ordering events without exact ages.</li>
+            <li><strong>Absolute dating</strong> — numerical ages using radioactive decay.</li>
+            <li><strong>Index fossil</strong> — fossil used to correlate rock layers.</li>
+            <li><strong>Geologic time scale</strong> — timeline of Earth’s history.</li>
+        </ul>
+    </section>
 
     <hr>
 
@@ -224,7 +213,7 @@
             allow correlation across regions. These concepts often appear in Science Olympiad tests 
             and help connect rock identification to larger geological processes.
         </p>
-    </div>
+    </section>
 
     <hr>
 
@@ -242,7 +231,5 @@
 
 </div>
 
-  <div class="vocab-section" data-lesson="9"></div>
-</div></div>
 </body>
 </html>

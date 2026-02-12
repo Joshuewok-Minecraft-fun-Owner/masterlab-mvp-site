@@ -99,12 +99,3 @@ const MLRelearnEngine = {
         }
     }
 };
-function getAdaptiveDifficulty(prefix, lessonNumber) {
-    const attempts = parseInt(localStorage.getItem(`${prefix}_lesson${lessonNumber}_attempts`) || "0");
-
-    if (attempts === 0) return "normal";
-    if (attempts === 1) return "reinforce";
-    return "mastery";
-}
-
-window.MLAdaptive = { getAdaptiveDifficulty };

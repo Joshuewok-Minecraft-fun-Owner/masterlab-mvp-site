@@ -10,14 +10,11 @@
     <link rel="stylesheet" href="../rm-style.css">
 
     <script src="../rm-lock.js"></script>
-    <script src="/masterlab-mvp-site/js/ml-xp.js"></script>
 </head>
 
 <body>
-
-<div class="ml-header">
-    <img src="/masterlab-mvp-site/assets/images/Copilot_20260205_213356.png" alt="MasterLab Logo" class="ml-logo">
-</div>
+  <script src="/js/global-header.js"></script>
+  <!--#include virtual="/components/global-header.html" -->
 
 <script>
     // Enforce lock for Lesson 7
@@ -25,12 +22,11 @@
 
     // Award XP if first time viewing
     if (!localStorage.getItem("rm_lesson7_xp")) {
-        addXP(50);
         RMRewards.rewardLessonXP(7);
     }
 </script>
 
-<div class="lesson-blocks" data-course="rocks-and-minerals" data-lesson="7">  <div class="lesson-block-header">    <h2 class="lesson-block-title">Part 1</h2>    <p class="lesson-block-progress">Block 1 of 1</p>    <audio controls class="lesson-audio"></audio>  </div>  <div class="lesson-block" data-block="1" data-title="Part 1">    <div class="lesson-container">
+<div class="lesson-container">
 
     <h1 class="lesson-title">Lesson 7 — The Rock Cycle & Geological Processes</h1>
     <p class="lesson-subtitle">MasterLab Rocks & Minerals (Division C)</p>
@@ -47,7 +43,7 @@
             these processes is essential for interpreting Earth’s history and answering 
             process‑based questions in Science Olympiad.
         </p>
-    </div>
+    </section>
 
     <hr>
 
@@ -65,7 +61,7 @@
         <p>
             The rock cycle explains how each type can transform into another.
         </p>
-    </div>
+    </section>
 
     <hr>
 
@@ -87,7 +83,7 @@
         <p>
             Weathering and erosion are the first steps in forming sedimentary rocks.
         </p>
-    </div>
+    </section>
 
     <hr>
 
@@ -106,7 +102,7 @@
             <li><strong>Quartz</strong></li>
             <li><strong>Iron oxides</strong></li>
         </ul>
-    </div>
+    </section>
 
     <hr>
 
@@ -126,7 +122,7 @@
             <li><strong>Contact metamorphism</strong> — heat from magma.</li>
             <li><strong>Regional metamorphism</strong> — pressure from mountain building.</li>
         </ul>
-    </div>
+    </section>
 
     <hr>
 
@@ -144,7 +140,7 @@
             <li><strong>Fast cooling</strong> → extrusive rocks (basalt, rhyolite).</li>
             <li><strong>Very rapid cooling</strong> → glassy rocks (obsidian).</li>
         </ul>
-    </div>
+    </section>
 
     <hr>
 
@@ -167,7 +163,7 @@
         <p>
             These transformations are frequently tested in Science Olympiad.
         </p>
-    </div>
+    </section>
 
     <hr>
 
@@ -183,28 +179,22 @@
             <li><strong>Uplift</strong> — exposes rocks to weathering.</li>
             <li><strong>Subduction</strong> — recycles rocks into the mantle.</li>
         </ul>
-    </div>
+    </section>
 
     <hr>
 
     <!-- SECTION 9: VOCABULARY -->
     <section>
-        <h2>Vocabulary</h2>
-        <ul id="vocab-list"></ul>
-
-        <script>
-        const vocab_7 = [
-            { term: "Plate Tectonics", def: "The theory describing the movement of Earth's lithospheric plates and the processes at their boundaries." },
-            { term: "Convergent Boundary", def: "A plate boundary where two plates move toward each other, often producing subduction or mountain building." },
-            { term: "Divergent Boundary", def: "A plate boundary where plates move apart, associated with seafloor spreading and rift formation." },
-            { term: "Transform Boundary", def: "A plate boundary where plates slide past each other, producing strike‑slip faults and earthquakes." },
-            { term: "Subduction", def: "The process by which one tectonic plate sinks beneath another into the mantle, often forming volcanic arcs." },
-            { term: "Mid‑Ocean Ridge", def: "An underwater mountain chain formed at divergent boundaries where new oceanic crust is created." },
-            { term: "Volcanism", def: "The eruption of magma at Earth's surface, commonly associated with convergent and divergent boundaries." },
-            { term: "Earthquake", def: "Shaking of the ground caused by sudden release of energy along faults, often at plate boundaries." }
-        ];
-        </script>
-    </div>
+        <h2>9. Key Vocabulary</h2>
+        <ul>
+            <li><strong>Weathering</strong> — breaking down rocks at Earth’s surface.</li>
+            <li><strong>Erosion</strong> — movement of sediment.</li>
+            <li><strong>Deposition</strong> — settling of sediment.</li>
+            <li><strong>Metamorphism</strong> — alteration by heat and pressure.</li>
+            <li><strong>Intrusive</strong> — igneous rock formed underground.</li>
+            <li><strong>Extrusive</strong> — igneous rock formed at the surface.</li>
+        </ul>
+    </section>
 
     <hr>
 
@@ -216,7 +206,7 @@
             transform through geological processes. Understanding these pathways helps you 
             interpret Earth’s history and answer process‑based questions in competition.
         </p>
-    </div>
+    </section>
 
     <hr>
 
@@ -234,7 +224,5 @@
 
 </div>
 
-  <div class="vocab-section" data-lesson="7"></div>
-</div></div>
 </body>
 </html>

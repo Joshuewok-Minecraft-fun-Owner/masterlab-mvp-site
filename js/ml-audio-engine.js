@@ -1,117 +1,61 @@
-const MLAudioEngine = (function () {
+// === MasterLab Audio Engine v4 ===
+// Everfi-style block-based narration system
+
+const MLAudioEngine = (() => {
   let state = {
+    audioOn: true,
+    currentBlock: 1,
     courseId: null,
-    lessonTitle: "",
-    blocks: [],
-    currentIndex: 0,
-    audioOn: true
+    lessonId: null
   };
 
+  const audioEl = document.createElement("audio");
+  audioEl.id = "ml-audio-player";
+  audioEl.controls = true;
+  document.body.appendChild(audioEl);
+
   function init(config) {
-    state.courseId = config.courseId || "course";
-    cacheDOM();
-    collectBlocks();
-    detectLessonTitle();
-    bindEvents();
-    setInitialState();
+    state.courseId = config.courseId || "unknown-course";
+    state.lessonId = config.lessonId || detectLessonId();
+    state.currentBlock = 1;
+    updateToggleLabel();
+    loadAudioForCurrentBlock();
   }
 
-  function cacheDOM() {
-    state.panel = document.getElementById("ml-audio-panel");
-    state.headerLabel = document.getElementById("ml-audio-section-label");
-    state.toggleBtn = document.getElementById("ml-audio-toggle");
-    state.player = document.getElementById("ml-audio-player");
+  function detectLessonId() {
+    const match = window.location.pathname.match(/lesson(\d+)/);
+    return match ? match[1] : "0";
   }
 
-  function collectBlocks() {
-    const nodeList = document.querySelectorAll(".lesson-block[data-block][data-title]");
-    state.blocks = Array.from(nodeList).sort((a, b) => {
-      const aNum = parseInt(a.getAttribute("data-block"), 10) || 0;
-      const bNum = parseInt(b.getAttribute("data-block"), 10) || 0;
-      return aNum - bNum;
-    });
-  }
-
-  function detectLessonTitle() {
-    const h1 = document.querySelector("h1");
-    state.lessonTitle = h1 ? h1.textContent.trim() : "Lesson";
-  }
-
-  function bindEvents() {
-    if (state.toggleBtn) {
-      state.toggleBtn.addEventListener("click", toggleAudio);
+  function loadAudioForCurrentBlock(forcePlay = false) {
+    if (!state.audioOn) {
+      audioEl.pause();
+      return;
     }
 
-    // Listen for block navigation events
-    document.addEventListener("MLBlockChange", function (e) {
-      const index = e.detail && typeof e.detail.index === "number"
-        ? e.detail.index
-        : 0;
-      goToBlock(index);
-    });
-  }
+    const src = `/audio/${state.courseId}/lesson${state.lessonId}-block${state.currentBlock}.mp3`;
+    audioEl.src = src;
 
-  function setInitialState() {
-    state.audioOn = true;
-    updateToggleLabel();
-
-    if (!state.blocks.length) return;
-
-    state.currentIndex = 0;
-    updateHeader();
-    loadAudioForCurrentBlock(true);
-  }
-
-  function toggleAudio() {
-    state.audioOn = !state.audioOn;
-    updateToggleLabel();
-
-    if (!state.audioOn) {
-      state.player.pause();
-    } else {
-      loadAudioForCurrentBlock(true);
+    if (forcePlay) {
+      audioEl.play().catch(() => {});
     }
   }
 
   function updateToggleLabel() {
-    state.toggleBtn.textContent = state.audioOn ? "[Audio is ON]" : "[Audio is OFF]";
-  }
-
-  function goToBlock(index) {
-    if (index < 0 || index >= state.blocks.length) return;
-    state.currentIndex = index;
-    updateHeader();
-    loadAudioForCurrentBlock(true);
-  }
-
-  function updateHeader() {
-    const block = state.blocks[state.currentIndex];
-    const sectionName = block.getAttribute("data-title") || "Section";
-    const x = state.currentIndex + 1;
-    const y = state.blocks.length;
-
-    state.headerLabel.textContent =
-      `${state.lessonTitle} – ${sectionName}, Section ${x}/${y}`;
-  }
-
-  function loadAudioForCurrentBlock(autoplay) {
-    if (!state.audioOn) return;
-
-    const block = state.blocks[state.currentIndex];
-    const blockNum = block.getAttribute("data-block");
-    const audioSrc = buildAudioSrc(blockNum);
-
-    state.player.src = audioSrc;
-    if (autoplay) {
-      state.player.play().catch(() => {});
+    const btn = document.getElementById("ml-audio-toggle-global");
+    if (btn) {
+      btn.textContent = state.audioOn ? "[Audio is ON]" : "[Audio is OFF]";
     }
   }
 
-  function buildAudioSrc(blockNum) {
-    const lessonMatch = window.location.pathname.match(/lesson(\d+)/i);
-    const lessonNum = lessonMatch ? lessonMatch[1] : "0";
-    return `/masterlab-mvp-site/audio/${state.courseId}/lesson${lessonNum}-block${blockNum}.mp3`;
+  function toggleFromHeader() {
+    state.audioOn = !state.audioOn;
+    updateToggleLabel();
+    loadAudioForCurrentBlock(true);
   }
 
-  return { init };
+  return {
+    init,
+    toggleFromHeader
+  };
 })();

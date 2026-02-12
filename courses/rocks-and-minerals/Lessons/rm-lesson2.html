@@ -10,14 +10,11 @@
     <link rel="stylesheet" href="../rm-style.css">
 
     <script src="../rm-lock.js"></script>
-    <script src="/masterlab-mvp-site/js/ml-xp.js"></script>
 </head>
 
 <body>
-
-<div class="ml-header">
-    <img src="/masterlab-mvp-site/assets/images/Copilot_20260205_213356.png" alt="MasterLab Logo" class="ml-logo">
-</div>
+  <script src="/js/global-header.js"></script>
+  <!--#include virtual="/components/global-header.html" -->
 
 <script>
     // Enforce lock for Lesson 2
@@ -25,12 +22,11 @@
 
     // Award XP if first time viewing
     if (!localStorage.getItem("rm_lesson2_xp")) {
-        addXP(50);
         RMRewards.rewardLessonXP(2);
     }
 </script>
 
-<div class="lesson-blocks" data-course="rocks-and-minerals" data-lesson="2">  <div class="lesson-block-header">    <h2 class="lesson-block-title">Part 1</h2>    <p class="lesson-block-progress">Block 1 of 1</p>    <audio controls class="lesson-audio"></audio>  </div>  <div class="lesson-block" data-block="1" data-title="Part 1">    <div class="lesson-container">
+<div class="lesson-container">
 
     <h1 class="lesson-title">Lesson 2 — Mineral Identification: Physical Properties</h1>
     <p class="lesson-subtitle">MasterLab Rocks & Minerals (Division C)</p>
@@ -50,7 +46,7 @@
             In this lesson, you’ll learn the most important physical properties used in competitions, 
             how to interpret them, and how they connect to a mineral’s internal structure.
         </p>
-    </div>
+    </section>
 
     <hr>
 
@@ -75,7 +71,7 @@
         <p>
             Hardness is directly related to atomic bonding strength. Stronger bonds = harder mineral.
         </p>
-    </div>
+    </section>
 
     <hr>
 
@@ -100,7 +96,7 @@
                 </ul>
             </li>
         </ul>
-    </div>
+    </section>
 
     <hr>
 
@@ -118,7 +114,7 @@
             <li>Nonmetallic minerals often have a white or colorless streak.</li>
             <li>Hematite’s streak is always red-brown — a classic ID clue.</li>
         </ul>
-    </div>
+    </section>
 
     <hr>
 
@@ -144,7 +140,7 @@
             <li><strong>Uneven</strong></li>
             <li><strong>Fibrous</strong></li>
         </ul>
-    </div>
+    </section>
 
     <hr>
 
@@ -161,7 +157,7 @@
             <li><strong>Galena</strong> — very high SG (feels heavy)</li>
             <li><strong>Graphite</strong> — very low SG (feels light)</li>
         </ul>
-    </div>
+    </section>
 
     <hr>
 
@@ -175,29 +171,16 @@
             <li><strong>Taste</strong> — halite tastes salty (only in controlled settings)</li>
             <li><strong>Smell</strong> — sulfur smells like rotten eggs</li>
         </ul>
-    </div>
+    </section>
 
     <hr>
 
     <!-- SECTION 8: VOCABULARY -->
     <section>
-        <h2>Vocabulary</h2>
-        <ul id="vocab-list"></ul>
+       <h2>Vocabulary</h2>
+<div id="lesson-vocab"></div>
 
-        <script>
-        const vocab_2 = [
-            { term: "Hardness", def: "A mineral's resistance to being scratched; commonly measured with the Mohs scale." },
-            { term: "Luster", def: "The way a mineral reflects light (e.g., metallic, vitreous, pearly)." },
-            { term: "Streak", def: "The color of a mineral's powder when rubbed on a porcelain streak plate." },
-            { term: "Cleavage", def: "The tendency of a mineral to break along flat, planar surfaces related to its crystal structure." },
-            { term: "Fracture", def: "The pattern in which a mineral breaks when not along cleavage planes (e.g., conchoidal)." },
-            { term: "Specific Gravity", def: "The density of a mineral relative to water; useful for identifying dense minerals." },
-            { term: "Mohs Scale", def: "A relative scale (1–10) ranking mineral hardness, from talc (1) to diamond (10)." },
-            { term: "Magnetism", def: "Magnetic response of a mineral (e.g., magnetite), useful for quick identification." },
-            { term: "Reaction to Acid", def: "Effervescence when a mineral reacts with dilute HCl, characteristic of carbonates like calcite." }
-        ];
-        </script>
-    </div>
+    </section>
 
     <hr>
 
@@ -210,7 +193,7 @@
             of competition-level mineral ID. Mastering these properties will make the rest of 
             the Rocks & Minerals event significantly easier.
         </p>
-    </div>
+    </section>
 
     <hr>
 
@@ -227,8 +210,13 @@
     </script>
 
 </div>
+<script src="/js/ml-browser-ai.js"></script>
+<script src="/js/ml-vocab-engine.js"></script>
 
-  <div class="vocab-section" data-lesson="2"></div>
-</div></div>
+<script>
+    // Load vocab for this lesson
+    MLVocabEngine.loadVocab(2);  // change 1 → lesson number
+</script>
+
 </body>
 </html>
