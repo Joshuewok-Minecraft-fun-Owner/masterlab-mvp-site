@@ -1,133 +1,2547 @@
 [
   {
-    "id": "c1-001",
+    "id": "c1-l1.1-001",
     "type": "vocab",
-    "lesson": null,
-    "traditional": "現在",
-    "simplified": "现在",
-    "pinyin": "xiànzài",
-    "english": "now",
-    "tags": []
+    "lesson": "1.1",
+    "traditional": "請",
+    "simplified": "请",
+    "pinyin": "qǐng",
+    "english": "please; to invite"
   },
   {
-    "id": "c1-002",
+    "id": "c1-l1.1-002",
     "type": "vocab",
-    "lesson": null,
-    "traditional": "刻",
-    "simplified": "刻",
-    "pinyin": "kè",
-    "english": "quarter (of an hour)",
-    "tags": []
+    "lesson": "1.1",
+    "traditional": "問",
+    "simplified": "问",
+    "pinyin": "wèn",
+    "english": "to ask"
   },
   {
-    "id": "c1-003",
+    "id": "c1-l1.1-003",
     "type": "vocab",
-    "lesson": null,
-    "traditional": "事兒",
-    "simplified": "事儿",
-    "pinyin": "shì (er)",
-    "english": "matter; affair; event",
-    "tags": []
+    "lesson": "1.1",
+    "traditional": "姓",
+    "simplified": "姓",
+    "pinyin": "xìng",
+    "english": "surname; to be surnamed"
   },
   {
-    "id": "c1-004",
+    "id": "c1-l1.1-004",
     "type": "vocab",
-    "lesson": null,
-    "traditional": "今天",
-    "simplified": "今天",
-    "pinyin": "jīntiān",
-    "english": "today",
-    "tags": []
+    "lesson": "1.1",
+    "traditional": "我",
+    "simplified": "我",
+    "pinyin": "wǒ",
+    "english": "I; me"
   },
   {
-    "id": "c1-005",
+    "id": "c1-l1.1-005",
     "type": "vocab",
-    "lesson": null,
-    "traditional": "明天",
-    "simplified": "明天",
-    "pinyin": "míngtiān",
-    "english": "tomorrow",
-    "tags": []
+    "lesson": "1.1",
+    "traditional": "呢",
+    "simplified": "呢",
+    "pinyin": "ne",
+    "english": "(question particle)"
   },
   {
-    "id": "c1-006",
+    "id": "c1-l1.1-006",
     "type": "vocab",
-    "lesson": null,
-    "traditional": "昨天",
-    "simplified": "昨天",
-    "pinyin": "zuótiān",
-    "english": "yesterday",
-    "tags": []
+    "lesson": "1.1",
+    "traditional": "小姐",
+    "simplified": "小姐",
+    "pinyin": "xiǎo jiě",
+    "english": "Miss; young lady"
   },
   {
-    "id": "c1-007",
+    "id": "c1-l1.1-007",
     "type": "vocab",
-    "lesson": null,
-    "traditional": "後天",
-    "simplified": "后天",
-    "pinyin": "hòutiān",
-    "english": "the day after tomorrow",
-    "tags": []
+    "lesson": "1.1",
+    "traditional": "什麼",
+    "simplified": "什么",
+    "pinyin": "shén me",
+    "english": "what"
   },
   {
-    "id": "c1-008",
+    "id": "c1-l1.1-008",
     "type": "vocab",
-    "lesson": null,
+    "lesson": "1.1",
+    "traditional": "先生",
+    "simplified": "先生",
+    "pinyin": "xiān shēng",
+    "english": "Mr.; husband; teacher"
+  },
+  {
+    "id": "c1-l1.1-009",
+    "type": "vocab",
+    "lesson": "1.1",
+    "traditional": "你",
+    "simplified": "你",
+    "pinyin": "nǐ",
+    "english": "you"
+  },
+  {
+    "id": "c1-l1.1-010",
+    "type": "vocab",
+    "lesson": "1.1",
+    "traditional": "好",
+    "simplified": "好",
+    "pinyin": "hǎo",
+    "english": "good; fine; OK"
+  },
+  {
+    "id": "c1-l1.1-011",
+    "type": "vocab",
+    "lesson": "1.1",
+    "traditional": "貴",
+    "simplified": "贵",
+    "pinyin": "guì",
+    "english": "honorable; expensive"
+  },
+  {
+    "id": "c1-l1.1-012",
+    "type": "vocab",
+    "lesson": "1.1",
+    "traditional": "叫",
+    "simplified": "叫",
+    "pinyin": "jiào",
+    "english": "to be called; to call"
+  },
+  {
+    "id": "c1-l1.1-013",
+    "type": "vocab",
+    "lesson": "1.1",
+    "traditional": "李友",
+    "simplified": "李友",
+    "pinyin": "Lǐ Yǒu",
+    "english": "(a personal name)"
+  },
+  {
+    "id": "c1-l1.1-014",
+    "type": "vocab",
+    "lesson": "1.1",
+    "traditional": "王朋",
+    "simplified": "王朋",
+    "pinyin": "Wáng Péng",
+    "english": "(a personal name)"
+  },
+  {
+    "id": "c1-l1.1-015",
+    "type": "vocab",
+    "lesson": "1.1",
+    "traditional": "朋友",
+    "simplified": "朋友",
+    "pinyin": "péng you",
+    "english": "friend"
+  },
+  {
+    "id": "c1-l1.1-016",
+    "type": "vocab",
+    "lesson": "1.1",
+    "traditional": "名字",
+    "simplified": "名字",
+    "pinyin": "míng zi",
+    "english": "name"
+  },
+
+  {
+    "id": "c1-l1.2-001",
+    "type": "vocab",
+    "lesson": "1.2",
+    "traditional": "老師",
+    "simplified": "老师",
+    "pinyin": "lǎo shī",
+    "english": "teacher"
+  },
+  {
+    "id": "c1-l1.2-002",
+    "type": "vocab",
+    "lesson": "1.2",
+    "traditional": "北京",
+    "simplified": "北京",
+    "pinyin": "Běi jīng",
+    "english": "Beijing"
+  },
+  {
+    "id": "c1-l1.2-003",
+    "type": "vocab",
+    "lesson": "1.2",
+    "traditional": "美國",
+    "simplified": "美国",
+    "pinyin": "Měi guó",
+    "english": "America"
+  },
+  {
+    "id": "c1-l1.2-004",
+    "type": "vocab",
+    "lesson": "1.2",
+    "traditional": "紐約",
+    "simplified": "纽约",
+    "pinyin": "Niǔ yuē",
+    "english": "New York"
+  },
+  {
+    "id": "c1-l1.2-005",
+    "type": "vocab",
+    "lesson": "1.2",
+    "traditional": "加州",
+    "simplified": "加州",
+    "pinyin": "Jiā zhōu",
+    "english": "California"
+  },
+  {
+    "id": "c1-l1.2-006",
+    "type": "vocab",
+    "lesson": "1.2",
+    "traditional": "是",
+    "simplified": "是",
+    "pinyin": "shì",
+    "english": "to be"
+  },
+  {
+    "id": "c1-l1.2-007",
+    "type": "vocab",
+    "lesson": "1.2",
+    "traditional": "不",
+    "simplified": "不",
+    "pinyin": "bù",
+    "english": "not; no"
+  },
+  {
+    "id": "c1-l1.2-008",
+    "type": "vocab",
+    "lesson": "1.2",
+    "traditional": "也",
+    "simplified": "也",
+    "pinyin": "yě",
+    "english": "also; too"
+  },
+  {
+    "id": "c1-l1.2-009",
+    "type": "vocab",
+    "lesson": "1.2",
+    "traditional": "嗎",
+    "simplified": "吗",
+    "pinyin": "ma",
+    "english": "(question particle)"
+  },
+  {
+    "id": "c1-l1.2-010",
+    "type": "vocab",
+    "lesson": "1.2",
+    "traditional": "學生",
+    "simplified": "学生",
+    "pinyin": "xué shēng",
+    "english": "student"
+  },
+  {
+    "id": "c1-l1.2-011",
+    "type": "vocab",
+    "lesson": "1.2",
+    "traditional": "人",
+    "simplified": "人",
+    "pinyin": "rén",
+    "english": "person"
+  },
+  {
+    "id": "c1-l1.2-012",
+    "type": "vocab",
+    "lesson": "1.2",
+    "traditional": "中國",
+    "simplified": "中国",
+    "pinyin": "Zhōng guó",
+    "english": "China"
+  },
+  {
+    "id": "c1-l1.2-013",
+    "type": "vocab",
+    "lesson": "1.2",
+    "traditional": "日本",
+    "simplified": "日本",
+    "pinyin": "Rì běn",
+    "english": "Japan"
+  },
+  {
+    "id": "c1-l1.2-014",
+    "type": "vocab",
+    "lesson": "1.2",
+    "traditional": "英國",
+    "simplified": "英国",
+    "pinyin": "Yīng guó",
+    "english": "Britain; England"
+  },
+  {
+    "id": "c1-l1.2-015",
+    "type": "vocab",
+    "lesson": "1.2",
+    "traditional": "法國",
+    "simplified": "法国",
+    "pinyin": "Fǎ guó",
+    "english": "France"
+  },
+  {
+    "id": "c1-l1.2-016",
+    "type": "vocab",
+    "lesson": "1.2",
+    "traditional": "德國",
+    "simplified": "德国",
+    "pinyin": "Dé guó",
+    "english": "Germany"
+  },
+  {
+    "id": "c1-l1.2-017",
+    "type": "vocab",
+    "lesson": "1.2",
+    "traditional": "韓國",
+    "simplified": "韩国",
+    "pinyin": "Hán guó",
+    "english": "Korea"
+  },
+  {
+    "id": "c1-l1.2-018",
+    "type": "vocab",
+    "lesson": "1.2",
+    "traditional": "加拿大",
+    "simplified": "加拿大",
+    "pinyin": "Jiā ná dà",
+    "english": "Canada"
+  },
+  {
+    "id": "c1-l1.2-019",
+    "type": "vocab",
+    "lesson": "1.2",
+    "traditional": "墨西哥",
+    "simplified": "墨西哥",
+    "pinyin": "Mò xī gē",
+    "english": "Mexico"
+  },
+  {
+    "id": "c1-l1.2-020",
+    "type": "vocab",
+    "lesson": "1.2",
+    "traditional": "印度",
+    "simplified": "印度",
+    "pinyin": "Yìn dù",
+    "english": "India"
+  },
+  {
+    "id": "c1-l1.2-021",
+    "type": "vocab",
+    "lesson": "1.2",
+    "traditional": "越南",
+    "simplified": "越南",
+    "pinyin": "Yuè nán",
+    "english": "Vietnam"
+  },
+  {
+    "id": "c1-l1.2-022",
+    "type": "vocab",
+    "lesson": "1.2",
+    "traditional": "夏威夷",
+    "simplified": "夏威夷",
+    "pinyin": "Xià wēi yí",
+    "english": "Hawaii"
+  },
+  {
+    "id": "c1-l1.2-023",
+    "type": "vocab",
+    "lesson": "1.2",
+    "traditional": "上海",
+    "simplified": "上海",
+    "pinyin": "Shàng hǎi",
+    "english": "Shanghai"
+  },
+  {
+    "id": "c1-l2.1-001",
+    "type": "vocab",
+    "lesson": "2.1",
+    "traditional": "妹妹",
+    "simplified": "妹妹",
+    "pinyin": "mèi mei",
+    "english": "younger sister"
+  },
+  {
+    "id": "c1-l2.1-002",
+    "type": "vocab",
+    "lesson": "2.1",
+    "traditional": "誰",
+    "simplified": "谁",
+    "pinyin": "shéi",
+    "english": "who"
+  },
+  {
+    "id": "c1-l2.1-003",
+    "type": "vocab",
+    "lesson": "2.1",
+    "traditional": "二哥",
+    "simplified": "二哥",
+    "pinyin": "èr gē",
+    "english": "second eldest older brother"
+  },
+  {
+    "id": "c1-l2.1-004",
+    "type": "vocab",
+    "lesson": "2.1",
+    "traditional": "兒子",
+    "simplified": "儿子",
+    "pinyin": "ér zi",
+    "english": "son"
+  },
+  {
+    "id": "c1-l2.1-005",
+    "type": "vocab",
+    "lesson": "2.1",
+    "traditional": "女兒",
+    "simplified": "女儿",
+    "pinyin": "nǚ ér",
+    "english": "daughter"
+  },
+  {
+    "id": "c1-l2.1-006",
+    "type": "vocab",
+    "lesson": "2.1",
+    "traditional": "有",
+    "simplified": "有",
+    "pinyin": "yǒu",
+    "english": "to have; to exist"
+  },
+  {
+    "id": "c1-l2.1-007",
+    "type": "vocab",
+    "lesson": "2.1",
+    "traditional": "那",
+    "simplified": "那",
+    "pinyin": "nà",
+    "english": "that"
+  },
+  {
+    "id": "c1-l2.1-008",
+    "type": "vocab",
+    "lesson": "2.1",
+    "traditional": "的",
+    "simplified": "的",
+    "pinyin": "de",
+    "english": "possessive particle"
+  },
+  {
+    "id": "c1-l2.1-009",
+    "type": "vocab",
+    "lesson": "2.1",
+    "traditional": "照片",
+    "simplified": "照片",
+    "pinyin": "zhào piàn",
+    "english": "picture; photo"
+  },
+  {
+    "id": "c1-l2.1-010",
+    "type": "vocab",
+    "lesson": "2.1",
+    "traditional": "這",
+    "simplified": "这",
+    "pinyin": "zhè",
+    "english": "this"
+  },
+  {
+    "id": "c1-l2.1-011",
+    "type": "vocab",
+    "lesson": "2.1",
+    "traditional": "爸爸",
+    "simplified": "爸爸",
+    "pinyin": "bà ba",
+    "english": "dad"
+  },
+  {
+    "id": "c1-l2.1-012",
+    "type": "vocab",
+    "lesson": "2.1",
+    "traditional": "媽媽",
+    "simplified": "妈",
+    "pinyin": "mā ma",
+    "english": "mom"
+  },
+  {
+    "id": "c1-l2.1-013",
+    "type": "vocab",
+    "lesson": "2.1",
+    "traditional": "哥哥",
+    "simplified": "哥哥",
+    "pinyin": "gē ge",
+    "english": "older brother"
+  },
+  {
+    "id": "c1-l2.1-014",
+    "type": "vocab",
+    "lesson": "2.1",
+    "traditional": "姐姐",
+    "simplified": "姐姐",
+    "pinyin": "jiě jie",
+    "english": "older sister"
+  },
+  {
+    "id": "c1-l2.1-015",
+    "type": "vocab",
+    "lesson": "2.1",
+    "traditional": "弟弟",
+    "simplified": "弟弟",
+    "pinyin": "dì di",
+    "english": "younger brother"
+  },
+  {
+    "id": "c1-l2.1-016",
+    "type": "vocab",
+    "lesson": "2.1",
+    "traditional": "個",
+    "simplified": "个",
+    "pinyin": "gè",
+    "english": "measure word for common objects"
+  },
+  {
+    "id": "c1-l2.1-017",
+    "type": "vocab",
+    "lesson": "2.1",
+    "traditional": "男",
+    "simplified": "男",
+    "pinyin": "nán",
+    "english": "male"
+  },
+  {
+    "id": "c1-l2.1-018",
+    "type": "vocab",
+    "lesson": "2.1",
+    "traditional": "女",
+    "simplified": "女",
+    "pinyin": "nǚ",
+    "english": "female"
+  },
+  {
+    "id": "c1-l2.1-019",
+    "type": "vocab",
+    "lesson": "2.1",
+    "traditional": "孩子",
+    "simplified": "孩子",
+    "pinyin": "hái zi",
+    "english": "child"
+  },
+  {
+    "id": "c1-l2.1-020",
+    "type": "vocab",
+    "lesson": "2.1",
+    "traditional": "他",
+    "simplified": "他",
+    "pinyin": "tā",
+    "english": "he; him"
+  },
+  {
+    "id": "c1-l2.1-021",
+    "type": "vocab",
+    "lesson": "2.1",
+    "traditional": "她",
+    "simplified": "她",
+    "pinyin": "tā",
+    "english": "she; her"
+  },
+  {
+    "id": "c1-l2.1-022",
+    "type": "vocab",
+    "lesson": "2.1",
+    "traditional": "大哥",
+    "simplified": "大哥",
+    "pinyin": "dà gē",
+    "english": "eldest older brother"
+  },
+  {
+    "id": "c1-l2.1-023",
+    "type": "vocab",
+    "lesson": "2.1",
+    "traditional": "沒有",
+    "simplified": "没有",
+    "pinyin": "méi yǒu",
+    "english": "to not have; there is not"
+  },
+  {
+    "id": "c1-l2.1-024",
+    "type": "vocab",
+    "lesson": "2.1",
+    "traditional": "高文中",
+    "simplified": "高文中",
+    "pinyin": "Gāo Wénzhōng",
+    "english": "(a personal name)"
+  },
+  {
+    "id": "c1-l2.1-025",
+    "type": "vocab",
+    "lesson": "2.1",
+    "traditional": "中文",
+    "simplified": "中文",
+    "pinyin": "Zhōng wén",
+    "english": "Chinese language"
+  },
+  {
+    "id": "c1-l2.1-026",
+    "type": "vocab",
+    "lesson": "2.1",
+    "traditional": "兄弟姐妹",
+    "simplified": "兄弟姐妹",
+    "pinyin": "xiōng dì jiě mèi",
+    "english": "siblings"
+  },
+  {
+    "id": "c1-l2.1-027",
+    "type": "vocab",
+    "lesson": "2.1",
+    "traditional": "們",
+    "simplified": "们",
+    "pinyin": "men",
+    "english": "plural marker for people"
+  },
+
+  /* LESSON 2.2 */
+
+  {
+    "id": "c1-l2.2-001",
+    "type": "vocab",
+    "lesson": "2.2",
+    "traditional": "家",
+    "simplified": "家",
+    "pinyin": "jiā",
+    "english": "family; home"
+  },
+  {
+    "id": "c1-l2.2-002",
+    "type": "vocab",
+    "lesson": "2.2",
+    "traditional": "幾",
+    "simplified": "几",
+    "pinyin": "jǐ",
+    "english": "how many; a few"
+  },
+  {
+    "id": "c1-l2.2-003",
+    "type": "vocab",
+    "lesson": "2.2",
+    "traditional": "口",
+    "simplified": "口",
+    "pinyin": "kǒu",
+    "english": "measure word for family members"
+  },
+  {
+    "id": "c1-l2.2-004",
+    "type": "vocab",
+    "lesson": "2.2",
+    "traditional": "兩",
+    "simplified": "两",
+    "pinyin": "liǎng",
+    "english": "two; a couple of"
+  },
+  {
+    "id": "c1-l2.2-005",
+    "type": "vocab",
+    "lesson": "2.2",
+    "traditional": "和",
+    "simplified": "和",
+    "pinyin": "hé",
+    "english": "and"
+  },
+  {
+    "id": "c1-l2.2-006",
+    "type": "vocab",
+    "lesson": "2.2",
+    "traditional": "大姐",
+    "simplified": "大姐",
+    "pinyin": "dà jiě",
+    "english": "eldest older sister"
+  },
+  {
+    "id": "c1-l2.2-007",
+    "type": "vocab",
+    "lesson": "2.2",
+    "traditional": "二姐",
+    "simplified": "二姐",
+    "pinyin": "èr jiě",
+    "english": "second oldest sister"
+  },
+  {
+    "id": "c1-l2.2-008",
+    "type": "vocab",
+    "lesson": "2.2",
+    "traditional": "做",
+    "simplified": "做",
+    "pinyin": "zuò",
+    "english": "to do; to make"
+  },
+  {
+    "id": "c1-l2.2-009",
+    "type": "vocab",
+    "lesson": "2.2",
+    "traditional": "工作",
+    "simplified": "工作",
+    "pinyin": "gōng zuò",
+    "english": "job; to work"
+  },
+  {
+    "id": "c1-l2.2-010",
+    "type": "vocab",
+    "lesson": "2.2",
+    "traditional": "英文",
+    "simplified": "英文",
+    "pinyin": "Yīng wén",
+    "english": "English language"
+  },
+  {
+    "id": "c1-l2.2-011",
+    "type": "vocab",
+    "lesson": "2.2",
+    "traditional": "中文",
+    "simplified": "中文",
+    "pinyin": "Zhōng wén",
+    "english": "Chinese language"
+  },
+  {
+    "id": "c1-l2.2-012",
+    "type": "vocab",
+    "lesson": "2.2",
+    "traditional": "都",
+    "simplified": "都",
+    "pinyin": "dōu",
+    "english": "both; all"
+  },
+  {
+    "id": "c1-l2.2-013",
+    "type": "vocab",
+    "lesson": "2.2",
+    "traditional": "大學",
+    "simplified": "大学",
+    "pinyin": "dà xué",
+    "english": "university; college"
+  },
+  {
+    "id": "c1-l2.2-014",
+    "type": "vocab",
+    "lesson": "2.2",
+    "traditional": "大學生",
+    "simplified": "大学生",
+    "pinyin": "dà xué shēng",
+    "english": "college student"
+  },
+  {
+    "id": "c1-l2.2-015",
+    "type": "vocab",
+    "lesson": "2.2",
+    "traditional": "律師",
+    "simplified": "律师",
+    "pinyin": "lǜ shī",
+    "english": "lawyer"
+  },
+  {
+    "id": "c1-l2.2-016",
+    "type": "vocab",
+    "lesson": "2.2",
+    "traditional": "醫生",
+    "simplified": "医生",
+    "pinyin": "yī shēng",
+    "english": "doctor"
+  },
+  {
+    "id": "c1-l2.2-017",
+    "type": "vocab",
+    "lesson": "2.2",
+    "traditional": "老師",
+    "simplified": "老师",
+    "pinyin": "lǎo shī",
+    "english": "teacher"
+  },
+  {
+    "id": "c1-l2.2-018",
+    "type": "vocab",
+    "lesson": "2.2",
+    "traditional": "白英愛",
+    "simplified": "白英爱",
+    "pinyin": "Bái Yīng'ài",
+    "english": "(a personal name)"
+  },
+  {
+    "id": "c1-l3.1-001",
+    "type": "vocab",
+    "lesson": "3.1",
+    "traditional": "月",
+    "simplified": "月",
+    "pinyin": "yuè",
+    "english": "month"
+  },
+  {
+    "id": "c1-l3.1-002",
+    "type": "vocab",
+    "lesson": "3.1",
+    "traditional": "號",
+    "simplified": "号",
+    "pinyin": "hào",
+    "english": "day of the month; number"
+  },
+  {
+    "id": "c1-l3.1-003",
+    "type": "vocab",
+    "lesson": "3.1",
+    "traditional": "星期",
+    "simplified": "星期",
+    "pinyin": "xīng qī",
+    "english": "week"
+  },
+  {
+    "id": "c1-l3.1-004",
+    "type": "vocab",
+    "lesson": "3.1",
+    "traditional": "天",
+    "simplified": "天",
+    "pinyin": "tiān",
+    "english": "day"
+  },
+  {
+    "id": "c1-l3.1-005",
+    "type": "vocab",
+    "lesson": "3.1",
+    "traditional": "生日",
+    "simplified": "生日",
+    "pinyin": "shēng rì",
+    "english": "birthday"
+  },
+  {
+    "id": "c1-l3.1-006",
+    "type": "vocab",
+    "lesson": "3.1",
+    "traditional": "今年",
+    "simplified": "今年",
+    "pinyin": "jīn nián",
+    "english": "this year"
+  },
+  {
+    "id": "c1-l3.1-007",
+    "type": "vocab",
+    "lesson": "3.1",
+    "traditional": "明年",
+    "simplified": "明年",
+    "pinyin": "míng nián",
+    "english": "next year"
+  },
+  {
+    "id": "c1-l3.1-008",
+    "type": "vocab",
+    "lesson": "3.1",
+    "traditional": "去年",
+    "simplified": "去年",
+    "pinyin": "qù nián",
+    "english": "last year"
+  },
+  {
+    "id": "c1-l3.1-009",
+    "type": "vocab",
+    "lesson": "3.1",
+    "traditional": "多",
+    "simplified": "多",
+    "pinyin": "duō",
+    "english": "how many; how much; many"
+  },
+  {
+    "id": "c1-l3.1-010",
+    "type": "vocab",
+    "lesson": "3.1",
+    "traditional": "大",
+    "simplified": "大",
+    "pinyin": "dà",
+    "english": "big; old (age)"
+  },
+  {
+    "id": "c1-l3.1-011",
+    "type": "vocab",
+    "lesson": "3.1",
+    "traditional": "歲",
+    "simplified": "岁",
+    "pinyin": "suì",
+    "english": "years of age"
+  },
+  {
+    "id": "c1-l3.1-012",
+    "type": "vocab",
+    "lesson": "3.1",
+    "traditional": "吃",
+    "simplified": "吃",
+    "pinyin": "chī",
+    "english": "to eat"
+  },
+  {
+    "id": "c1-l3.1-013",
+    "type": "vocab",
+    "lesson": "3.1",
+    "traditional": "飯",
+    "simplified": "饭",
+    "pinyin": "fàn",
+    "english": "meal; (cooked) rice"
+  },
+  {
+    "id": "c1-l3.1-014",
+    "type": "vocab",
+    "lesson": "3.1",
+    "traditional": "怎麼樣",
+    "simplified": "怎么样",
+    "pinyin": "zěn me yàng",
+    "english": "How is it? How does that sound?"
+  },
+  {
+    "id": "c1-l3.1-015",
+    "type": "vocab",
+    "lesson": "3.1",
+    "traditional": "太...了",
+    "simplified": "太...了",
+    "pinyin": "tài ... le",
+    "english": "too; extremely"
+  },
+  {
+    "id": "c1-l3.1-016",
+    "type": "vocab",
+    "lesson": "3.1",
+    "traditional": "謝謝",
+    "simplified": "谢谢",
+    "pinyin": "xiè xie",
+    "english": "to thank"
+  },
+  {
+    "id": "c1-l3.1-017",
+    "type": "vocab",
+    "lesson": "3.1",
+    "traditional": "不客氣",
+    "simplified": "不客气",
+    "pinyin": "bú kè qi",
+    "english": "you’re welcome"
+  },
+  {
+    "id": "c1-l3.1-018",
+    "type": "vocab",
+    "lesson": "3.1",
+    "traditional": "喜歡",
+    "simplified": "喜欢",
+    "pinyin": "xǐ huan",
+    "english": "to like"
+  },
+  {
+    "id": "c1-l3.1-019",
+    "type": "vocab",
+    "lesson": "3.1",
+    "traditional": "菜",
+    "simplified": "菜",
+    "pinyin": "cài",
+    "english": "dishes; cuisine"
+  },
+  {
+    "id": "c1-l3.1-020",
+    "type": "vocab",
+    "lesson": "3.1",
+    "traditional": "還是",
+    "simplified": "还是",
+    "pinyin": "hái shì",
+    "english": "or (in a question)"
+  },
+  {
+    "id": "c1-l3.1-021",
+    "type": "vocab",
+    "lesson": "3.1",
+    "traditional": "可是",
+    "simplified": "可是",
+    "pinyin": "kě shì",
+    "english": "but"
+  },
+  {
+    "id": "c1-l3.1-022",
+    "type": "vocab",
+    "lesson": "3.1",
+    "traditional": "我們",
+    "simplified": "我们",
+    "pinyin": "wǒ men",
+    "english": "we; us"
+  },
+  {
+    "id": "c1-l3.1-023",
+    "type": "vocab",
+    "lesson": "3.1",
+    "traditional": "你們",
+    "simplified": "你们",
+    "pinyin": "nǐ men",
+    "english": "you (plural)"
+  },
+  {
+    "id": "c1-l3.1-024",
+    "type": "vocab",
+    "lesson": "3.1",
+    "traditional": "他們",
+    "simplified": "他们",
+    "pinyin": "tā men",
+    "english": "they; them"
+  },
+  {
+    "id": "c1-l3.1-025",
+    "type": "vocab",
+    "lesson": "3.1",
+    "traditional": "點",
+    "simplified": "点",
+    "pinyin": "diǎn",
+    "english": "o'clock"
+  },
+  {
+    "id": "c1-l3.1-026",
+    "type": "vocab",
+    "lesson": "3.1",
+    "traditional": "半分鐘",
+    "simplified": "半分钟",
+    "pinyin": "bàn fēn zhōng",
+    "english": "half a minute"
+  },
+  {
+    "id": "c1-l3.1-027",
+    "type": "vocab",
+    "lesson": "3.1",
+    "traditional": "早上",
+    "simplified": "早上",
+    "pinyin": "zǎo shang",
+    "english": "morning"
+  },
+  {
+    "id": "c1-l3.1-028",
+    "type": "vocab",
+    "lesson": "3.1",
+    "traditional": "中午",
+    "simplified": "中午",
+    "pinyin": "zhōng wǔ",
+    "english": "noon"
+  },
+  {
+    "id": "c1-l3.1-029",
+    "type": "vocab",
+    "lesson": "3.1",
+    "traditional": "下午",
+    "simplified": "下午",
+    "pinyin": "xià wǔ",
+    "english": "afternoon"
+  },
+  {
+    "id": "c1-l3.1-030",
+    "type": "vocab",
+    "lesson": "3.1",
+    "traditional": "晚上",
+    "simplified": "晚上",
+    "pinyin": "wǎn shang",
+    "english": "evening; night"
+  },
+  {
+    "id": "c1-l3.1-031",
+    "type": "vocab",
+    "lesson": "3.1",
+    "traditional": "再見",
+    "simplified": "再见",
+    "pinyin": "zài jiàn",
+    "english": "goodbye"
+  },
+  {
+    "id": "c1-l3.1-032",
+    "type": "vocab",
+    "lesson": "3.1",
+    "traditional": "學期",
+    "simplified": "学期",
+    "pinyin": "xué qī",
+    "english": "semester"
+  },
+  {
+    "id": "c1-l3.1-033",
+    "type": "vocab",
+    "lesson": "3.1",
+    "traditional": "日期",
+    "simplified": "日期",
+    "pinyin": "rì qí",
+    "english": "date"
+  },
+
+  /* LESSON 3.2 */
+
+  {
+    "id": "c1-l3.2-001",
+    "type": "vocab",
+    "lesson": "3.2",
+    "traditional": "事",
+    "simplified": "事",
+    "pinyin": "shì",
+    "english": "matter; affair; event"
+  },
+  {
+    "id": "c1-l3.2-002",
+    "type": "vocab",
+    "lesson": "3.2",
     "traditional": "很忙",
     "simplified": "很忙",
     "pinyin": "hěn máng",
-    "english": "very busy",
-    "tags": []
+    "english": "very busy"
   },
   {
-    "id": "c1-009",
+    "id": "c1-l3.2-003",
     "type": "vocab",
-    "lesson": null,
+    "lesson": "3.2",
+    "traditional": "現在",
+    "simplified": "现在",
+    "pinyin": "xiàn zài",
+    "english": "now"
+  },
+  {
+    "id": "c1-l3.2-004",
+    "type": "vocab",
+    "lesson": "3.2",
+    "traditional": "刻",
+    "simplified": "刻",
+    "pinyin": "kè",
+    "english": "quarter (hour)"
+  },
+  {
+    "id": "c1-l3.2-005",
+    "type": "vocab",
+    "lesson": "3.2",
+    "traditional": "今天",
+    "simplified": "今天",
+    "pinyin": "jīn tiān",
+    "english": "today"
+  },
+  {
+    "id": "c1-l3.2-006",
+    "type": "vocab",
+    "lesson": "3.2",
+    "traditional": "明天",
+    "simplified": "明天",
+    "pinyin": "míng tiān",
+    "english": "tomorrow"
+  },
+  {
+    "id": "c1-l3.2-007",
+    "type": "vocab",
+    "lesson": "3.2",
+    "traditional": "昨天",
+    "simplified": "昨天",
+    "pinyin": "zuó tiān",
+    "english": "yesterday"
+  },
+  {
+    "id": "c1-l3.2-008",
+    "type": "vocab",
+    "lesson": "3.2",
+    "traditional": "後天",
+    "simplified": "后天",
+    "pinyin": "hòu tiān",
+    "english": "the day after tomorrow"
+  },
+  {
+    "id": "c1-l3.2-009",
+    "type": "vocab",
+    "lesson": "3.2",
     "traditional": "晚飯",
     "simplified": "晚饭",
-    "pinyin": "wǎnfàn",
-    "english": "dinner",
-    "tags": []
+    "pinyin": "wǎn fàn",
+    "english": "dinner"
   },
   {
-    "id": "c1-010",
+    "id": "c1-l3.2-010",
     "type": "vocab",
-    "lesson": null,
+    "lesson": "3.2",
     "traditional": "中飯",
     "simplified": "中饭",
-    "pinyin": "zhōngfàn",
-    "english": "lunch",
-    "tags": []
+    "pinyin": "zhōng fàn",
+    "english": "lunch"
   },
   {
-    "id": "c1-011",
+    "id": "c1-l3.2-011",
     "type": "vocab",
-    "lesson": null,
+    "lesson": "3.2",
     "traditional": "早飯",
     "simplified": "早饭",
-    "pinyin": "zǎofàn",
-    "english": "breakfast",
-    "tags": []
+    "pinyin": "zǎo fàn",
+    "english": "breakfast"
   },
   {
-    "id": "c1-012",
+    "id": "c1-l3.2-012",
     "type": "vocab",
-    "lesson": null,
+    "lesson": "3.2",
     "traditional": "為什麼",
     "simplified": "为什么",
-    "pinyin": "wèi shénme",
-    "english": "why",
-    "tags": []
+    "pinyin": "wèi shén me",
+    "english": "why"
   },
   {
-    "id": "c1-013",
+    "id": "c1-l3.2-013",
     "type": "vocab",
-    "lesson": null,
+    "lesson": "3.2",
     "traditional": "因為",
     "simplified": "因为",
-    "pinyin": "yīnwèi",
-    "english": "because",
-    "tags": []
+    "pinyin": "yīn wèi",
+    "english": "because"
+  },
+  {
+    "id": "c1-l3.2-014",
+    "type": "vocab",
+    "lesson": "3.2",
+    "traditional": "還",
+    "simplified": "还",
+    "pinyin": "hái",
+    "english": "also; too; as well"
+  },
+  {
+    "id": "c1-l3.2-015",
+    "type": "vocab",
+    "lesson": "3.2",
+    "traditional": "同學",
+    "simplified": "同学",
+    "pinyin": "tóng xué",
+    "english": "classmate"
+  },
+  {
+    "id": "c1-l3.2-016",
+    "type": "vocab",
+    "lesson": "3.2",
+    "traditional": "認識",
+    "simplified": "认识",
+    "pinyin": "rèn shi",
+    "english": "to know; to be acquainted with"
+  },
+  {
+    "id": "c1-l3.2-017",
+    "type": "vocab",
+    "lesson": "3.2",
+    "traditional": "朋友",
+    "simplified": "朋友",
+    "pinyin": "péng you",
+    "english": "friend"
+  },
+  {
+    "id": "c1-l4.1-001",
+    "type": "vocab",
+    "lesson": "4.1",
+    "traditional": "週末",
+    "simplified": "周末",
+    "pinyin": "zhōu mò",
+    "english": "weekend"
+  },
+  {
+    "id": "c1-l4.1-002",
+    "type": "vocab",
+    "lesson": "4.1",
+    "traditional": "打球",
+    "simplified": "打球",
+    "pinyin": "dǎ qiú",
+    "english": "to play ball"
+  },
+  {
+    "id": "c1-l4.1-003",
+    "type": "vocab",
+    "lesson": "4.1",
+    "traditional": "看",
+    "simplified": "看",
+    "pinyin": "kàn",
+    "english": "to watch; to look; to read"
+  },
+  {
+    "id": "c1-l4.1-004",
+    "type": "vocab",
+    "lesson": "4.1",
+    "traditional": "電視",
+    "simplified": "电视",
+    "pinyin": "diàn shì",
+    "english": "television"
+  },
+  {
+    "id": "c1-l4.1-005",
+    "type": "vocab",
+    "lesson": "4.1",
+    "traditional": "唱歌",
+    "simplified": "唱歌",
+    "pinyin": "chàng gē",
+    "english": "to sing"
+  },
+  {
+    "id": "c1-l4.1-006",
+    "type": "vocab",
+    "lesson": "4.1",
+    "traditional": "跳舞",
+    "simplified": "跳舞",
+    "pinyin": "tiào wǔ",
+    "english": "to dance"
+  },
+  {
+    "id": "c1-l4.1-007",
+    "type": "vocab",
+    "lesson": "4.1",
+    "traditional": "聽",
+    "simplified": "听",
+    "pinyin": "tīng",
+    "english": "to listen"
+  },
+  {
+    "id": "c1-l4.1-008",
+    "type": "vocab",
+    "lesson": "4.1",
+    "traditional": "音樂",
+    "simplified": "音乐",
+    "pinyin": "yīn yuè",
+    "english": "music"
+  },
+  {
+    "id": "c1-l4.1-009",
+    "type": "vocab",
+    "lesson": "4.1",
+    "traditional": "書",
+    "simplified": "书",
+    "pinyin": "shū",
+    "english": "book"
+  },
+  {
+    "id": "c1-l4.1-010",
+    "type": "vocab",
+    "lesson": "4.1",
+    "traditional": "對",
+    "simplified": "对",
+    "pinyin": "duì",
+    "english": "right; correct"
+  },
+  {
+    "id": "c1-l4.1-011",
+    "type": "vocab",
+    "lesson": "4.1",
+    "traditional": "有的",
+    "simplified": "有的",
+    "pinyin": "yǒu de",
+    "english": "some"
+  },
+  {
+    "id": "c1-l4.1-012",
+    "type": "vocab",
+    "lesson": "4.1",
+    "traditional": "時候",
+    "simplified": "时候",
+    "pinyin": "shí hòu",
+    "english": "a point in time; moment"
+  },
+  {
+    "id": "c1-l4.1-013",
+    "type": "vocab",
+    "lesson": "4.1",
+    "traditional": "電影",
+    "simplified": "电影",
+    "pinyin": "diàn yǐng",
+    "english": "movie"
+  },
+  {
+    "id": "c1-l4.1-014",
+    "type": "vocab",
+    "lesson": "4.1",
+    "traditional": "常常",
+    "simplified": "常常",
+    "pinyin": "cháng cháng",
+    "english": "often"
+  },
+  {
+    "id": "c1-l4.1-015",
+    "type": "vocab",
+    "lesson": "4.1",
+    "traditional": "那",
+    "simplified": "那",
+    "pinyin": "nà",
+    "english": "then; in that case"
+  },
+  {
+    "id": "c1-l4.1-016",
+    "type": "vocab",
+    "lesson": "4.1",
+    "traditional": "去",
+    "simplified": "去",
+    "pinyin": "qù",
+    "english": "to go"
+  },
+  {
+    "id": "c1-l4.1-017",
+    "type": "vocab",
+    "lesson": "4.1",
+    "traditional": "外國人",
+    "simplified": "外国人",
+    "pinyin": "wài guó rén",
+    "english": "foreigner"
+  },
+  {
+    "id": "c1-l4.1-018",
+    "type": "vocab",
+    "lesson": "4.1",
+    "traditional": "請客",
+    "simplified": "请客",
+    "pinyin": "qǐng kè",
+    "english": "to invite someone; to host"
+  },
+  {
+    "id": "c1-l4.1-019",
+    "type": "vocab",
+    "lesson": "4.1",
+    "traditional": "所以",
+    "simplified": "所以",
+    "pinyin": "suǒ yǐ",
+    "english": "so; therefore"
+  },
+  {
+    "id": "c1-l4.1-020",
+    "type": "vocab",
+    "lesson": "4.1",
+    "traditional": "都",
+    "simplified": "都",
+    "pinyin": "dōu",
+    "english": "all; both"
+  },
+
+  /* LESSON 4.2 */
+
+  {
+    "id": "c1-l4.2-001",
+    "type": "vocab",
+    "lesson": "4.2",
+    "traditional": "好久",
+    "simplified": "好久",
+    "pinyin": "hǎo jiǔ",
+    "english": "a long time"
+  },
+  {
+    "id": "c1-l4.2-002",
+    "type": "vocab",
+    "lesson": "4.2",
+    "traditional": "不錯",
+    "simplified": "不错",
+    "pinyin": "bú cuò",
+    "english": "pretty good; not bad"
+  },
+  {
+    "id": "c1-l4.2-003",
+    "type": "vocab",
+    "lesson": "4.2",
+    "traditional": "想",
+    "simplified": "想",
+    "pinyin": "xiǎng",
+    "english": "to want; to think"
+  },
+  {
+    "id": "c1-l4.2-004",
+    "type": "vocab",
+    "lesson": "4.2",
+    "traditional": "覺得",
+    "simplified": "觉得",
+    "pinyin": "jué de",
+    "english": "to feel; to think"
+  },
+  {
+    "id": "c1-l4.2-005",
+    "type": "vocab",
+    "lesson": "4.2",
+    "traditional": "有意思",
+    "simplified": "有意思",
+    "pinyin": "yǒu yì si",
+    "english": "interesting"
+  },
+  {
+    "id": "c1-l4.2-006",
+    "type": "vocab",
+    "lesson": "4.2",
+    "traditional": "只",
+    "simplified": "只",
+    "pinyin": "zhǐ",
+    "english": "only"
+  },
+  {
+    "id": "c1-l4.2-007",
+    "type": "vocab",
+    "lesson": "4.2",
+    "traditional": "睡覺",
+    "simplified": "睡觉",
+    "pinyin": "shuì jiào",
+    "english": "to sleep"
+  },
+  {
+    "id": "c1-l4.2-008",
+    "type": "vocab",
+    "lesson": "4.2",
+    "traditional": "算了",
+    "simplified": "算了",
+    "pinyin": "suàn le",
+    "english": "forget it; never mind"
+  },
+  {
+    "id": "c1-l4.2-009",
+    "type": "vocab",
+    "lesson": "4.2",
+    "traditional": "找",
+    "simplified": "找",
+    "pinyin": "zhǎo",
+    "english": "to look for; to find"
+  },
+  {
+    "id": "c1-l4.2-010",
+    "type": "vocab",
+    "lesson": "4.2",
+    "traditional": "別人",
+    "simplified": "别人",
+    "pinyin": "bié rén",
+    "english": "other people"
+  },
+  {
+    "id": "c1-l4.2-011",
+    "type": "vocab",
+    "lesson": "4.2",
+    "traditional": "別的",
+    "simplified": "别的",
+    "pinyin": "bié de",
+    "english": "other"
+  },
+  {
+    "id": "c1-l4.2-012",
+    "type": "vocab",
+    "lesson": "4.2",
+    "traditional": "畫畫兒",
+    "simplified": "画画儿",
+    "pinyin": "huà huà r",
+    "english": "to draw"
+  },
+  {
+    "id": "c1-l4.2-013",
+    "type": "vocab",
+    "lesson": "4.2",
+    "traditional": "棒球",
+    "simplified": "棒球",
+    "pinyin": "bàng qiú",
+    "english": "baseball"
+  },
+  {
+    "id": "c1-l4.2-014",
+    "type": "vocab",
+    "lesson": "4.2",
+    "traditional": "排球",
+    "simplified": "排球",
+    "pinyin": "pái qiú",
+    "english": "volleyball"
+  },
+  {
+    "id": "c1-l4.2-015",
+    "type": "vocab",
+    "lesson": "4.2",
+    "traditional": "乒乓球",
+    "simplified": "乒乓球",
+    "pinyin": "pīng pāng qiú",
+    "english": "ping pong"
+  },
+  {
+    "id": "c1-l4.2-016",
+    "type": "vocab",
+    "lesson": "4.2",
+    "traditional": "網球",
+    "simplified": "网球",
+    "pinyin": "wǎng qiú",
+    "english": "tennis"
+  },
+  {
+    "id": "c1-l4.2-017",
+    "type": "vocab",
+    "lesson": "4.2",
+    "traditional": "籃球",
+    "simplified": "篮球",
+    "pinyin": "lán qiú",
+    "english": "basketball"
+  },
+  {
+    "id": "c1-l4.2-018",
+    "type": "vocab",
+    "lesson": "4.2",
+    "traditional": "踢足球",
+    "simplified": "踢足球",
+    "pinyin": "tī zú qiú",
+    "english": "to play soccer"
+  },
+  {
+    "id": "c1-l4.2-019",
+    "type": "vocab",
+    "lesson": "4.2",
+    "traditional": "玩遊戲機",
+    "simplified": "玩游戏机",
+    "pinyin": "wán yóu xì jī",
+    "english": "to play video games"
+  },
+  {
+    "id": "c1-l4.2-020",
+    "type": "vocab",
+    "lesson": "4.2",
+    "traditional": "打電動",
+    "simplified": "打电动",
+    "pinyin": "dǎ diàn dòng",
+    "english": "to play video games"
+  },
+  {
+    "id": "c1-l4.2-021",
+    "type": "vocab",
+    "lesson": "4.2",
+    "traditional": "上網聊天兒",
+    "simplified": "上网聊天儿",
+    "pinyin": "shàng wǎng liáo tiān r",
+    "english": "to chat online"
+  },
+  {
+    "id": "c1-l4.2-022",
+    "type": "vocab",
+    "lesson": "4.2",
+    "traditional": "逛街",
+    "simplified": "逛街",
+    "pinyin": "guàng jiē",
+    "english": "to go shopping"
+  },
+  {
+    "id": "c1-l4.2-023",
+    "type": "vocab",
+    "lesson": "4.2",
+    "traditional": "象棋",
+    "simplified": "象棋",
+    "pinyin": "xiàng qí",
+    "english": "Chinese chess"
+  },
+  {
+    "id": "c1-l4.2-024",
+    "type": "vocab",
+    "lesson": "4.2",
+    "traditional": "西洋棋",
+    "simplified": "西洋棋",
+    "pinyin": "xī yáng qí",
+    "english": "chess"
+  },
+  {
+    "id": "c1-l5.1-001",
+    "type": "vocab",
+    "lesson": "5.1",
+    "traditional": "呀",
+    "simplified": "呀",
+    "pinyin": "ya",
+    "english": "interjectory particle to soften a question"
+  },
+  {
+    "id": "c1-l5.1-002",
+    "type": "vocab",
+    "lesson": "5.1",
+    "traditional": "進",
+    "simplified": "进",
+    "pinyin": "jìn",
+    "english": "to enter"
+  },
+  {
+    "id": "c1-l5.1-003",
+    "type": "vocab",
+    "lesson": "5.1",
+    "traditional": "出",
+    "simplified": "出",
+    "pinyin": "chū",
+    "english": "to exit"
+  },
+  {
+    "id": "c1-l5.1-004",
+    "type": "vocab",
+    "lesson": "5.1",
+    "traditional": "進來",
+    "simplified": "进来",
+    "pinyin": "jìn lái",
+    "english": "to come in"
+  },
+  {
+    "id": "c1-l5.1-005",
+    "type": "vocab",
+    "lesson": "5.1",
+    "traditional": "出去",
+    "simplified": "出去",
+    "pinyin": "chū qù",
+    "english": "to go out; exit"
+  },
+  {
+    "id": "c1-l5.1-006",
+    "type": "vocab",
+    "lesson": "5.1",
+    "traditional": "快",
+    "simplified": "快",
+    "pinyin": "kuài",
+    "english": "fast; quick; quickly"
+  },
+  {
+    "id": "c1-l5.1-007",
+    "type": "vocab",
+    "lesson": "5.1",
+    "traditional": "慢",
+    "simplified": "慢",
+    "pinyin": "màn",
+    "english": "slow; slowly"
+  },
+  {
+    "id": "c1-l5.1-008",
+    "type": "vocab",
+    "lesson": "5.1",
+    "traditional": "介紹",
+    "simplified": "介绍",
+    "pinyin": "jiè shào",
+    "english": "to introduce"
+  },
+  {
+    "id": "c1-l5.1-009",
+    "type": "vocab",
+    "lesson": "5.1",
+    "traditional": "一下",
+    "simplified": "一下",
+    "pinyin": "yí xià",
+    "english": "once; a bit"
+  },
+  {
+    "id": "c1-l5.1-010",
+    "type": "vocab",
+    "lesson": "5.1",
+    "traditional": "高興",
+    "simplified": "高兴",
+    "pinyin": "gāo xìng",
+    "english": "happy; pleased"
+  },
+  {
+    "id": "c1-l5.1-011",
+    "type": "vocab",
+    "lesson": "5.1",
+    "traditional": "漂亮",
+    "simplified": "漂亮",
+    "pinyin": "piào liang",
+    "english": "pretty; beautiful"
+  },
+  {
+    "id": "c1-l5.1-012",
+    "type": "vocab",
+    "lesson": "5.1",
+    "traditional": "坐",
+    "simplified": "坐",
+    "pinyin": "zuò",
+    "english": "to sit"
+  },
+  {
+    "id": "c1-l5.1-013",
+    "type": "vocab",
+    "lesson": "5.1",
+    "traditional": "在",
+    "simplified": "在",
+    "pinyin": "zài",
+    "english": "at; in; on"
+  },
+  {
+    "id": "c1-l5.1-014",
+    "type": "vocab",
+    "lesson": "5.1",
+    "traditional": "哪兒",
+    "simplified": "哪儿",
+    "pinyin": "nǎ r",
+    "english": "where"
+  },
+  {
+    "id": "c1-l5.1-015",
+    "type": "vocab",
+    "lesson": "5.1",
+    "traditional": "學校",
+    "simplified": "学校",
+    "pinyin": "xué xiào",
+    "english": "school"
+  },
+  {
+    "id": "c1-l5.1-016",
+    "type": "vocab",
+    "lesson": "5.1",
+    "traditional": "喝茶",
+    "simplified": "喝茶",
+    "pinyin": "hē chá",
+    "english": "to drink tea"
+  },
+  {
+    "id": "c1-l5.1-017",
+    "type": "vocab",
+    "lesson": "5.1",
+    "traditional": "點兒",
+    "simplified": "点儿",
+    "pinyin": "diǎn r",
+    "english": "a little; a bit; some"
+  },
+  {
+    "id": "c1-l5.1-018",
+    "type": "vocab",
+    "lesson": "5.1",
+    "traditional": "咖啡",
+    "simplified": "咖啡",
+    "pinyin": "kā fēi",
+    "english": "coffee"
+  },
+  {
+    "id": "c1-l5.1-019",
+    "type": "vocab",
+    "lesson": "5.1",
+    "traditional": "吧",
+    "simplified": "吧",
+    "pinyin": "ba",
+    "english": "sentence-final particle"
+  },
+  {
+    "id": "c1-l5.1-020",
+    "type": "vocab",
+    "lesson": "5.1",
+    "traditional": "要",
+    "simplified": "要",
+    "pinyin": "yào",
+    "english": "to want"
+  },
+  {
+    "id": "c1-l5.1-021",
+    "type": "vocab",
+    "lesson": "5.1",
+    "traditional": "瓶",
+    "simplified": "瓶",
+    "pinyin": "píng",
+    "english": "measure word for bottles; bottle"
+  },
+  {
+    "id": "c1-l5.1-022",
+    "type": "vocab",
+    "lesson": "5.1",
+    "traditional": "可樂",
+    "simplified": "可乐",
+    "pinyin": "kě lè",
+    "english": "cola"
+  },
+  {
+    "id": "c1-l5.1-023",
+    "type": "vocab",
+    "lesson": "5.1",
+    "traditional": "可以",
+    "simplified": "可以",
+    "pinyin": "kě yǐ",
+    "english": "can; may"
+  },
+  {
+    "id": "c1-l5.1-024",
+    "type": "vocab",
+    "lesson": "5.1",
+    "traditional": "對不起",
+    "simplified": "对不起",
+    "pinyin": "duì bu qǐ",
+    "english": "sorry"
+  },
+  {
+    "id": "c1-l5.1-025",
+    "type": "vocab",
+    "lesson": "5.1",
+    "traditional": "給",
+    "simplified": "给",
+    "pinyin": "gěi",
+    "english": "to give"
+  },
+  {
+    "id": "c1-l5.1-026",
+    "type": "vocab",
+    "lesson": "5.1",
+    "traditional": "杯",
+    "simplified": "杯",
+    "pinyin": "bēi",
+    "english": "measure word for cups/glasses"
+  },
+  {
+    "id": "c1-l5.1-027",
+    "type": "vocab",
+    "lesson": "5.1",
+    "traditional": "水",
+    "simplified": "水",
+    "pinyin": "shuǐ",
+    "english": "water"
+  },
+  {
+    "id": "c1-l5.1-028",
+    "type": "vocab",
+    "lesson": "5.1",
+    "traditional": "高小音",
+    "simplified": "高小音",
+    "pinyin": "Gāo Xiǎoyīn",
+    "english": "(a personal name)"
+  },
+
+  /* LESSON 5.2 */
+
+  {
+    "id": "c1-l5.2-001",
+    "type": "vocab",
+    "lesson": "5.2",
+    "traditional": "了",
+    "simplified": "了",
+    "pinyin": "le",
+    "english": "dynamic particle"
+  },
+  {
+    "id": "c1-l5.2-002",
+    "type": "vocab",
+    "lesson": "5.2",
+    "traditional": "圖書館",
+    "simplified": "图书馆",
+    "pinyin": "tú shū guǎn",
+    "english": "library"
+  },
+  {
+    "id": "c1-l5.2-003",
+    "type": "vocab",
+    "lesson": "5.2",
+    "traditional": "一起",
+    "simplified": "一起",
+    "pinyin": "yì qǐ",
+    "english": "together"
+  },
+  {
+    "id": "c1-l5.2-004",
+    "type": "vocab",
+    "lesson": "5.2",
+    "traditional": "聊天",
+    "simplified": "聊天",
+    "pinyin": "liáo tiān",
+    "english": "to chat"
+  },
+  {
+    "id": "c1-l5.2-005",
+    "type": "vocab",
+    "lesson": "5.2",
+    "traditional": "才",
+    "simplified": "才",
+    "pinyin": "cái",
+    "english": "not until; only then"
+  },
+  {
+    "id": "c1-l5.2-006",
+    "type": "vocab",
+    "lesson": "5.2",
+    "traditional": "回家",
+    "simplified": "回家",
+    "pinyin": "huí jiā",
+    "english": "to go home"
+  },
+  {
+    "id": "c1-l6.1-001",
+    "type": "vocab",
+    "lesson": "6.1",
+    "traditional": "給",
+    "simplified": "给",
+    "pinyin": "gěi",
+    "english": "to; for"
+  },
+  {
+    "id": "c1-l6.1-002",
+    "type": "vocab",
+    "lesson": "6.1",
+    "traditional": "打電話",
+    "simplified": "打电话",
+    "pinyin": "dǎ diàn huà",
+    "english": "to make a phone call"
+  },
+  {
+    "id": "c1-l6.1-003",
+    "type": "vocab",
+    "lesson": "6.1",
+    "traditional": "喂",
+    "simplified": "喂",
+    "pinyin": "wéi",
+    "english": "hello (on the phone)"
+  },
+  {
+    "id": "c1-l6.1-004",
+    "type": "vocab",
+    "lesson": "6.1",
+    "traditional": "在",
+    "simplified": "在",
+    "pinyin": "zài",
+    "english": "to be present; to be at"
+  },
+  {
+    "id": "c1-l6.1-005",
+    "type": "vocab",
+    "lesson": "6.1",
+    "traditional": "就",
+    "simplified": "就",
+    "pinyin": "jiù",
+    "english": "precisely; exactly"
+  },
+  {
+    "id": "c1-l6.1-006",
+    "type": "vocab",
+    "lesson": "6.1",
+    "traditional": "您",
+    "simplified": "您",
+    "pinyin": "nín",
+    "english": "you (honorific)"
+  },
+  {
+    "id": "c1-l6.1-007",
+    "type": "vocab",
+    "lesson": "6.1",
+    "traditional": "哪",
+    "simplified": "哪",
+    "pinyin": "nǎ / něi",
+    "english": "which"
+  },
+  {
+    "id": "c1-l6.1-008",
+    "type": "vocab",
+    "lesson": "6.1",
+    "traditional": "位",
+    "simplified": "位",
+    "pinyin": "wèi",
+    "english": "polite measure word for people"
+  },
+  {
+    "id": "c1-l6.1-009",
+    "type": "vocab",
+    "lesson": "6.1",
+    "traditional": "時間",
+    "simplified": "时间",
+    "pinyin": "shí jiān",
+    "english": "time"
+  },
+  {
+    "id": "c1-l6.1-010",
+    "type": "vocab",
+    "lesson": "6.1",
+    "traditional": "問題",
+    "simplified": "问题",
+    "pinyin": "wèn tí",
+    "english": "question; problem"
+  },
+  {
+    "id": "c1-l6.1-011",
+    "type": "vocab",
+    "lesson": "6.1",
+    "traditional": "要",
+    "simplified": "要",
+    "pinyin": "yào",
+    "english": "will; to want to"
+  },
+  {
+    "id": "c1-l6.1-012",
+    "type": "vocab",
+    "lesson": "6.1",
+    "traditional": "開會",
+    "simplified": "开会",
+    "pinyin": "kāi huì",
+    "english": "to have a meeting"
+  },
+  {
+    "id": "c1-l6.1-013",
+    "type": "vocab",
+    "lesson": "6.1",
+    "traditional": "上午",
+    "simplified": "上午",
+    "pinyin": "shàng wǔ",
+    "english": "morning"
+  },
+  {
+    "id": "c1-l6.1-014",
+    "type": "vocab",
+    "lesson": "6.1",
+    "traditional": "中午",
+    "simplified": "中午",
+    "pinyin": "zhōng wǔ",
+    "english": "noon"
+  },
+  {
+    "id": "c1-l6.1-015",
+    "type": "vocab",
+    "lesson": "6.1",
+    "traditional": "下午",
+    "simplified": "下午",
+    "pinyin": "xià wǔ",
+    "english": "afternoon"
+  },
+  {
+    "id": "c1-l6.1-016",
+    "type": "vocab",
+    "lesson": "6.1",
+    "traditional": "節",
+    "simplified": "节",
+    "pinyin": "jié",
+    "english": "measure word for class periods"
+  },
+  {
+    "id": "c1-l6.1-017",
+    "type": "vocab",
+    "lesson": "6.1",
+    "traditional": "課",
+    "simplified": "课",
+    "pinyin": "kè",
+    "english": "class; course"
+  },
+  {
+    "id": "c1-l6.1-018",
+    "type": "vocab",
+    "lesson": "6.1",
+    "traditional": "年級",
+    "simplified": "年级",
+    "pinyin": "nián jí",
+    "english": "grade in school"
+  },
+  {
+    "id": "c1-l6.1-019",
+    "type": "vocab",
+    "lesson": "6.1",
+    "traditional": "考試",
+    "simplified": "考试",
+    "pinyin": "kǎo shì",
+    "english": "to give or take a test; test"
+  },
+  {
+    "id": "c1-l6.1-020",
+    "type": "vocab",
+    "lesson": "6.1",
+    "traditional": "考卷",
+    "simplified": "考卷",
+    "pinyin": "kǎo juàn",
+    "english": "examination paper"
+  },
+  {
+    "id": "c1-l6.1-021",
+    "type": "vocab",
+    "lesson": "6.1",
+    "traditional": "以後",
+    "simplified": "以后",
+    "pinyin": "yǐ hòu",
+    "english": "after; later on"
+  },
+  {
+    "id": "c1-l6.1-022",
+    "type": "vocab",
+    "lesson": "6.1",
+    "traditional": "空兒",
+    "simplified": "空儿",
+    "pinyin": "kòng r",
+    "english": "free time"
+  },
+  {
+    "id": "c1-l6.1-023",
+    "type": "vocab",
+    "lesson": "6.1",
+    "traditional": "要是",
+    "simplified": "要是",
+    "pinyin": "yào shì",
+    "english": "if"
+  },
+  {
+    "id": "c1-l6.1-024",
+    "type": "vocab",
+    "lesson": "6.1",
+    "traditional": "方便",
+    "simplified": "方便",
+    "pinyin": "fāng biàn",
+    "english": "convenient"
+  },
+  {
+    "id": "c1-l6.1-025",
+    "type": "vocab",
+    "lesson": "6.1",
+    "traditional": "到",
+    "simplified": "到",
+    "pinyin": "dào",
+    "english": "to go to; to arrive"
+  },
+  {
+    "id": "c1-l6.1-026",
+    "type": "vocab",
+    "lesson": "6.1",
+    "traditional": "辦公室",
+    "simplified": "办公室",
+    "pinyin": "bàn gōng shì",
+    "english": "office"
+  },
+  {
+    "id": "c1-l6.1-027",
+    "type": "vocab",
+    "lesson": "6.1",
+    "traditional": "行",
+    "simplified": "行",
+    "pinyin": "xíng",
+    "english": "all right; OK"
+  },
+  {
+    "id": "c1-l6.1-028",
+    "type": "vocab",
+    "lesson": "6.1",
+    "traditional": "等",
+    "simplified": "等",
+    "pinyin": "děng",
+    "english": "to wait"
+  },
+  {
+    "id": "c1-l6.1-029",
+    "type": "vocab",
+    "lesson": "6.1",
+    "traditional": "別",
+    "simplified": "别",
+    "pinyin": "bié",
+    "english": "don't"
+  },
+  {
+    "id": "c1-l6.1-030",
+    "type": "vocab",
+    "lesson": "6.1",
+    "traditional": "客氣",
+    "simplified": "客气",
+    "pinyin": "kè qi",
+    "english": "polite"
+  },
+  {
+    "id": "c1-l6.1-031",
+    "type": "vocab",
+    "lesson": "6.1",
+    "traditional": "常老師",
+    "simplified": "常老师",
+    "pinyin": "Cháng lǎo shī",
+    "english": "Teacher Chang"
+  },
+
+  /* LESSON 6.2 */
+
+  {
+    "id": "c1-l6.2-001",
+    "type": "vocab",
+    "lesson": "6.2",
+    "traditional": "下個",
+    "simplified": "下个",
+    "pinyin": "xià ge",
+    "english": "next one"
+  },
+  {
+    "id": "c1-l6.2-002",
+    "type": "vocab",
+    "lesson": "6.2",
+    "traditional": "中文",
+    "simplified": "中文",
+    "pinyin": "Zhōng wén",
+    "english": "Chinese language"
+  },
+  {
+    "id": "c1-l6.2-003",
+    "type": "vocab",
+    "lesson": "6.2",
+    "traditional": "幫",
+    "simplified": "帮",
+    "pinyin": "bāng",
+    "english": "to help"
+  },
+  {
+    "id": "c1-l6.2-004",
+    "type": "vocab",
+    "lesson": "6.2",
+    "traditional": "準備",
+    "simplified": "准备",
+    "pinyin": "zhǔn bèi",
+    "english": "to prepare"
+  },
+  {
+    "id": "c1-l6.2-005",
+    "type": "vocab",
+    "lesson": "6.2",
+    "traditional": "練習",
+    "simplified": "练习",
+    "pinyin": "liàn xí",
+    "english": "to practice"
+  },
+  {
+    "id": "c1-l6.2-006",
+    "type": "vocab",
+    "lesson": "6.2",
+    "traditional": "說",
+    "simplified": "说",
+    "pinyin": "shuō",
+    "english": "to speak; to say"
+  },
+  {
+    "id": "c1-l6.2-007",
+    "type": "vocab",
+    "lesson": "6.2",
+    "traditional": "啊",
+    "simplified": "啊",
+    "pinyin": "a / ā",
+    "english": "sentence-final particle"
+  },
+  {
+    "id": "c1-l6.2-008",
+    "type": "vocab",
+    "lesson": "6.2",
+    "traditional": "但是",
+    "simplified": "但是",
+    "pinyin": "dàn shì",
+    "english": "but"
+  },
+  {
+    "id": "c1-l6.2-009",
+    "type": "vocab",
+    "lesson": "6.2",
+    "traditional": "得",
+    "simplified": "得",
+    "pinyin": "děi",
+    "english": "must; to have to"
+  },
+  {
+    "id": "c1-l6.2-010",
+    "type": "vocab",
+    "lesson": "6.2",
+    "traditional": "跟",
+    "simplified": "跟",
+    "pinyin": "gēn",
+    "english": "with"
+  },
+  {
+    "id": "c1-l6.2-011",
+    "type": "vocab",
+    "lesson": "6.2",
+    "traditional": "見面",
+    "simplified": "见面",
+    "pinyin": "jiàn miàn",
+    "english": "to meet up"
+  },
+  {
+    "id": "c1-l6.2-012",
+    "type": "vocab",
+    "lesson": "6.2",
+    "traditional": "回來",
+    "simplified": "回来",
+    "pinyin": "huí lái",
+    "english": "to come back"
+  },
+  {
+    "id": "c1-l7.1-001",
+    "type": "vocab",
+    "lesson": "7.1",
+    "traditional": "說話",
+    "simplified": "说话",
+    "pinyin": "shuō huà",
+    "english": "to talk"
+  },
+  {
+    "id": "c1-l7.1-002",
+    "type": "vocab",
+    "lesson": "7.1",
+    "traditional": "上個",
+    "simplified": "上个",
+    "pinyin": "shàng ge",
+    "english": "the previous one"
+  },
+  {
+    "id": "c1-l7.1-003",
+    "type": "vocab",
+    "lesson": "7.1",
+    "traditional": "得",
+    "simplified": "得",
+    "pinyin": "de",
+    "english": "structural particle"
+  },
+  {
+    "id": "c1-l7.1-004",
+    "type": "vocab",
+    "lesson": "7.1",
+    "traditional": "復習",
+    "simplified": "复习",
+    "pinyin": "fù xí",
+    "english": "to review"
+  },
+  {
+    "id": "c1-l7.1-005",
+    "type": "vocab",
+    "lesson": "7.1",
+    "traditional": "寫",
+    "simplified": "写",
+    "pinyin": "xiě",
+    "english": "to write"
+  },
+  {
+    "id": "c1-l7.1-006",
+    "type": "vocab",
+    "lesson": "7.1",
+    "traditional": "字",
+    "simplified": "字",
+    "pinyin": "zì",
+    "english": "character; word"
+  },
+  {
+    "id": "c1-l7.1-007",
+    "type": "vocab",
+    "lesson": "7.1",
+    "traditional": "慢",
+    "simplified": "慢",
+    "pinyin": "màn",
+    "english": "slow"
+  },
+  {
+    "id": "c1-l7.1-008",
+    "type": "vocab",
+    "lesson": "7.1",
+    "traditional": "枝",
+    "simplified": "枝",
+    "pinyin": "zhī",
+    "english": "measure word for long, thin objects"
+  },
+  {
+    "id": "c1-l7.1-009",
+    "type": "vocab",
+    "lesson": "7.1",
+    "traditional": "筆",
+    "simplified": "笔",
+    "pinyin": "bǐ",
+    "english": "pen"
+  },
+  {
+    "id": "c1-l7.1-010",
+    "type": "vocab",
+    "lesson": "7.1",
+    "traditional": "張",
+    "simplified": "张",
+    "pinyin": "zhāng",
+    "english": "measure word for flat objects"
+  },
+  {
+    "id": "c1-l7.1-011",
+    "type": "vocab",
+    "lesson": "7.1",
+    "traditional": "紙",
+    "simplified": "纸",
+    "pinyin": "zhǐ",
+    "english": "paper"
+  },
+  {
+    "id": "c1-l7.1-012",
+    "type": "vocab",
+    "lesson": "7.1",
+    "traditional": "教",
+    "simplified": "教",
+    "pinyin": "jiāo",
+    "english": "to teach"
+  },
+  {
+    "id": "c1-l7.1-013",
+    "type": "vocab",
+    "lesson": "7.1",
+    "traditional": "教室",
+    "simplified": "教室",
+    "pinyin": "jiào shì",
+    "english": "classroom"
+  },
+  {
+    "id": "c1-l7.1-014",
+    "type": "vocab",
+    "lesson": "7.1",
+    "traditional": "怎麼",
+    "simplified": "怎么",
+    "pinyin": "zěn me",
+    "english": "how; how come"
+  },
+  {
+    "id": "c1-l7.1-015",
+    "type": "vocab",
+    "lesson": "7.1",
+    "traditional": "懂",
+    "simplified": "懂",
+    "pinyin": "dǒng",
+    "english": "to understand"
+  },
+  {
+    "id": "c1-l7.1-016",
+    "type": "vocab",
+    "lesson": "7.1",
+    "traditional": "真",
+    "simplified": "真",
+    "pinyin": "zhēn",
+    "english": "really"
+  },
+  {
+    "id": "c1-l7.1-017",
+    "type": "vocab",
+    "lesson": "7.1",
+    "traditional": "哪裡",
+    "simplified": "哪里",
+    "pinyin": "nǎ lǐ",
+    "english": "where"
+  },
+  {
+    "id": "c1-l7.1-018",
+    "type": "vocab",
+    "lesson": "7.1",
+    "traditional": "預習",
+    "simplified": "预习",
+    "pinyin": "yù xí",
+    "english": "to preview"
+  },
+  {
+    "id": "c1-l7.1-019",
+    "type": "vocab",
+    "lesson": "7.1",
+    "traditional": "學",
+    "simplified": "学",
+    "pinyin": "xué",
+    "english": "to study; to learn"
+  },
+  {
+    "id": "c1-l7.1-020",
+    "type": "vocab",
+    "lesson": "7.1",
+    "traditional": "第",
+    "simplified": "第",
+    "pinyin": "dì",
+    "english": "ordinal prefix"
+  },
+  {
+    "id": "c1-l7.1-021",
+    "type": "vocab",
+    "lesson": "7.1",
+    "traditional": "語法",
+    "simplified": "语法",
+    "pinyin": "yǔ fǎ",
+    "english": "grammar"
+  },
+  {
+    "id": "c1-l7.1-022",
+    "type": "vocab",
+    "lesson": "7.1",
+    "traditional": "容易",
+    "simplified": "容易",
+    "pinyin": "róng yì",
+    "english": "easy"
+  },
+  {
+    "id": "c1-l7.1-023",
+    "type": "vocab",
+    "lesson": "7.1",
+    "traditional": "生詞",
+    "simplified": "生词",
+    "pinyin": "shēng cí",
+    "english": "new words; vocabulary"
+  },
+  {
+    "id": "c1-l7.1-024",
+    "type": "vocab",
+    "lesson": "7.1",
+    "traditional": "多",
+    "simplified": "多",
+    "pinyin": "duō",
+    "english": "many; much; more"
+  },
+  {
+    "id": "c1-l7.1-025",
+    "type": "vocab",
+    "lesson": "7.1",
+    "traditional": "漢字",
+    "simplified": "汉字",
+    "pinyin": "hàn zì",
+    "english": "Chinese characters"
+  },
+  {
+    "id": "c1-l7.1-026",
+    "type": "vocab",
+    "lesson": "7.1",
+    "traditional": "難",
+    "simplified": "难",
+    "pinyin": "nán",
+    "english": "difficult"
   }
-  /* …continues for all 150+ words … */
 ]
